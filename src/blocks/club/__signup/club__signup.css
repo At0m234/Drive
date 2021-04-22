@@ -14,6 +14,7 @@
 @media screen and (min-width: 768px) and (max-width: 1365px) {
   .club__signup {
     right: 2.73%;
+    left: 35.98%;
     top: -41px;
     max-width: 466px;
     max-height: 694px;
@@ -25,6 +26,7 @@
   .club__signup {
     top: 191px;
     right: 0;
+    left: 0;
     width: 100%;
     height: 594px;
     justify-content: center;

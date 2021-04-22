@@ -9,3 +9,15 @@
   max-width: 1366px;
   width: 100%;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .guru__content {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .guru__content {
+    max-width: 375px;
+  }
+}

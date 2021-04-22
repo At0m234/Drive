@@ -14,3 +14,15 @@
   width: 100%;
   opacity: .85;
 }
+/* 
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .header {
+    max-width: 1365px;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .header {
+    width: 86.67%;
+  }
+} */

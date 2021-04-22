@@ -13,7 +13,6 @@
 @media screen and (min-width: 768px) and (max-width: 1365px) {
   .header__info {
     width: 96.006%;
-    max-width: 1365px;
     padding: 23px 27px 23px 27px;
     display: grid;
     justify-content: space-between;

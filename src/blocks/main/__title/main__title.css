@@ -9,6 +9,7 @@
   line-height: 130%;
   margin: 229px 0 15px 9.74%;
   width: 74.30%;
+  max-width: 1015px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1365px) {
@@ -24,7 +25,8 @@
     font-size: 24px;
     line-height: 140%;
     width: 86.67%;
-    margin: 498px 0 10px 6.67%;
+    max-width: 325px;
+    margin: 498px auto 10px 6.67%;
     align-self: center;
   }
 }

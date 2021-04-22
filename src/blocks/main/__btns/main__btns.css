@@ -16,7 +16,7 @@
   .main__btns {
     justify-content: left;
     flex-direction: column;
-    margin: 0 0 57px 10%;
+    margin: 0 auto 57px 6.5%;
     width: 325px;
   }
 }

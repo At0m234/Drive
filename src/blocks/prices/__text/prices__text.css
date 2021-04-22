@@ -11,6 +11,7 @@
   .prices__text {
     width: 100%;
     margin: 0 0 44px 0;
+    max-width: 720px;
   }
 }
 

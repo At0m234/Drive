@@ -13,7 +13,10 @@
   .prices__info {
     flex-direction: column;
     width: 100%;
+    max-width: 715px;
     height: 697px;
+    justify-content: center;
+    align-items: center;
   }
 }
 

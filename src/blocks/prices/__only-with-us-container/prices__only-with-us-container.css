@@ -18,8 +18,7 @@
   .prices__only-with-us-container {
     position: absolute;
     top: 0;
-    right: auto;
-    left: auto;
+    left: 0;
     display: none;
   }
 

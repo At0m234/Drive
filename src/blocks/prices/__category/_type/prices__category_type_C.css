@@ -15,7 +15,7 @@
 @media screen and (min-width: 50px) and (max-width: 767px) {
   .prices__category_type_C {
     width: 285px;
-    height: 385px;
+    height: 383px;
     flex-direction: column;
     margin-top: 28px;
   }
