@@ -1,12 +1,17 @@
 .contacts__content {
   display: flex;
+  justify-content: center;
   max-width: 1366px;
+  width: 100%;
   padding: 128px 9.37% 134px 9.37%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1365px) {
   .contacts__content {
     padding: 70px 3.52% 90px 3.52%;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: center;
   }
 }
 

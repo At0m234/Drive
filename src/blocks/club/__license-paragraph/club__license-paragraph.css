@@ -7,7 +7,7 @@
   color: #181818;
   margin: 0 0 25px 0;
   width: 81.26%;
-  max-width: 1110px;
+  width: 1091px;
 }
 
 .club__license-paragraph:nth-of-type(2) {
@@ -19,6 +19,7 @@
     font-size: 16px;
     margin: 0 0 25px 0;
     max-width: 720px;
+    min-width: 715px;
   }
 
   .club__license-paragraph:nth-of-type(2) {
@@ -30,9 +31,11 @@
   .club__license-paragraph {
     font-size: 14px;
     margin: 17px 0 25px 0;
+    width: 100%;
   }
 
   .club__license-paragraph:nth-of-type(2) {
     margin-bottom: 0;
+    margin-top: 0;
   }
 }

@@ -24,7 +24,7 @@
   .prices__category_type_only-with-us {
     flex-direction: column;
     width: 283px;
-    height: 385px;
+    height: 383px;
   }
 
   .prices__category_type_only-with-us:nth-of-type(n) {

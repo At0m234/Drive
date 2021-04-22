@@ -21,6 +21,6 @@
 .prices__categories-container {
     flex-direction: column;
     width: 100%;
-    max-width: 714px;
+    max-width: 325px;
   }
 }

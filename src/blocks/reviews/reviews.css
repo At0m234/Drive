@@ -29,12 +29,11 @@
 @media screen and (min-width: 768px) and (max-width: 1365px) {
   .reviews {
     position: relative;
-    padding: 0 3.52%;
   }
 }
 
 @media screen and (min-width: 50px) and (max-width: 767px) {
   .reviews {
-    padding: 0 6.67% 50px 6.67%;
+    position: relative;
   }
 }

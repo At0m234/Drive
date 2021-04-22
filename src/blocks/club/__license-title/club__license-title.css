@@ -6,7 +6,7 @@
   line-height: 140%;
   color: #181818;
   width: 81.26%;
-  max-width: 1050px;
+  width: 1091px;
   margin: 0 0 44px 0;
 }
 
@@ -14,7 +14,7 @@
   .club__license-title {
     font-size: 28px;
     margin: 0 0 26px 0;
-    max-width: 720px;
+    width: 720px;
   }
 }
 
@@ -22,7 +22,7 @@
   .club__license-title {
     font-size: 20px;
     margin: 6px 0 13px 0;
-    min-width: 325px;
+    width: 100%;
   }
 
   .club__license-title img {

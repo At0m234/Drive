@@ -9,6 +9,7 @@
   .club__adress-text {
     width: 92.84%;
     flex-direction: column;
+    align-items: flex-start;
   }
 }
 

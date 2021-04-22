@@ -23,8 +23,9 @@
   .main__subtitle {
     font-size: 16px;
     line-height: 170%;
-    margin: 0 0 32px 6.67%;
     width: 86.67%;
+    max-width: 325px;
+    margin: 0 auto 32px 6.67%;
     align-self: center;
   }
 }

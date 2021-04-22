@@ -22,7 +22,7 @@ label {
   .contacts__form {
     position: relative;
     flex-direction: column;
-    margin: 0 0 0 9.80%;
+    margin: 0 0 0 72px;
   }
 }
 

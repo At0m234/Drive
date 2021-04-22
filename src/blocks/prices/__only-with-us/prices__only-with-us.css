@@ -11,6 +11,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1365px) {
   .prices__only-with-us {
+    margin-top: 0;
     width: 715px;
     height: 198px;
     grid-area: alumni;
