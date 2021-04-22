@@ -1,0 +1,26 @@
+.reviews__title {
+  width: 16.94%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  color: #181818;
+  margin: 0 0 16px 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .reviews__title {
+    width: 26.33%;
+    font-size: 32px;
+    margin: 0 0 16px 0;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .reviews__title {
+    font-size: 24px;
+    margin: 0 43.2% 19px 0%;
+  }
+}

@@ -1,0 +1,22 @@
+.prices__category_type_C {
+  width: 1108px;
+  height: 234px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .prices__category_type_C {
+    width: 715px;
+    height: 171px;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .prices__category_type_C {
+    width: 285px;
+    height: 385px;
+    flex-direction: column;
+    margin-top: 28px;
+  }
+}

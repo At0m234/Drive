@@ -1,0 +1,43 @@
+.button_type_callback {
+  border: none;
+  color: #828284;
+  text-decoration: underline;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Montserrat;
+  font-weight: normal;
+  font-style: normal;
+  padding: 0;
+}
+
+.button_type_callback:hover {
+  background: linear-gradient(277.54deg, #1492A1 41.65%, #BBB272 69.55%, #F4C245 100.21%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button_type_callback:active {
+  -webkit-text-fill-color: #F4C245;
+}
+
+.header__link:visited {
+  color: #828284;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .button_type_callback {
+    width: 123px;
+    height: 18px;
+  }
+
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .button_type_callback {
+    align-self: flex-start;
+    width: 111px;
+    height: 20px;
+    margin: 0 0 0 33.50%;
+  }
+
+}

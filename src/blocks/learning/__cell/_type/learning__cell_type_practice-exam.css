@@ -1,0 +1,79 @@
+.learning__cell_type_practice-exam {
+  width: 255px;
+  height: 68px;
+  background-color: rgba(24, 24, 24, 1);
+  top: 230px;
+  right: 0;
+}
+
+.learning__cell_type_practice-exam::after {
+  background-color: #28969B;
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 12px;
+  top: -2px;
+  right: -2px;
+  border-radius: 0 0 0 10px;
+}
+
+.learning__cell_type_practice-exam img:nth-of-type(2) {
+  width: 12px;
+  height: 12px;
+  right: -8px;
+  top: -6px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .learning__cell_type_practice-exam {
+    width: 218px;
+    height: 68px;
+    right: 0;
+    top: 245px;
+  }
+
+  .learning__cell_type_practice-exam::after {
+    background-color: #85A781;
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 12px;
+    top: -2px;
+    right: -2px;
+    border-radius: 0 0 0 10px;
+  }
+
+  .learning__cell_type_practice-exam img:nth-of-type(2) {
+    width: 12px;
+    height: 12px;
+    right: -8px;
+    top: -6px;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .learning__cell_type_practice-exam {
+    width: 47.69%;
+    height: 58px;
+    right: 0;
+    top: 185px;
+  }
+
+  .learning__cell_type_practice-exam::after {
+    background-color: #7CA683;
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 12px;
+    top: -2px;
+    right: -2px;
+    border-radius: 0 0 0 10px;
+  }
+
+  .learning__cell_type_practice-exam img:nth-of-type(2) {
+    width: 12px;
+    height: 12px;
+    right: -8px;
+    top: -6px;
+  }
+}

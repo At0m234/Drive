@@ -1,0 +1,38 @@
+.button_type_cat-D {
+  width: 160px;
+  min-height: 54px;
+  border: 2px solid #5BAFCA;
+  padding: 0;
+  margin: 73px 0 32px 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #181818;
+}
+
+.button_type_cat-D:hover {
+  border: 2px solid #181818;
+}
+
+.button_type_cat-D:focus {
+  background: #5BAFCA;
+  border: 2px solid #181818;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .button_type_cat-D {
+    width: 160px;
+    height: 54px;
+    margin: 45px 0 23px 0;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .button_type_cat-D {
+    width: 246px;
+    height: 54px;
+    margin: 0 0 19px 0;
+  }
+}

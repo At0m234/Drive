@@ -1,0 +1,35 @@
+.reviews__director-photo {
+  position: relative;
+  display: flex;
+  background-image: url('../../../images/Reviews/Vector Wheel.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-fit: fill;
+  width: 325px;
+  height: 325px;
+  z-index: 1;
+  margin: 0 3.87% 0 0;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .reviews__director-photo {
+    width: 263px;
+    height: 263px;
+    margin: 0 -22px 0 0;
+    align-self: flex-end;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .reviews__director-photo {
+    position: absolute;
+    bottom: -3px;
+    left: -15px;
+    width: 140px;
+    height: 140px;
+    z-index: 1;
+    margin: 0;
+  }
+}

@@ -1,0 +1,22 @@
+.prices__categories-choise {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 160px);
+  grid-template-rows: repeat(2, 48px);
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .prices__categories-choise {
+    grid-template-columns: repeat(3, 218px);
+    grid-template-rows: repeat(2, 48px);
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .prices__categories-choise {
+    gap: 15px;
+    grid-template-columns: repeat(2, 155px);
+    grid-template-rows: repeat(3, 48px);
+  }
+}

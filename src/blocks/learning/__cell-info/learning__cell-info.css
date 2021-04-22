@@ -1,0 +1,7 @@
+.learning__cell-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-self: flex-start;
+  width: 100%;
+}

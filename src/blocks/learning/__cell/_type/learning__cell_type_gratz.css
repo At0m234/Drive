@@ -1,0 +1,88 @@
+.learning__cell_type_gratz {
+  width: 540px;
+  height: 68px;
+  background-color: rgba(24, 24, 24, 1);
+  bottom: 0;
+  left: 0;
+}
+
+.learning__cell_type_gratz::after {
+  background-color: #28969B;
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 12px;
+  top: -2px;
+  right: -2px;
+  border-radius: 0 0 0 10px;
+}
+
+.learning__cell_type_gratz img:nth-of-type(2) {
+  width: 12px;
+  height: 12px;
+  right: -8px;
+  top: -6px;
+}
+
+.learning__cell_type_gratz img:nth-of-type(1) {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .learning__cell_type_gratz {
+    width: 466px;
+    height: 68px;
+    bottom: 0;
+    left: 0;
+  }
+
+  .learning__cell_type_gratz::after {
+    background-color: #85A781;
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 12px;
+    top: -2px;
+    right: -2px;
+    border-radius: 0 0 0 10px;
+  }
+
+  .learning__cell_type_gratz img:nth-of-type(2) {
+    width: 12px;
+    height: 12px;
+    right: -8px;
+    top: -6px;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .learning__cell_type_gratz {
+    width: 100%;
+    height: 58px;
+    bottom: 0;
+    left: 0;
+  }
+
+  .learning__cell_type_gratz img:nth-of-type(1) {
+    width: 0;
+    height: 0;
+  }
+
+  .learning__cell_type_gratz::after {
+    background-color: #7CA683;
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 12px;
+    top: -2px;
+    right: -2px;
+    border-radius: 0 0 0 10px;
+  }
+
+  .learning__cell_type_gratz img:nth-of-type(2) {
+    width: 12px;
+    height: 12px;
+    right: -8px;
+    top: -6px;
+  }
+}

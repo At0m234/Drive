@@ -1,0 +1,15 @@
+.main__image_type_three {
+  width: 135px;
+  height: 132px;
+  top: 65px;
+  right: -34px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .main__image_type_three {
+    width: 80px;
+    height: 79px;
+    top: 111px;
+    right: -21px;
+  }
+}

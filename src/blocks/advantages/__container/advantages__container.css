@@ -1,0 +1,24 @@
+.advantages__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1110px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .advantages__container {
+    width: 100%;
+    max-width: 712px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .advantages__container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

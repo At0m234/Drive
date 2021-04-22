@@ -1,0 +1,35 @@
+.learning__question {
+  position: absolute;
+  width: 16px;
+  height: 18px;
+  top: -10px;
+  right: -10px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.learning__question:hover ~ span {
+  opacity: 1;
+}
+
+.learning__question:hover ~ div {
+  opacity: 1;
+}
+
+
+.learning__question:focus ~ span {
+  opacity: 1;
+}
+
+.learning__question:focus ~ div {
+  opacity: 1;
+}
+
+
+.learning__question:active ~ span {
+  opacity: 1;
+}
+
+.learning__question:active ~ div {
+  opacity: 1;
+}

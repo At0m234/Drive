@@ -1,0 +1,22 @@
+.guru__alumni-title_type_white {
+  width: 32.15%;
+  max-width: 180px;
+  height: 48px;
+  background-color: #F8F8F8;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .guru__alumni-title_type_white {
+    width: 36.62%;
+    max-width: 156px;
+    height: 42px;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .guru__alumni-title_type_white {
+    width: 39.08%;
+    max-width: 127px;
+    min-height: 37px;
+  }
+}

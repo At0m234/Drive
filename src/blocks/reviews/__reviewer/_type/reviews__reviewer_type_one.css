@@ -1,0 +1,24 @@
+.reviews__reviewer_type_one {
+  grid-area: one;
+  padding: 44px;
+  width: 262px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .reviews__reviewer_type_one {
+    min-width: 278px;
+    max-height: 360px;
+    padding: 32px;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .reviews__reviewer_type_one {
+    display: flex;
+    flex-direction: column;
+    min-width: 287px;
+    min-height: 281px;
+    padding: 22px 18px;
+    margin: 0 15px 0 0;
+  }
+}

@@ -1,0 +1,32 @@
+.contacts__office-adress {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #181818;
+  margin: 0 0 16px 0;
+  width: 100%;
+  -webkit-touch-callout: text; /* iOS Safari */
+  -webkit-user-select: text;   /* Chrome/Safari/Opera */
+  -khtml-user-select: text;    /* Konqueror */
+  -moz-user-select: text;      /* Firefox */
+  -ms-user-select: text;       /* Internet Explorer/Edge */
+  user-select: text;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .contacts__office-adress {
+    font-size: 14px;
+    margin: 0 0 50px 0;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .contacts__office-adress {
+    width: 100%;
+    font-size: 14px;
+    margin: 0 0 24px 0;
+  }
+}

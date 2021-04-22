@@ -1,0 +1,31 @@
+.club__title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  color: #F8F8F8;
+  margin: 86px 95px 16px 66px;
+  width: 70.19%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .club__title {
+    font-size: 32px;
+    margin: 59px 26px 18px 61px;
+    align-self: flex-start;
+    width: 67.81%;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .club__title {
+    font-size: 24px;
+    margin: 37px 0 6px 0;
+    /* align-self: flex-start; */
+    width: 54.93%;
+    max-width: 206px;
+  }
+}

@@ -1,0 +1,36 @@
+
+@import url('__title/main__title.css');
+@import url('__subtitle/main__subtitle.css');
+@import url('__btns/main__btns.css');
+@import url('__bg-first/main__bg-first.css');
+@import url('__bg-second/main__bg-second.css');
+@import url('__image/main__image.css');
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1366px;
+  min-height: 768px;
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .main {
+    min-width: 768px;
+    max-width: 1365px;
+    min-height: 553px;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .main {
+    min-width: 375px;
+    max-width: 767px;
+    min-height: 812px;
+  }
+}

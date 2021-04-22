@@ -1,0 +1,26 @@
+.guru__teachers-title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 61px;
+  display: flex;
+  align-items: center;
+  color: #181818;
+  width: 72.60%;
+  margin: 0 0 44px 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .guru__teachers-title {
+    font-size: 32px;
+    width: 77.1%;
+    margin: 0 0 21px 0;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .guru__teachers-title {
+    display: none;
+  }
+}

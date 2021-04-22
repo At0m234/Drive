@@ -1,0 +1,28 @@
+.popup__licenses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 1110px;
+  height: 630px;
+  background-color: #fff;
+  padding: 95px 190px;
+  border: 1px solid #181818;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .popup__licenses {
+    width: 752px;
+    height: 436px;
+    padding: 66px 115px 65px 131px;
+  }
+}
+
+/* @media screen and (min-width: 50px) and (max-width: 767px) {
+  .popup__licenses {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+} */

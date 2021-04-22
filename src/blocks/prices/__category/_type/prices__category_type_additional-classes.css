@@ -1,0 +1,58 @@
+.prices__category_type_additional-classes {
+  width: 537px;
+  height: 209px;
+  justify-content: space-between;
+}
+
+.prices__category_type_additional-classes:nth-of-type(1) {
+  margin-right: 30px;
+}
+
+.prices__category_type_additional-classes p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 190%;
+  color: #212121;
+  margin: 68px 0 21px 0;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .prices__category_type_additional-classes {
+    width: 715px;
+    height: 171px;
+    margin-bottom: 30px;
+  }
+
+  .prices__category_type_additional-classes:nth-of-type(1) {
+    margin-right: 0;
+  }
+
+  .prices__category_type_additional-classes p {
+    font-size: 13px;
+    line-height: 170%;
+    margin: 73px 0 23px 0;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .prices__category_type_additional-classes {
+    flex-direction: column;
+    width: 285px;
+    height: 385px;
+    margin: 0 15px 0 0;
+  }
+
+  .prices__category_type_additional-classes:nth-of-type(1) {
+    margin-right: 15px;
+  }
+
+  .prices__category_type_additional-classes p {
+    width: 100%;
+    font-size: 14px;
+    line-height: 160%;
+    margin: 9px 198px 0 0;
+  }
+}

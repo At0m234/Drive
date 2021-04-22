@@ -1,0 +1,24 @@
+.guru__for-example {
+  display: flex;
+  flex-direction: column;
+  margin: 0 9.37% 103px 49.63%;
+  width: 41%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .guru__for-example {
+    justify-content: flex-end;
+    margin: 0 2.86% 81.41px auto;
+    width: 55.47%;
+    max-width: 426px;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .guru__for-example {
+    position: relative;
+    width: 86.67%;
+    margin: 0 0 298px 0;
+    padding: 0 6.67%;
+  }
+}

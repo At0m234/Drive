@@ -1,0 +1,24 @@
+.learning__cell_type_theory {
+  width: 255px;
+  height: 68px;
+  top: 97px;
+  left: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .learning__cell_type_theory {
+    width: 218px;
+    height: 68px;
+    top: 100px;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .learning__cell_type_theory {
+    width: 47.69%;
+    height: 58px;
+    top: 75px;
+    left: 0;
+  }
+}

@@ -1,0 +1,22 @@
+.prices__only-with-us-image_type_logo {
+  left: 32px;
+  bottom: 31.51px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .prices__only-with-us-image_type_logo {
+    width: 160px;
+    height: 18px;
+    left: 30px;
+    bottom: 24.51px;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .prices__only-with-us-image_type_logo {
+    left: 19px;
+    bottom: 38px;
+    width: 246px;
+    height: 27px;
+  }
+}

@@ -1,0 +1,30 @@
+@import url('_type/main__subtitle_type_white.css');
+@import url('_type/main__subtitle_type_black.css');
+
+.main__subtitle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 180%;
+  margin: 0 0 85px 9.74%;
+  width: 46.49%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .main__subtitle {
+    font-size: 18px;
+    margin: 0 0 66px 3.52%;
+    width: 46.88%;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .main__subtitle {
+    font-size: 16px;
+    line-height: 170%;
+    margin: 0 0 32px 6.67%;
+    width: 86.67%;
+    align-self: center;
+  }
+}

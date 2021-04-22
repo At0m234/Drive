@@ -1,0 +1,27 @@
+.contacts__questionnaire {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #181818;
+  margin: 0;
+  width: 81.32%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .contacts__questionnaire {
+    font-size: 12px;
+    width: 70.32%;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .contacts__questionnaire {
+    position: absolute;
+    bottom: 135px;
+    font-size: 10px;
+    max-width: 325px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,18 @@
+.club__location-image {
+  width: 42px;
+  height: 62px;
+  margin: 0;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .club__location-image {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .club__location-image {
+    display: none;
+  }
+}

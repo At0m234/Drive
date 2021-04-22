@@ -1,0 +1,27 @@
+.prices__title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 140%;
+  color: #181818;
+  width: 100%;
+  margin: 0 0 16px 0;
+  align-self: start;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .prices__title {
+    font-size: 32px;
+    width: 100%;
+    margin: 0 0 2px 0;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .prices__title {
+    font-size: 24px;
+    width: 100%;
+    margin: 0 0 8px 0;
+  }
+}

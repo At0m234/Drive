@@ -1,0 +1,8 @@
+.club__licenses {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 86.67%;
+  margin: 0;
+}

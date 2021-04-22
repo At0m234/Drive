@@ -1,0 +1,25 @@
+.learning__steps {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+  min-height: 460px;
+  margin: 16px 0 0 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .learning__steps {
+    width: 466px;
+    height: 460px;
+    margin: 0 3.39% 30px 35.94%;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .learning__steps {
+    align-self: center;
+    width: 325px;
+    height: 355px;
+    margin: 32px 0 0 0;
+  }
+}

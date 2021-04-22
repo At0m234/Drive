@@ -1,0 +1,27 @@
+.club__text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  color: #F8F8F8;
+  margin: 12px 0 0 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .club__text {
+    font-size: 16px;
+    margin: 8px 0 0 0;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .club__text {
+    font-size: 14px;
+    width: 101%;
+    margin: 6px 0 0 0;
+    width: 280px;
+  }
+}

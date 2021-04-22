@@ -1,0 +1,37 @@
+.button_type_additional-classes {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #181818;
+  width: 160px;
+  height: 48px;
+  background: #fff;
+  border: 1px solid #181818;
+  padding: 0;
+}
+
+.button_type_additional-classes:hover {
+  border: 1px solid #8D96C3;
+}
+
+.button_type_additional-classes:focus {
+  background: #8D96C3;
+  border: 1px solid #181818;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .button_type_additional-classes {
+    width: 218px;
+    height: 48px;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .button_type_additional-classes {
+    width: 155px;
+    height: 48px;
+  }
+}

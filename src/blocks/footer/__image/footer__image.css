@@ -1,0 +1,117 @@
+.footer__image {
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.footer__image:nth-child(2) {
+  width: 38.6px;
+  height: 38.6px;
+  top: 98px;
+  left: 36.68%;
+}
+.footer__image:nth-child(3) {
+  width: 14px;
+  height: 73px;
+  top: -14px;
+  left: 49.32%;
+}
+.footer__image:nth-child(4) {
+  width: 67px;
+  height: 68px;
+  top: 39.85px;
+  left: 55.35%;
+}
+.footer__image:nth-child(5) {
+  width: 69px;
+  height: 76px;
+  top: 0px;
+  left: 66.65%;
+}
+.footer__image:nth-child(6) {
+  width: 45px;
+  height: 45px;
+  top: 34.77px;
+  left: 70.5%;
+}
+.footer__image:nth-child(7) {
+  transform: scale(1.5);
+  width: 162px;
+  height: 162px;
+  top: -25px;
+  left: 78.40%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .footer__image:nth-child(2) {
+    width: 39px;
+    height: 39px;
+    top: 95px;
+    left: 52.6%;
+  }
+  .footer__image:nth-child(3) {
+    width: 14px;
+    height: 73px;
+    top: -14px;
+    left: 75%;
+  }
+  .footer__image:nth-child(4) {
+    width: 67px;
+    height: 68px;
+    top: 39.85px;
+    left: 85.81%;
+  }
+  .footer__image:nth-child(5) {
+    width: 0;
+    height: 0;
+  }
+  .footer__image:nth-child(6) {
+    width: 0;
+    height: 0;
+  }
+  .footer__image:nth-child(7) {
+    width: 0;
+    height: 0;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .footer__image:nth-child(2) {
+    width: 20px;
+    height: 35px;
+    top: 85.71px;
+    left: 50.4%;
+  }
+  .footer__image:nth-child(3) {
+    width: 7px;
+    height: 30px;
+    top: 10px;
+    left: 61.52%;
+  }
+  .footer__image:nth-child(4) {
+    width: 34px;
+    height: 34px;
+    top: 64px;
+    left: 67.20%;
+  }
+  .footer__image:nth-child(5) {
+    width: 35px;
+    height: 39px;
+    top: -7px;
+    left: 86.67%;
+  }
+  .footer__image:nth-child(6) {
+    width: 23px;
+    height: 23px;
+    top: 60px;
+    left: 83.47%;
+  }
+  .footer__image:nth-child(7) {
+    transform: scale(1.4);
+    width: 82px;
+    height: 82px;
+    top: 49px;
+    left: 87.47%;
+  }
+}

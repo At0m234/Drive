@@ -1,0 +1,22 @@
+.contacts__questions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(24, 24, 24);
+  padding: 86px 9.37% 87px 9.37%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .contacts__questions {
+    padding: 71px 3.52%;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .contacts__questions {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 6.67% 54px 6.67%;
+  }
+}

@@ -1,0 +1,25 @@
+@import url('_type/learning__stage_type_white.css');
+@import url('_type/learning__stage_type_black.css');
+
+.learning__stage {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  text-align: center;
+  margin: 0 18px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .learning__stage {
+    font-size: 48px;
+    margin: 0 18px 0 20px;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .learning__stage {
+    font-size: 38px;
+    margin: 14px 12px;
+  }
+}

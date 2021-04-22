@@ -1,0 +1,33 @@
+@import url('__title/learning__title.css');
+@import url('__steps/learning__steps.css');
+@import url('__cell/learning__cell.css');
+@import url('__cell-info/learning__cell-info.css');
+@import url('__stage/learning__stage.css');
+@import url('__subtitle/learning__subtitle.css');
+@import url('__image/learning__image.css');
+@import url('__question/learning__question.css');
+@import url('__popup/learning__popup.css');
+
+.learning {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 106px 9.37% 103px 9.37%;
+  background-image:linear-gradient(270deg, #1492A1 1.44%, #BBB272 47.36%, #F4C245 97.81%);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .learning {
+    padding: 0 0 66px 0;
+    flex-direction: column;
+    background: linear-gradient(270deg, #1492A1 -17.6%, #BBB272 37.39%, #F4C245 97.81%);
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .learning {
+    background: linear-gradient(270.69deg, #1492A1 -30.45%, #BBB272 30.36%, #F4C245 97.17%);
+    flex-direction: column;
+    padding: 39px 6.67% 48px 6.67%;
+  }
+}

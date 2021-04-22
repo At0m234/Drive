@@ -1,0 +1,216 @@
+.prices__category-price {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 34px;
+  color: #181818;
+  margin: 0 0 16px 0;
+  max-width: 175px;
+}
+
+#price-one {
+  margin-top: 132px;
+}
+
+#price-two {
+  margin-top: 132px;
+}
+
+#price-three {
+  margin-top: 102px;
+}
+
+#price-four {
+  margin-top: 132px;
+}
+
+#price-five {
+  margin-top: 102px;
+}
+
+#price-six {
+  margin-top: 42px;
+}
+
+#price-seven {
+  margin-top: 26px;
+}
+
+#price-eight {
+  margin-top: 26px;
+}
+
+#price-nine {
+  margin-top: 26px;
+  align-self: center;
+}
+
+#price-ten {
+  margin-top: 26px;
+  align-self: center;
+}
+
+#price-eleven {
+  margin-top: 26px;
+  align-self: center;
+}
+
+#price-twelve {
+  margin-top: 26px;
+  align-self: center;
+}
+
+#price-thirteen {
+  margin-top: 26px;
+  align-self: center;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .prices__category-price {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  #price-one {
+    margin-top: 20px;
+    align-self: center;
+    margin-bottom: 0;
+  }
+
+  #price-two {
+    margin-top: 20px;
+    align-self: center;
+    margin-bottom: 0;
+  }
+
+  #price-three {
+    margin-top: 20px;
+    align-self: center;
+    margin-bottom: 23px;
+  }
+
+  #price-four {
+    margin-top: 20px;
+    align-self: center;
+    margin-bottom: 0;
+  }
+
+  #price-five {
+    margin-top: 20px;
+    align-self: center;
+    margin-bottom: 23px;
+  }
+
+  #price-six {
+    margin-top: 20px;
+    align-self: center;
+    margin-bottom: 71px;
+  }
+
+  #price-seven {
+    margin-top: 26px;
+    margin-bottom: 0;
+  }
+
+  #price-eight {
+    margin-top: 26px;
+    margin-bottom: 0;
+  }
+
+  #price-nine {
+    margin-top: 26px;
+    align-self: center;
+    margin-bottom: 0;
+  }
+
+  #price-ten {
+    margin-top: 26px;
+    align-self: center;
+    margin-bottom: 0;
+  }
+
+  #price-eleven {
+    margin-top: 20px;
+    align-self: center;
+    margin-bottom: 0;
+  }
+
+  #price-twelve {
+    margin-top: 20px;
+    align-self: center;
+    margin-bottom: 0;
+  }
+
+  #price-thirteen {
+    margin-top: 20px;
+    align-self: center;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .prices__category-price {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  #price-one {
+    margin: 95px 0 13px 0;
+  }
+
+  #price-two {
+    margin: 95px 0 13px 0;
+  }
+
+  #price-three {
+    margin: 73px 0 13px 0;
+  }
+
+  #price-four {
+    margin: 95px 0 13px 0;
+  }
+
+  #price-five {
+    margin: 73px 0 13px 0;
+  }
+
+  #price-six {
+    margin: 29px 0 13px 0;
+  }
+
+  #price-seven {
+    margin: 117px 0 13px 0;
+  }
+
+  #price-eight {
+    margin: 100px 0 13px 0;
+  }
+
+  #price-nine {
+    margin: 95px 0 13px 0;
+    align-self: start;
+  }
+
+  #price-ten {
+    margin: 95px 0 13px 0;
+    align-self: start;
+  }
+
+  #price-eleven {
+    margin: 95px 0 13px 0;
+    align-self: start;
+  }
+
+  #price-twelve {
+    margin: 95px 0 13px 0;
+    align-self: start;
+  }
+
+  #price-thirteen {
+    margin: 75px 0 13px 0;
+    align-self: start;
+  }
+}

@@ -1,0 +1,37 @@
+.club__license-paragraph {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  color: #181818;
+  margin: 0 0 25px 0;
+  width: 100%;
+}
+
+.club__license-paragraph:nth-of-type(2) {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .club__license-paragraph {
+    font-size: 16px;
+    margin: 0 0 25px 0;
+    max-width: 720px;
+  }
+
+  .club__license-paragraph:nth-of-type(2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .club__license-paragraph {
+    font-size: 14px;
+    margin: 17px 0 25px 0;
+  }
+
+  .club__license-paragraph:nth-of-type(2) {
+    margin-bottom: 0;
+  }
+}

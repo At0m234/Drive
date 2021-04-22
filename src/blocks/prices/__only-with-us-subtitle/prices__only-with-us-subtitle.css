@@ -1,0 +1,24 @@
+.prices__only-with-us-subtitle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 144%;
+  color: #666666;
+  margin: 26px 0 8px 30px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .prices__only-with-us-subtitle {
+    font-size: 10px;
+    margin: 13px 0 2px 30px;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .prices__only-with-us-subtitle {
+    font-size: 10px;
+    line-height: 144%;
+    margin: 20px 173px 5px 19px;
+  }
+}

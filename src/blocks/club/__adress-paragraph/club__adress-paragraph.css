@@ -1,0 +1,30 @@
+@import url('_type/club__adress-paragraph_type_normal.css');
+@import url('_type/club__adress-paragraph_type_bold.css');
+
+.club__adress-paragraph {
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 140%;
+  color: #181818;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .club__adress-paragraph {
+    font-size: 16px;
+  }
+
+  .club__adress-paragraph:nth-of-type(2) {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .club__adress-paragraph {
+    font-size: 14px;
+  }
+
+  .club__adress-paragraph:nth-of-type(2) {
+    margin: 0;
+  }
+}

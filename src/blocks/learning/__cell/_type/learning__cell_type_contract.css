@@ -1,0 +1,20 @@
+.learning__cell_type_contract {
+  top: 0;
+  left: 0;
+  width: 540px;
+  height: 68px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .learning__cell_type_contract {
+    width: 466px;
+    height: 68px;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .learning__cell_type_contract {
+    width: 100%;
+    height: 58px;
+  }
+}

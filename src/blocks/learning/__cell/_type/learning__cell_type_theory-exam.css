@@ -1,0 +1,82 @@
+.learning__cell_type_theory-exam {
+  position: relative;
+  width: 255px;
+  height: 68px;
+  background-color: rgba(24, 24, 24, 1);
+  left: 0;
+  top: 196px;
+  float: left;
+}
+
+.learning__cell_type_theory-exam::after {
+  background-color: #7BA683;
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 12px;
+  top: -2px;
+  right: -2px;
+  border-radius: 0 0 0 10px;
+}
+
+.learning__cell_type_theory-exam img:nth-of-type(2) {
+  width: 12px;
+  height: 12px;
+  right: -8px;
+  top: -6px;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .learning__cell_type_theory-exam {
+    width: 218px;
+    height: 68px;
+    left: 0;
+    top: 200px;
+  }
+
+  .learning__cell_type_theory-exam::after {
+    background-color: #BBB272;
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 12px;
+    top: -2px;
+    right: -2px;
+    border-radius: 0 0 0 10px;
+  }
+
+  .learning__cell_type_theory-exam img:nth-of-type(2) {
+    width: 12px;
+    height: 12px;
+    right: -8px;
+    top: -6px;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .learning__cell_type_theory-exam {
+    width: 47.69%;
+    height: 58px;
+    left: 0;
+    top: 150px;
+  }
+
+  .learning__cell_type_theory-exam::after {
+    background-color: #CEB762;
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 12px;
+    top: -2px;
+    right: -2px;
+    border-radius: 0 0 0 10px;
+  }
+
+  .learning__cell_type_theory-exam img:nth-of-type(2) {
+    width: 12px;
+    height: 12px;
+    right: -8px;
+    top: -6px;
+  }
+}

@@ -1,0 +1,41 @@
+.header__link {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  margin-right: 24px;
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: #f8f8f8;
+}
+
+.header__link:nth-of-type(7) {
+  margin-right: 0;
+}
+
+.header__link:visited {
+  color: #f8f8f8;
+}
+
+.header__link:hover {
+  color: #F4C245;
+}
+
+.header__link:active {
+  color: #F4C245;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .header__link {
+    margin-right: 24px;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .header__link {
+    margin-right: 0;
+  }
+}

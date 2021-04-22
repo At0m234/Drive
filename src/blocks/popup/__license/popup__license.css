@@ -1,0 +1,31 @@
+.popup__license {
+  width: 311px;
+  height: 441px;
+  background-color: #c4c4c4;
+}
+
+.popup__license:nth-of-type(1) {
+  margin-right: 108px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .popup__license {
+    width: 216px;
+    height: 305px;
+  }
+
+  .popup__license:nth-of-type(1) {
+    margin-right: 74px;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .popup__license {
+    width: 320px;
+    height: 452px;
+  }
+
+  .popup__license:nth-of-type(1) {
+    margin: 0;
+  }
+}

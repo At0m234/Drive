@@ -1,0 +1,45 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  font-family: Montserrat, Roboto, Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  z-index: -5;
+  /* max-width: 2560px; */
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .page {
+    min-width: 768px;
+    max-width: 1365px;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .page {
+    min-width: 50px;
+    max-width: 767px;
+  }
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+  -webkit-box-shadow: 0 0 0 30px #181818 inset !important;
+  -webkit-text-fill-color: white !important;
+}

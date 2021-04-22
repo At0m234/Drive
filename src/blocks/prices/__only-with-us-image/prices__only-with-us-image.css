@@ -1,0 +1,11 @@
+@import url('_type/prices__only-with-us-image_type_one.css');
+@import url('_type/prices__only-with-us-image_type_two.css');
+@import url('_type/prices__only-with-us-image_type_three.css');
+@import url('_type/prices__only-with-us-image_type_four.css');
+@import url('_type/prices__only-with-us-image_type_five.css');
+@import url('_type/prices__only-with-us-image_type_six.css');
+@import url('_type/prices__only-with-us-image_type_logo.css');
+
+.prices__only-with-us-image {
+  position: absolute;
+}

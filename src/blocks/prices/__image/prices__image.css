@@ -1,0 +1,22 @@
+.prices__image {
+  position: absolute;
+  right: 22px;
+  bottom: 19px;
+  width: 80px;
+  height: 80px;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .prices__image {
+    top: -28px;
+    right: -10px;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .prices__image {
+    top: -30px;
+    right: -15px;
+  }
+}

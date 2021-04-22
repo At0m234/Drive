@@ -1,0 +1,33 @@
+.prices__category_type_only-with-us {
+  width: 537px;
+  height: 261px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.prices__category_type_only-with-us:nth-of-type(1) {
+  margin-right: 30px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .prices__category_type_only-with-us {
+    width: 713px;
+    height: 198px;
+  }
+
+  .prices__category_type_only-with-us:nth-of-type(1) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .prices__category_type_only-with-us {
+    flex-direction: column;
+    width: 283px;
+    height: 385px;
+  }
+
+  .prices__category_type_only-with-us:nth-of-type(n) {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,22 @@
+.contacts__title_type_black {
+  color: #181818;
+  width: 61.78%;
+  font-size: 40px;
+  margin: 0 0 16px 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .contacts__title_type_black {
+    width: 69.35%;
+    font-size: 32px;
+    margin: 0 0 16px 0;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .contacts__title_type_black {
+    width: 34.84%;
+    font-size: 20px;
+    margin: 0 0 24px 0;
+  }
+}

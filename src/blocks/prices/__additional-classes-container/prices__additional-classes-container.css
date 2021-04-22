@@ -1,0 +1,31 @@
+.prices__additional-classes-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  max-width: 1110px;
+}
+
+.prices__additional-classes-container_visible {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .prices__additional-classes-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+  .prices__additional-classes-container_visible {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 25px 0 0 0;
+  }
+}

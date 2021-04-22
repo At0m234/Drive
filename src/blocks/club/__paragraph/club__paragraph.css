@@ -1,0 +1,20 @@
+.club__paragraph {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 19px;
+  width: 84.40%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .club__paragraph {
+    width: 87.40%;
+    margin: 0 0 0 13px;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .club__paragraph {
+    width: 87.40%;
+    margin: 0 0 0 11px;
+  }
+}

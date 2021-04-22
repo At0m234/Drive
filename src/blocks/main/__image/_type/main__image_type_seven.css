@@ -1,0 +1,15 @@
+.main__image_type_seven {
+  width: 218px;
+  height: 218px;
+  top: 384.26px;
+  right: -63px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .main__image_type_seven {
+    width: 130px;
+    height: 130px;
+    top: 310px;
+    right: -26px;
+  }
+}

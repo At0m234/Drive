@@ -1,0 +1,42 @@
+.guru__example {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 170%;
+  color: #F8F8F8;
+  list-style-image: url('../../../images/Guru/LiMarker.svg');
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  width: 96.62%;
+}
+
+.guru__example::marker {
+  width: 10px;
+  height: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .guru__example {
+    font-size: 16px;
+    background-size: 6px 6px;
+  }
+
+  .guru__example::marker {
+    background-size: 6px 6px;
+    max-width: 6px;
+    max-height: 6px;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .guru__example {
+    font-size: 12px;
+    background-size: 4px 4px;
+  }
+
+  .guru__example::marker {
+    max-width: 4px;
+    max-height: 4px;
+  }
+}

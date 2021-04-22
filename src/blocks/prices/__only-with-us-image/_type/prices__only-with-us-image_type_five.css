@@ -1,0 +1,20 @@
+.prices__only-with-us-image_type_five {
+  top: 149px;
+  right: 224.22px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .prices__only-with-us-image_type_five {
+    width: 90px;
+    height: 75px;
+    top: 124px;
+    right: 204.22px;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .prices__only-with-us-image_type_five {
+    width: 0;
+    height: 0;
+  }
+}

@@ -1,0 +1,15 @@
+.main__image_type_six {
+  width: 92px;
+  height: 88px;
+  top: 558px;
+  right: 12.52%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .main__image_type_six {
+    width: 45px;
+    height: 45px;
+    top: 466px;
+    right: 12.85%;
+  }
+}

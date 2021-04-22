@@ -1,0 +1,13 @@
+@import url('_type/main__image_type_one.css');
+@import url('_type/main__image_type_two.css');
+@import url('_type/main__image_type_three.css');
+@import url('_type/main__image_type_four.css');
+@import url('_type/main__image_type_five.css');
+@import url('_type/main__image_type_six.css');
+@import url('_type/main__image_type_seven.css');
+@import url('_type/main__image_type_arrows.css');
+
+.main__image {
+  position: absolute;
+  pointer-events: none;
+}

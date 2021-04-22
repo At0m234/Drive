@@ -1,0 +1,13 @@
+.button_type_consult-popup {
+  width: 326px;
+  height: 54px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #F8F8F8;
+  border: 1px solid #F8F8F8;
+  margin: 38px 0 0 0;
+  padding: 0;
+}

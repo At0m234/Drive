@@ -1,0 +1,25 @@
+.guru__teachers-third-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 548px;
+  height: 410px;
+  flex-wrap: wrap;
+}
+
+.guru__teachers-third-slide span{
+  background-image: url('../../../images/Guru/Smile.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 64px;
+  height: 64px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .guru__teachers-third-slide {
+    width: 350px;
+    height: 410px;
+  }
+}

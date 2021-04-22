@@ -1,0 +1,38 @@
+.button_type_cat-A {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #181818;
+  width: 160px;
+  height: 54px;
+  border: 2px solid #E08645;
+  padding: 0;
+  margin: 0 0 32px 0;
+}
+
+.button_type_cat-A:hover {
+  border: 2px solid #181818;
+}
+
+.button_type_cat-A:focus {
+  background: #E08645;
+  border: 2px solid #181818;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .button_type_cat-A {
+    margin-bottom: 21px;
+    margin-top: 70px;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .button_type_cat-A {
+    width: 246px;
+    height: 54px;
+    margin-bottom: 19px;
+    margin-top: 0;
+  }
+}

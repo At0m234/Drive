@@ -1,0 +1,32 @@
+.guru__alumni-title_type_grad {
+  width: 36.76%;
+  max-width: 464px;
+  height: 88px;
+  background: linear-gradient(270.74deg, #F4C245 6.92%, #BBB272 50.69%, #1492A1 98.77%);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 61px;
+  color: #181818;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .guru__alumni-title_type_grad {
+    width: 85.10%;
+    max-height: 88px;
+    font-size: 32px;
+    margin: 0 0 32px 0;
+    max-width: 377px;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .guru__alumni-title_type_grad {
+    font-size: 24px;
+    width: 87.69%;
+    max-height: 54px;
+    margin: 0 17.85% 32px 0;
+    max-width: 285px;
+  }
+}

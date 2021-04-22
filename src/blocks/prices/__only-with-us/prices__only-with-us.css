@@ -1,0 +1,28 @@
+.prices__only-with-us {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #181818;
+  width: 1110px;
+  height: 223px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .prices__only-with-us {
+    width: 715px;
+    height: 198px;
+    grid-area: alumni;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .prices__only-with-us {
+    width: 285px;
+    height: 385px;
+    grid-area: alumni;
+    margin: 0;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,48 @@
+.reviews__director-name {
+  display: flex;
+  flex-direction: column;
+  max-height: 48px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #181818;
+  margin: 0;
+  width: 100%;
+}
+
+h2 span {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .reviews__director-name {
+    width: 100%;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  h2 span {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .reviews__director-name {
+    width: 42.77%;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0 4.92% 39px 52.31%;
+  }
+
+  h2 span {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 10px;
+  }
+}

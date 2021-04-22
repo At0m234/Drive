@@ -1,0 +1,55 @@
+.prices__only-with-us-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  max-width: 1110px;
+}
+
+.prices__only-with-us-container_visible {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .prices__only-with-us-container {
+    position: absolute;
+    top: 0;
+    right: auto;
+    left: auto;
+    display: none;
+  }
+
+  .prices__only-with-us-container_visible {
+    display: grid;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    grid-template-areas:
+    'alumni'
+    'carsharing'
+    'lifehack';
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .prices__only-with-us-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+  .prices__only-with-us-container_visible {
+    display: grid;
+    gap: 0 15px;
+    align-items: end;
+    align-content: flex-end;
+    margin-top: 25px;
+    grid-template-areas:
+    'alumni carsharing lifehack';
+  }
+}

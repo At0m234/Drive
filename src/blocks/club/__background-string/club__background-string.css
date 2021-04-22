@@ -1,0 +1,24 @@
+.club__background-string {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: 1366px;
+  height: 44px;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .club__background-string {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .club__background-string {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+}

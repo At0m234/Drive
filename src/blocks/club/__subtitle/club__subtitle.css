@@ -1,0 +1,27 @@
+.club__subtitle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  color: #F8F8F8;
+  margin: 0 95px 36px 66px;
+  width: 70.19%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .club__subtitle {
+    font-size: 16px;
+    margin: 0 95px 33px 61px;
+    width: 66.52%;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .club__subtitle {
+    font-size: 14px;
+    margin: 0 0 35px 0;
+    width: 74.4%;
+    max-width: 279px;
+  }
+}

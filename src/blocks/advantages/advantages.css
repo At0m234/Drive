@@ -1,0 +1,32 @@
+@import url('__info/advantages__info.css');
+@import url('__title/advantages__title.css');
+@import url('__container/advantages__container.css');
+@import url('__cell/advantages__cell.css');
+@import url('__subtitle/advantages__subtitle.css');
+@import url('__text/advantages__text.css');
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 9.37%;
+  background-color: #f8f8f8;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .advantages {
+    width: 92.71%;
+    padding: 49px 3.39% 57px 3.91%;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .advantages {
+    position: relative;
+    width: 86.67%;
+    padding: 32px 6.67% 63px 6.67%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}

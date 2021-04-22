@@ -1,0 +1,39 @@
+.prices__only-with-us-paragraph {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  width: 391px;
+}
+
+.prices__only-with-us-paragraph:nth-of-type(1) {
+  margin-right: 35px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .prices__only-with-us-paragraph {
+    width: 335px;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0;
+  }
+
+  .prices__only-with-us-paragraph:nth-of-type(1) {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .prices__only-with-us-paragraph {
+    width: 100%;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0;
+  }
+
+  .prices__only-with-us-paragraph:nth-of-type(1) {
+    margin: 0 0 10px 0;
+  }
+}

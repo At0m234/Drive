@@ -1,0 +1,43 @@
+.prices__category-step {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 190%;
+  color: #181818;
+  margin-left: 14px;
+  list-style-image: url('../../../images/Prices/MarkerRhombus.svg');
+}
+
+.prices__category-step::marker {
+  color: #181818;
+  width: 6px;
+  height: 6px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .prices__category-step {
+    font-size: 14px;
+    line-height: 170%;
+  }
+
+  .prices__category-step::marker {
+    color: #181818;
+    width: 6px;
+    height: 6px;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .prices__category-step {
+    width: 100%;
+    font-size: 14px;
+    line-height: 160%;
+  }
+
+  .prices__category-step::marker {
+    color: #181818;
+    width: 4px;
+    height: 4px;
+  }
+}

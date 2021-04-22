@@ -1,0 +1,41 @@
+.guru__teachers-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 410px;
+}
+
+.guru__teachers-slider input{
+	display: none;
+}
+
+/*позиция изображения при активации переключателя*/
+#switch1:checked ~ #slides .guru__teachers-info {
+	margin-top: 0;
+}
+
+#switch2:checked ~ #slides .guru__teachers-info {
+	margin-top: -410px;
+}
+
+#switch3:checked ~ #slides .guru__teachers-info {
+	margin-top: -820px;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .guru__teachers-slider {
+    justify-content: center;
+    width: 385px;
+    height: 410px;
+  }
+
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .guru__teachers-slider {
+    display: none;
+  }
+}

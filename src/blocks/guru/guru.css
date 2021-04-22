@@ -1,0 +1,40 @@
+@import url('__alumni/guru__alumni.css');
+@import url('__alumni-title/guru__alumni-title.css');
+@import url('__alumni-text/guru__alumni-text.css');
+@import url('__alumni-image/guru__alumni-image.css');
+
+@import url('__image/guru__image.css');
+
+@import url('__for-example/guru__for-example.css');
+@import url('__for-example-heading/guru__for-example-heading.css');
+@import url('__examples/guru__examples.css');
+@import url('__example/guru__example.css');
+
+@import url('__teachers/guru__teachers.css');
+@import url('__teachers-text/guru__teachers-text.css');
+@import url('__teachers-title/guru__teachers-title.css');
+@import url('__teachers-heading/guru__teachers-heading.css');
+@import url('__teachers-paragraph/guru__teachers-paragraph.css');
+
+@import url('__teachers-slider/guru__teachers-slider.css');
+@import url('__teachers-slider-controls/guru__teachers-slider-controls.css');
+@import url('__teachers-slider-control/guru__teachers-slider-control.css');
+@import url('__teachers-slider-circles/guru__teachers-slider-circles.css');
+@import url('__teachers-slider-circle/guru__teachers-slider-circle.css');
+@import url('__teachers-slides/guru__teachers-slides.css');
+@import url('__teachers-info/guru__teachers-info.css');
+@import url('__teachers-fisrt-slide/guru__teachers-fisrt-slide.css');
+@import url('__teachers-second-slide/guru__teachers-second-slide.css');
+@import url('__teachers-third-slide/guru__teachers-third-slide.css');
+@import url('__teacher/guru__teacher.css');
+@import url('__teacher-image/guru__teacher-image.css');
+@import url('__teacher-name/guru__teacher-name.css');
+@import url('__teachers-third-slide-gradient-text/guru__teachers-third-slide-gradient-text.css');
+@import url('__teachers-third-slide-text/guru__teachers-third-slide-text.css');
+
+.guru {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: rgb(24, 24, 24);
+}

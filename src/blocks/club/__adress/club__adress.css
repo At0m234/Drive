@@ -1,0 +1,25 @@
+.club__adress {
+  display: flex;
+  flex-direction: row;
+  padding: 141px 9.37% 44px 9.37%;
+  align-items: center;
+  background-color: rgb(248, 248, 248);
+  width: 81.26%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .club__adress {
+    width: 100%;
+    flex-direction: column;
+    padding: 92px 0 32px 0;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .club__adress {
+    width: 86.67%;
+    flex-direction: column;
+    margin-top: 310px;
+    padding: 0 6.67% 39px 6.67%;
+  }
+}

@@ -1,0 +1,38 @@
+.learning__cell_type_GIBDD {
+  width: 255px;
+  height: 68px;
+  left: 0;
+  top: 294px;
+}
+
+.learning__cell_type_GIBDD img:nth-of-type(1) {
+  margin-right: 25.74px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .learning__cell_type_GIBDD {
+    width: 218px;
+    height: 68px;
+    left: 0;
+    top: 295px;
+  }
+
+  .learning__cell_type_GIBDD img:nth-of-type(1) {
+    margin-right: 25px;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .learning__cell_type_GIBDD {
+    width: 47.69%;
+    height: 58px;
+    left: 0;
+    top: 224px;
+  }
+
+  .learning__cell_type_GIBDD img:nth-of-type(1) {
+    margin-right: 14px;
+    width: 10px;
+    height: 57px;
+  }
+}

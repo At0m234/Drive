@@ -1,0 +1,18 @@
+.contacts__info {
+  display: flex;
+  flex-direction: column;
+  width: 31.35%;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+.contacts__info {
+    width: 43.42%;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+.contacts__info {
+    width: 95.38%;
+  }
+}

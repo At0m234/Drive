@@ -1,0 +1,31 @@
+.main__bg-first {
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../../../images/FirstMain/main1.jpg');
+  clip-path: polygon(0% 0%, 84.8% 0%, 84.8% 48%, 86% 50%, 84.8% 52%, 84.8% 100%, 0% 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .main__bg-first {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 24.41%, 86.59% 24.41%, 86.59% 78.84%, 100% 78.84%, 100% 100%, 0% 100%);
+    background-position: 75% 0%;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .main__bg-first {
+    clip-path: none;
+    padding: 0;
+    background-position: 80% 0%;
+  }
+}

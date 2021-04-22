@@ -1,0 +1,39 @@
+.main__bg-second {
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(359.54deg, #1492A1 -7.95%, #BBB272 26.96%, #F4C245 99.7%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 4;
+}
+
+.main__bg-second:hover {
+  background-image: linear-gradient(359.54deg, #1492A1 -7.95%, #BBB272 26.96%, #F4C245 99.7%);
+  transition: background 1s ease-in-out 1s;
+}
+
+.margin-class {
+  margin-left: -200%;
+  z-index: 3;
+  transition: 2s linear .3s;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .main__bg-second {
+
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .main__bg-second {
+    display: none;
+  }
+}

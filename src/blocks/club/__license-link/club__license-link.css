@@ -1,0 +1,11 @@
+@import url('_type/club__license-link_type_normal.css');
+@import url('_type/club__license-link_type_bold.css');
+
+.club__license-link {
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: 140%;
+  text-decoration-line: underline;
+  color: #F4C245;
+}
+

@@ -1,0 +1,23 @@
+.guru__image_type_message-one {
+  width: 158px;
+  height: 65px;
+  top: 109.65px;
+  right: 20.71%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .guru__image_type_message-one {
+    width: 134px;
+    height: 54px;
+    top: 34px;
+    right: 17%;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .guru__image_type_message-one {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+}
