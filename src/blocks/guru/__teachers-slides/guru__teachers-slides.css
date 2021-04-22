@@ -1,6 +1,6 @@
 .guru__teachers-slides {
-  width: 548px;
-  height: 410px;
+  width: 550px;
+  height: 412px;
   margin: 0 0 0 35px;
   overflow: hidden;
 }
@@ -8,7 +8,7 @@
 @media screen and (min-width: 768px) and (max-width: 1365px) {
   .guru__teachers-slides {
     width: 341px;
-    height: 410px;
+    height: 412px;
     margin: 0 0 0 26px;
   }
 }

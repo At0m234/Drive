@@ -33,6 +33,23 @@ import {
   formInputs
 } from '../utils/constants';
 
+// function showTeachersExpearence() {
+//   let teacherExpearence = document.querySelectorAll('.guru__teacher-expearence');
+//   let teachersImages = document.querySelectorAll('.guru__teacher-image');
+//   console.log(teachersImages);
+//   teachersImages.onmouseenter = (e) => {
+//     console.log('xxx')
+//     teacherExpearence.style.opacity = 1;
+//     teacherExpearence.style.visibility = 'visible';
+//   }
+//   for (var i = 0; i < teachersImages.length; i++) {
+//     teachersImages[i].addEventListener('click', () => {
+//       teacherExpearence.style.opacity = 1;
+//       teacherExpearence.style.visibility = 'visible';
+//     });
+//   }
+// }
+// showTeachersExpearence();
 
 // ЦИКЛ ДЛЯ ПЛАВНОГО СКРОЛА ПО ЯКОРНЫМ ССЫЛКАМ
 for (let anchor of anchors) {

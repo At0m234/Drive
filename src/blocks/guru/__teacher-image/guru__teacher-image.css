@@ -5,7 +5,17 @@
   background-size: cover;
   border: 1px solid #181818;
   cursor: pointer;
-  pointer-events: none;
+  /* pointer-events: none; */
+}
+
+.guru__teacher-image:hover ~ .guru__teacher-expearence {
+  opacity: 1;
+  visibility: visible;
+}
+
+.guru__teacher-image:focus ~ .guru__teacher-expearence {
+  opacity: 1;
+  visibility: visible;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1365px) {

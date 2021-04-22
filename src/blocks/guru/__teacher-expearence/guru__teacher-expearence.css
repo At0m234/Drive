@@ -1,0 +1,41 @@
+.guru__teacher-expearence {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 73%;
+  overflow: hidden;
+  background-color: rgba(24, 24, 24, 0.8);
+  z-index: 5;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility .5s, opacity .5s ease-in-out;
+}
+
+.guru__teacher-expearence label {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  color: #BFBFBF;
+  margin: 12px auto 4px 15px;
+}
+
+.guru__teacher-expearence span {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  color: #F8F8F8;
+  margin: 0 0 0 15px;
+}
