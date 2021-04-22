@@ -1,11 +1,15 @@
 .reviews__title {
   width: 16.94%;
+  max-width: 188px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 800;
   font-size: 40px;
   display: flex;
-  align-items: center;
+  align-items: left;
+  align-self: flex-start;
+  justify-items: left;
+  justify-self: left;
   color: #181818;
   margin: 0 0 16px 0;
 }

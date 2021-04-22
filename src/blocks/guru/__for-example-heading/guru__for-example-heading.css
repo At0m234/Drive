@@ -8,6 +8,7 @@
   background: linear-gradient(270.74deg, #1492A1 6.92%, #BBB272 50.69%, #F4C245 98.77%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1365px) {

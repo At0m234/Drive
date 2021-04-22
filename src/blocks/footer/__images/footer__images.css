@@ -1,0 +1,10 @@
+.footer__images {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  max-width: 1366px;
+  width: 100%;
+}

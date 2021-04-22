@@ -6,7 +6,8 @@
   line-height: 140%;
   color: #181818;
   margin: 0 0 25px 0;
-  width: 100%;
+  width: 81.26%;
+  max-width: 1110px;
 }
 
 .club__license-paragraph:nth-of-type(2) {

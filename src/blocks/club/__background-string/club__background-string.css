@@ -3,9 +3,6 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  max-width: 1366px;
-  height: 44px;
-  object-fit: cover;
   pointer-events: none;
 }
 

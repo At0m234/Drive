@@ -1,5 +1,4 @@
 .guru__alumni-title_type_grad {
-  width: 36.76%;
   max-width: 464px;
   height: 88px;
   background: linear-gradient(270.74deg, #F4C245 6.92%, #BBB272 50.69%, #1492A1 98.77%);
@@ -9,6 +8,30 @@
   font-size: 40px;
   line-height: 61px;
   color: #181818;
+  position: relative;
+}
+
+.guru__alumni-title_type_grad::before {
+  content: '';
+  position: absolute;
+  bottom: 1px;
+  left: -7px;
+  width: 20px;
+  height: 11px;
+  /* background-image: url('../../../../images/Guru/Vector 9.svg'); */
+  background-color: coral;
+  /* border-bottom-left-radius: 16px 14px; */
+  border-radius: 1% 1% 50% 50% / 1% 1% 100% 100%;
+}
+
+.guru__alumni-title_type_grad::after {
+  content: '';
+  position: absolute;
+  left: -26px;
+  width: 26px;
+  height: 10px;
+  background-color: blue;
+  border-bottom-left-radius: 10px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1365px) {

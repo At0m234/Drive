@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   background-color: rgb(24, 24, 24);
   padding: 86px 9.37% 87px 9.37%;
 }

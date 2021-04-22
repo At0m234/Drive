@@ -1,20 +1,20 @@
-.club__adress-text {
+.reviews__content {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 100%;
+  padding: 100px 9.37% 128px 9.37%;
   max-width: 1110px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1365px) {
-  .club__adress-text {
-    width: 92.84%;
-    flex-direction: column;
+  .reviews__content {
+    
   }
 }
 
 @media screen and (min-width: 50px) and (max-width: 767px) {
-  .club__adress-text {
-    width: 100%;
-    flex-direction: column;
+  .reviews__content {
+    
   }
 }

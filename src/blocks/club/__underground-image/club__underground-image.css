@@ -1,13 +1,8 @@
 .club__underground-image {
   display: flex;
-  justify-content: center;
   background-image: url('../../../images/Club/UndergroundImage.svg');
   background-repeat: no-repeat;
-  background-size: 100%;
-  object-fit: fill;
   width: 100%;
-  height: 26.13%;
-  max-width: 1366px;
   min-height: 228px;
   background-color: #f8f8f8;
 }

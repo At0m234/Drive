@@ -1,0 +1,19 @@
+.contacts__content {
+  display: flex;
+  max-width: 1366px;
+  padding: 128px 9.37% 134px 9.37%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .contacts__content {
+    padding: 70px 3.52% 90px 3.52%;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .contacts__content {
+    position: relative;
+    flex-direction: column;
+    padding: 41px 6.67% 69px 6.67%;
+  }
+}
