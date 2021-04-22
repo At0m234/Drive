@@ -7,6 +7,8 @@
   width: 548px;
   height: 410px;
   flex-wrap: wrap;
+  background-color: #fff;
+  border: 1px solid #181818;
 }
 
 .guru__teachers-third-slide span{
