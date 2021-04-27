@@ -1,9 +1,9 @@
 .club__underground-image {
-  display: flex;
-  background-image: url('../../../images/Club/UndergroundImage.svg');
-  background-repeat: no-repeat;
+  /* display: flex; */
+  /* background-image: url('../../../images/Club/UndergroundImage.svg'); */
+  /* background-repeat: no-repeat; */
   width: 100%;
-  min-height: 228px;
+  /* min-height: 228px; */
   background-color: #f8f8f8;
 }
 
