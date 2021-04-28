@@ -9,11 +9,11 @@ window.onload = function () {
   });
 
   // Add animation bindings to elements
-  lax.addElements(".club__underground-image", {
+  lax.addElements(".club__underground-svg", {
     scrollY: {
       translateX: [
         ["elInY", "elOutY"], // Driver value map
-        [-500, 0], // Animation value map
+        [-100, 0], // Animation value map
       ],
     },
   });
