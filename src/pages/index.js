@@ -33,6 +33,7 @@ import {
   formInputs
 } from '../utils/constants';
 
+
 // function showTeachersExpearence() {
 //   let teacherExpearence = document.querySelectorAll('.guru__teacher-expearence');
 //   let teachersImages = document.querySelectorAll('.guru__teacher-image');

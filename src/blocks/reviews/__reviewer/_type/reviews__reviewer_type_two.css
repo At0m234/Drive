@@ -6,9 +6,10 @@
 
 @media screen and (min-width: 768px) and (max-width: 1365px) {
   .reviews__reviewer_type_two {
-    min-width: 278px;
-    max-height: 360px;
+    width: 278px;
+    height: 360px;
     padding: 32px;
+    margin-right: 30px;
   }
 }
 

@@ -583,8 +583,8 @@
           </div>
 
           <article class="guru__teachers-slider" id="slider">
-            <!-- <input checked type="radio" name="respond" id="desktop"> -->
-            <input type="radio" name="slider" id="switch1" checked>
+
+            <input type="radio" name="slider" id="switch1">
             <input type="radio" name="slider" id="switch2">
             <input type="radio" name="slider" id="switch3">
 
@@ -792,41 +792,65 @@
         <div class="reviews__content">
           <h2 class="reviews__title">Отзывы</h2>
           <h3 class="reviews__subtitle">Что говорят о нас наши выпускники.</h3>
-          <div class="reviews__container">
 
-            <div class="reviews__reviewer reviews__reviewer_type_one">
-              <div class="reviews__reviewer-info">
-                <img class="reviews__reviewer-image" src="<%=require('../src/images/Reviews/Diesel.jpg')%>" alt="Фото">
-                <h4 class="reviews__reviewer-name">Иван<br>Иванов</h4>
-              </div>
-              <p class="reviews__reviewer-text">Не следует, однако забывать, что рамки и место обучения кадров позволяет оценить значение дальнейших направлений развития. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке дальнейших направлений развития. С другой стороны дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям.</p>
+          <article class="reviews__container" id="reviews-slider">
+
+            <!-- <div class="reviews__inputs" id="inputs"> -->
+              <input type="radio" name="reviews-slider" id="switch4">
+              <input type="radio" name="reviews-slider" id="switch5">
+              <input type="radio" name="reviews-slider" id="switch6">
+            <!-- </div> -->
+
+            <div class="reviews__slider-circles" id="reviews-circles">
+              <label class="reviews__slider-circle" for="switch4"></label>
+              <label class="reviews__slider-circle" for="switch5"></label>
+              <label class="reviews__slider-circle" for="switch6"></label>
             </div>
 
-            <div class="reviews__reviewer reviews__reviewer_type_two">
-              <div class="reviews__reviewer-info">
-                <img class="reviews__reviewer-image" src="<%=require('../src/images/Reviews/Diesel.jpg')%>" alt="Фото">
-                <h4 class="reviews__reviewer-name">Костя<br>Петров</h4>
-              </div>
-              <p class="reviews__reviewer-text">Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. С другой стороны консультация с широким активом позволяет оценить значение дальнейших направлений развития.</p>
-            </div>
+            <div class="reviews__slides" id="reviews__slides">
+              <div class="reviews__slides-info">
 
-            <div class="reviews__reviewer reviews__reviewer_type_three">
-              <div class="reviews__reviewer-info">
-                <img class="reviews__reviewer-image" src="<%=require('../src/images/Reviews/Diesel.jpg')%>" alt="Фото">
-                <h4 class="reviews__reviewer-name">Костя<br>Петров</h4>
-              </div>
-              <p class="reviews__reviewer-text">Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности требуют определения и уточнения позиций</p>
-            </div>
+                <article id="reviews-first-slide">
+                  <div class="reviews__reviewer reviews__reviewer_type_one">
+                    <div class="reviews__reviewer-info">
+                      <img class="reviews__reviewer-image" src="<%=require('../src/images/Reviews/Diesel.jpg')%>" alt="Фото">
+                      <h4 class="reviews__reviewer-name">Иван<br>Иванов</h4>
+                    </div>
+                    <p class="reviews__reviewer-text">Не следует, однако забывать, что рамки и место обучения кадров позволяет оценить значение дальнейших направлений развития. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке дальнейших направлений развития. С другой стороны дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям.</p>
+                  </div>
 
-            <div class="reviews__reviewer reviews__reviewer_type_four">
-              <div class="reviews__reviewer-info">
-                <img class="reviews__reviewer-image" src="<%=require('../src/images/Reviews/Diesel.jpg')%>" alt="Фото">
-                <h4 class="reviews__reviewer-name">Костя<br>Петров</h4>
-              </div>
-              <p class="reviews__reviewer-text">Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности требуют определения и уточнения позиций</p>
-            </div>
+                  <div class="reviews__reviewer reviews__reviewer_type_two">
+                    <div class="reviews__reviewer-info">
+                      <img class="reviews__reviewer-image" src="<%=require('../src/images/Reviews/Diesel.jpg')%>" alt="Фото">
+                      <h4 class="reviews__reviewer-name">Костя<br>Петров</h4>
+                    </div>
+                    <p class="reviews__reviewer-text">Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. С другой стороны консультация с широким активом позволяет оценить значение дальнейших направлений развития.</p>
+                  </div>
+                </article>
 
-          </div>
+                <article>
+                  <div class="reviews__reviewer reviews__reviewer_type_three">
+                    <div class="reviews__reviewer-info">
+                      <img class="reviews__reviewer-image" src="<%=require('../src/images/Reviews/Diesel.jpg')%>" alt="Фото">
+                      <h4 class="reviews__reviewer-name">Костя<br>Петров</h4>
+                    </div>
+                    <p class="reviews__reviewer-text">Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности требуют определения и уточнения позиций</p>
+                  </div>
+                </article>
+
+                <article>
+                  <div class="reviews__reviewer reviews__reviewer_type_four">
+                    <div class="reviews__reviewer-info">
+                      <img class="reviews__reviewer-image" src="<%=require('../src/images/Reviews/Diesel.jpg')%>" alt="Фото">
+                      <h4 class="reviews__reviewer-name">Костя<br>Петров</h4>
+                    </div>
+                    <p class="reviews__reviewer-text">Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности требуют определения и уточнения позиций</p>
+                  </div>
+                </article>
+
+              </div>
+            </div>
+          </article>
 
           <div class="reviews__director-container">
             <div class="reviews__director-photo">
