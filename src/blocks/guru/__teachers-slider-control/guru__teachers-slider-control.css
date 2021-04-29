@@ -1,6 +1,6 @@
-#switch3:checked ~ #controls label:nth-child(1),
-#switch1:checked ~ #controls label:nth-child(2),
-#switch2:checked ~ #controls label:nth-child(3) {
+#switch3:checked ~ #controls .guru__teachers-slider-control:nth-child(1),
+#switch1:checked ~ #controls .guru__teachers-slider-control:nth-child(2),
+#switch2:checked ~ #controls .guru__teachers-slider-control:nth-child(3) {
 	background: url('../../../images/Guru/Next.svg') no-repeat;
   margin: 0 0 -15px 0;
   display: block;
@@ -9,9 +9,9 @@
 	width: 25px;
 }
 
-#switch2:checked ~ #controls label:nth-child(1),
-#switch3:checked ~ #controls label:nth-child(2),
-#switch1:checked ~ #controls label:nth-child(3) {
+#switch2:checked ~ #controls .guru__teachers-slider-control:nth-child(1),
+#switch3:checked ~ #controls .guru__teachers-slider-control:nth-child(2),
+#switch1:checked ~ #controls .guru__teachers-slider-control:nth-child(3) {
 	background: url('../../../images/Guru/Prev.svg') no-repeat;
   margin: -15px 0 0 0;
   display: block;

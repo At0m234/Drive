@@ -6,6 +6,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: opacity .5s ease-in-out .02s;
+    /* pointer-events: none; */
+}
+
+.logo:hover {
   cursor: pointer;
-  pointer-events: none;
+  opacity: 0.5;
 }

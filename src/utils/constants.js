@@ -33,7 +33,6 @@ export const headerLinks = document.querySelector('.header__links');
 export const headerLogo = document.querySelector('.logo_type_header');
 
 export const burgerPopup = document.querySelector('#burger-popup');
-export const burgerLinks = document.querySelector('.burger-menu__links');
 
 export const contactsForm = document.querySelector('#contacts-form');
 export const anchors = document.querySelectorAll('.header__link');

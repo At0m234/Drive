@@ -7,12 +7,36 @@
   color: #181818;
   margin: 0 0 64px 0;
   width: 100%;
+  text-decoration: none;
+  -webkit-text-decoration: none;
+
   -webkit-touch-callout: text; /* iOS Safari */
   -webkit-user-select: text;   /* Chrome/Safari/Opera */
   -khtml-user-select: text;    /* Konqueror */
   -moz-user-select: text;      /* Firefox */
   -ms-user-select: text;       /* Internet Explorer/Edge */
   user-select: text;
+}
+
+.contacts__office-phone:visited {
+  color: #181818;
+  -webkit-color: #181818;
+  text-decoration: none;
+  -webkit-text-decoration: none;
+}
+
+.contacts__office-phone:active {
+  color: #181818;
+  -webkit-color: #181818;
+  text-decoration: none;
+  -webkit-text-decoration: none;
+}
+
+.contacts__office-phone:focus {
+  color: #181818;
+  -webkit-color: #181818;
+  text-decoration: none;
+  -webkit-text-decoration: none;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1365px) {

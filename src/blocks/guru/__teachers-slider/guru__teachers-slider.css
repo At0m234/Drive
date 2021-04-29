@@ -13,7 +13,7 @@
 
 /*позиция изображения при активации переключателя*/
 #switch1:checked ~ #slides .guru__teachers-info {
-	margin-top: 2;
+	margin-top: 2px;
 }
 
 #switch2:checked ~ #slides .guru__teachers-info {

@@ -1,0 +1,44 @@
+.reviews__slides-info {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: 249px 249px;
+  grid-template-areas:
+  "one two two"
+  "one three four";
+  transition: all 600ms ease-out;
+  gap: 30px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .reviews__slides-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 430px;
+    gap: 0;
+  }
+
+  /*позиция изображения при активации переключателя*/
+  #switch4:checked ~ #reviews__slides .reviews__slides-info {
+    margin-left: 1px;
+  }
+
+  #switch5:checked ~ #reviews__slides .reviews__slides-info {
+    margin-left: -768px;
+  }
+
+  #switch6:checked ~ #reviews__slides .reviews__slides-info {
+    margin-left: -1536px;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .reviews__slides-info {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    min-width: 325px;
+    gap: 0;
+  }
+}

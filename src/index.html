@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
   <meta name="description" content="Автошкола ИзиДрайв. Научим вас водить выгодно для всех."/>
   <title>Автошкола EasyDrive</title>
 </head>
@@ -66,7 +68,7 @@
 
     <header class="header">
       <div class="header__info">
-        <img class="logo logo_type_header" src="<%=require('./images/Header/Logo.svg')%>" alt="Логотип EasyDrive">
+        <a href="/" class="logo logo_type_header"><img src="<%=require('./images/Header/Logo.svg')%>" alt="Логотип EasyDrive"></a>
         <nav class="header__links">
           <a class="header__link" href="#prices">цены</a>
           <a class="header__link" href="#advantages">преимущества</a>
@@ -76,7 +78,7 @@
           <a class="header__link" href="#reviews">отзывы</a>
           <a class="header__link" href="#contacts">контакты</a>
         </nav>
-        <span class="header__connection">+7 499 755-55-77</span>
+        <a href="tel:+74997555577" class="header__connection">+7 499 755-55-77</a>
       </div>
     </header>
 
@@ -87,8 +89,8 @@
           <h2 class="main__subtitle main__subtitle_type_white">теоретический курс онлайн<br>практика в удобном для тебя
             районе</h2>
           <div class="main__btns">
-            <button class="button button_type_main-first">Записаться</button>
-            <button class="button button_type_callback">Перезвонить</button>
+            <button class="button button_type_main-first" onclick="window.location.href = '#contacts';">Записаться</button>
+            <button class="button button_type_callback" onclick="window.location.href = '#contacts';">Перезвонить</button>
           </div>
         </div>
 
@@ -97,8 +99,8 @@
           <h2 class="main__subtitle main__subtitle_type_black">все автошколы гарантируют, что ты получишь права мы
             гарантируем, что это будет изи</h2>
           <div class="main__btns">
-            <button class="button button_type_main-second">Записаться</button>
-            <button class="button button_type_callback">Перезвонить</button>
+            <button class="button button_type_main-second" onclick="window.location.href = '#contacts';">Записаться</button>
+            <button class="button button_type_callback" onclick="window.location.href = '#contacts';">Перезвонить</button>
           </div>
           <button class="main__image main__image_type_arrows"></button>
           <img class="main__image main__image_type_one" src="<%=require('../src/images/SecondMain/icon1.svg')%>"
@@ -570,7 +572,7 @@
                 <h5 class="club__text">Онлайн-вебинары, на которых можно задать вопросы преподавателям</h5>
               </div>
             </div>
-            <button class="button button_type_club">Записаться</button>
+            <button class="button button_type_club" onclick="window.location.href = '#contacts';">Записаться</button>
           </div>
         </div>
         <div class="club__adress">
@@ -669,9 +671,9 @@
 
           <article class="guru__teachers-slider" id="slider">
 
-            <input type="radio" name="slider" id="switch1">
-            <input type="radio" name="slider" id="switch2">
-            <input type="radio" name="slider" id="switch3">
+            <input type="radio" name="teachers-slider" id="switch1" checked>
+            <input type="radio" name="teachers-slider" id="switch2">
+            <input type="radio" name="teachers-slider" id="switch3">
 
             <div class="guru__teachers-slider-circles" id="circles">
               <label class="guru__teachers-slider-circle" for="switch1"></label>
@@ -893,11 +895,9 @@
 
           <article class="reviews__container" id="reviews-slider">
 
-            <!-- <div class="reviews__inputs" id="inputs"> -->
-              <input type="radio" name="reviews-slider" id="switch4">
-              <input type="radio" name="reviews-slider" id="switch5">
-              <input type="radio" name="reviews-slider" id="switch6">
-            <!-- </div> -->
+            <input type="radio" name="reviews-slider" id="switch4" checked>
+            <input type="radio" name="reviews-slider" id="switch5">
+            <input type="radio" name="reviews-slider" id="switch6">
 
             <div class="reviews__slider-circles" id="reviews-circles">
               <label class="reviews__slider-circle" for="switch4"></label>
@@ -908,7 +908,6 @@
             <div class="reviews__slides" id="reviews__slides">
               <div class="reviews__slides-info">
 
-                <article id="reviews-first-slide">
                   <div class="reviews__reviewer reviews__reviewer_type_one">
                     <div class="reviews__reviewer-info">
                       <img class="reviews__reviewer-image" src="<%=require('../src/images/Reviews/Diesel.jpg')%>" alt="Фото">
@@ -924,9 +923,7 @@
                     </div>
                     <p class="reviews__reviewer-text">Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. С другой стороны консультация с широким активом позволяет оценить значение дальнейших направлений развития.</p>
                   </div>
-                </article>
 
-                <article>
                   <div class="reviews__reviewer reviews__reviewer_type_three">
                     <div class="reviews__reviewer-info">
                       <img class="reviews__reviewer-image" src="<%=require('../src/images/Reviews/Diesel.jpg')%>" alt="Фото">
@@ -934,17 +931,14 @@
                     </div>
                     <p class="reviews__reviewer-text">Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности требуют определения и уточнения позиций</p>
                   </div>
-                </article>
 
-                <article>
                   <div class="reviews__reviewer reviews__reviewer_type_four">
                     <div class="reviews__reviewer-info">
                       <img class="reviews__reviewer-image" src="<%=require('../src/images/Reviews/Diesel.jpg')%>" alt="Фото">
-                      <h4 class="reviews__reviewer-name">Костя<br>Петров</h4>
+                      <h4 class="reviews__reviewer-name">Иван<br>Петров</h4>
                     </div>
                     <p class="reviews__reviewer-text">Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности требуют определения и уточнения позиций</p>
                   </div>
-                </article>
 
               </div>
             </div>
@@ -1001,9 +995,9 @@
                 (РГУ нефти и газа имени И.М. Губкина,
                 станция метро Университет)
               </p>
-              <span class="contacts__office-phone">8 (499) 755-55-77</span>
+              <a href="tel:+74997555577" class="contacts__office-phone">8 (499) 755-55-77</a>
               <p class="contacts__questionnaire">заполни анкету для составления договора на обучение</p>
-              <button class="button button_type_office">Записаться</button>
+              <button class="button button_type_office" onclick="window.location.href = '#contacts';">Записаться</button>
             </div>
             <div class="contacts__map">
               <iframe
@@ -1070,24 +1064,12 @@
             </div>
           </div>
         </div>
-        <!-- <section class="popup" id="burger-popup">
-        <div class='burger-menu'>
-          <nav class="burger-menu__links">
-            <a class="header__link" href="#prices">цены</a>
-            <a class="header__link" href="#advantages">преимущества</a>
-            <a class="header__link" href="#learning">обучение</a>
-            <a class="header__link" href="#club">клуб</a>
-            <a class="header__link" href="#guru">гуру</a>
-            <a class="header__link" href="#reviews">отзывы</a>
-            <a class="header__link" href="#contacts">контакты</a>
-          </nav>
-        </div>
-      </section> -->
+
     </main>
 
     <footer class="footer">
       <div class="footer__images">
-        <img class="logo logo_type_footer" src="<%=require('./images/Header/Logo.svg')%>" alt="Логотип EasyDrive">
+        <a href="/" class="logo logo_type_footer"><img src="<%=require('./images/Header/Logo.svg')%>" alt="Логотип EasyDrive"></a>
         <img class="footer__image" src="<%=require('./images/Footer/Image1.svg')%>" alt="картинка дорожного знака">
         <img class="footer__image" src="<%=require('./images/Footer/Image2.svg')%>" alt="картинка дорожного знака">
         <img class="footer__image" src="<%=require('./images/Footer/Image3.svg')%>" alt="картинка дорожного знака">

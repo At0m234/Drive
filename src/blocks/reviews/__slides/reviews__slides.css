@@ -1,0 +1,26 @@
+.reviews__slides {
+  display: flex;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .reviews__slides {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 768px;
+    height: 430px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .reviews__slides {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    min-width: 325px;
+    width: 100%;
+  }
+
+}

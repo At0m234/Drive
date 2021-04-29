@@ -9,6 +9,12 @@
 @import url('__reviewer-text/reviews__reviewer-text.css');
 
 @import url('__director-container/reviews__director-container.css');
+@import url('__slider-circles/reviews__slider-circles.css');
+@import url('__slider-circle/reviews__slider-circle.css');
+@import url('__slides/reviews__slides.css');
+@import url('__slides-info/reviews__slides-info.css');
+
+
 @import url('__director-photo/reviews__director-photo.css');
 @import url('__director-image/reviews__director-image.css');
 @import url('__director-message/reviews__director-message.css');

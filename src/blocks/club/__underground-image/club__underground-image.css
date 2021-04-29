@@ -1,28 +1,31 @@
-.club__underground-svg {
-  background-image: url('../../../images/Club/metroImgUpdated.svg');
-  background-repeat: no-repeat;
-  width: 150%;
-  height: 100%;
-  position: absolute;
-}
 .club__underground-image {
   display: flex;
-  /* background-image: url('../../../images/Club/UndergroundImage.svg'); */
-  /* background-image: url('../../../images/Club/metroImgUpdated.svg'); */
-  background-repeat: no-repeat;
   width: 100%;
   min-height: 228px;
   background-color: #f8f8f8;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
+}
+
+.club__underground-svg {
+  background-image: url('../../../images/Club/metroImgUpdated.svg');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1365px) {
   .club__underground-svg {
     height: 26.13%;
-    /* min-height: 228px; */
-    background-position: 40% 0%;
-    background-size: 210%;
+    min-height: 228px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* background-position: 40% 0%; */
+    /* background-size: 210%; */
   }
 }
 

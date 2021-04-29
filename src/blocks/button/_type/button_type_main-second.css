@@ -2,6 +2,8 @@
   width: 255px;
   height: 54px;
   color: #181818;
+  border-width: 1px;
+  border-style: solid;
   border: 1px solid rgb(24, 24, 24);
   margin: 0 30px 0 0;
   font-size: 16px;
@@ -16,15 +18,34 @@
 
 .button_type_main-second:hover {
   background: linear-gradient(277.54deg, #1492A1 41.65%, #BBB272 69.55%, #F4C245 100.21%);
+  background: -moz-linear-gradient(277.54deg, #1492A1 41.65%, #BBB272 69.55%, #F4C245 100.21%);
+  background: -webkit-linear-gradient(277.54deg, #1492A1 41.65%, #BBB272 69.55%, #F4C245 100.21%);
+  background: -o-linear-gradient(277.54deg, #1492A1 41.65%, #BBB272 69.55%, #F4C245 100.21%);
+  background: -ms-linear-gradient(277.54deg, #1492A1 41.65%, #BBB272 69.55%, #F4C245 100.21%);
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  border-width: 1px;
+  border-style: solid;
   border: 1px solid transparent;
+
   border-image: linear-gradient(277.54deg, #1492A1 41.65%, #BBB272 69.55%, #F4C245 100.21%);
+  -moz-border-image: linear-gradient(277.54deg, #1492A1 41.65%, #BBB272 69.55%, #F4C245 100.21%);
+  -webkit-border-image: linear-gradient(277.54deg, #1492A1 41.65%, #BBB272 69.55%, #F4C245 100.21%);
+  -o-border-image: linear-gradient(277.54deg, #1492A1 41.65%, #BBB272 69.55%, #F4C245 100.21%);
+
   border-image-slice: 1;
+  -webkit-border-image-slice: 1;
 }
 
 .button_type_main-second:active {
   background: linear-gradient(277.54deg, #1492A1 41.65%, #BBB272 69.55%, #F4C245 100.21%);
+  background: -moz-linear-gradient(277.54deg, #1492A1 41.65%, #BBB272 69.55%, #F4C245 100.21%);
+  background: -webkit-linear-gradient(277.54deg, #1492A1 41.65%, #BBB272 69.55%, #F4C245 100.21%);
+  background: -o-linear-gradient(277.54deg, #1492A1 41.65%, #BBB272 69.55%, #F4C245 100.21%);
+  background: -ms-linear-gradient(277.54deg, #1492A1 41.65%, #BBB272 69.55%, #F4C245 100.21%);
+  
   -webkit-text-fill-color: #181818;
 }
 

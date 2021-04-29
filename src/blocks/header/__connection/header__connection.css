@@ -12,24 +12,36 @@
   padding: 0;
   width: 141px;
   height: 20px;
-  /* mix-blend-mode:difference; */
-  /* color:white; */
   text-decoration: none;
+  -webkit-text-decoration: none;
+
+  -webkit-touch-callout: text; /* iOS Safari */
+  -webkit-user-select: text;   /* Chrome/Safari/Opera */
+  -khtml-user-select: text;    /* Konqueror */
+  -moz-user-select: text;      /* Firefox */
+  -ms-user-select: text;       /* Internet Explorer/Edge */
+  user-select: text;
 }
 
 .header__connection:visited {
   color: #F8F8F8;
+  -webkit-color: #f8f8f8;
   text-decoration: none;
+  -webkit-text-decoration: none;
 }
 
 .header__connection:active {
   color: #F8F8F8;
+  -webkit-color: #f8f8f8;
   text-decoration: none;
+  -webkit-text-decoration: none;
 }
 
 .header__connection:focus {
   color: #F8F8F8;
+  -webkit-color: #f8f8f8;
   text-decoration: none;
+  -webkit-text-decoration: none;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1365px) {

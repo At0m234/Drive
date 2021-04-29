@@ -18,8 +18,8 @@
 
 @media screen and (min-width: 50px) and (max-width: 767px) {
   .contacts__map {
-    min-width: 325px;
-    width: 100%;
+    min-width: 323px;
+    width: 99%;
     margin: 32px 0 116px 0;
   }
 }

@@ -34,11 +34,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* align-items: center; */
   padding: 128px 9.37% 0 9.37%;
   background-color: #f8f8f8;
   position: relative;
-  /* max-width: 1366px; */
   height: auto;
 
   -webkit-touch-callout: text; /* iOS Safari */
