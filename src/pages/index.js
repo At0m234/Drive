@@ -1,5 +1,5 @@
 import './index.css';
-
+import '../utils/parallax.js'
 import {
   windowWidth,
   AContainer,
