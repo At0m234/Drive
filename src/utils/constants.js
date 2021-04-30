@@ -1,7 +1,4 @@
-export const windowWidth = window.addEventListener('resize', () => {
-  let displayWidth = window.innerWidth;
-  return displayWidth;
-});
+export const windowWidth = window.innerWidth;
 // ЗАПИСЫВАЕМ БЛОКИ С КАТЕГОРИЯМИ В СООТВЕТСТВУЮЩИЕ ПЕРЕМЕННЫЕ
 export const AContainer = document.querySelector('.prices__A-container');
 export const BContainer = document.querySelector('.prices__B-container');
@@ -19,7 +16,6 @@ export const AdditionalClassesBtn = document.querySelector('#Additional-classes-
 
 export const pricesInfo = document.querySelector('.prices__info');
 
-
 export const clubLicenseTitle = document.querySelector('.club__license-title');
 
 export const popups = document.querySelectorAll('.popup');
@@ -31,7 +27,7 @@ export const consultPopup = document.querySelector('#consult-popup');
 export const license = document.querySelector('#license');
 
 export const contactsSubtitle = document.querySelector('.contacts__subtitle');
-
+export const header = document.querySelector('.header');
 export const headerLinks = document.querySelector('.header__links');
 export const headerLogo = document.querySelector('.logo_type_header');
 

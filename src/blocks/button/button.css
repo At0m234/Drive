@@ -31,6 +31,7 @@
   text-align: center;
   outline: none;
   cursor: pointer;
+  box-sizing: border-box;
 
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none;   /* Chrome/Safari/Opera */
@@ -38,4 +39,8 @@
   -moz-user-select: none;      /* Firefox */
   -ms-user-select: none;       /* Internet Explorer/Edge */
   user-select: none;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  #safari { background-color: linear-gradient(272.45deg, #1492A1 17.58%, #BBB272 75.77%, #F4C245 100%) }
 }

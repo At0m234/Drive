@@ -17,8 +17,13 @@
   border: 1px solid #E08645;
 }
 
-.button_type_A:focus {
+.button_type_A:focus, .button_type_A:active {
+  -webkit-background-color: #E08645;
+  background-color: #E08645;
   background: #E08645;
+  background: rgba(224, 134, 69, 1);
+  -webkit-background-clip: border-box;
+  -webkit-tap-highlight-color: #E08645;
   border: 1px solid #181818;
 }
 
