@@ -1,4 +1,7 @@
-export const windowWidth = window.innerWidth;
+export const windowWidth = window.addEventListener('resize', () => {
+  let displayWidth = window.innerWidth;
+  return displayWidth;
+});
 // ЗАПИСЫВАЕМ БЛОКИ С КАТЕГОРИЯМИ В СООТВЕТСТВУЮЩИЕ ПЕРЕМЕННЫЕ
 export const AContainer = document.querySelector('.prices__A-container');
 export const BContainer = document.querySelector('.prices__B-container');
@@ -37,3 +40,7 @@ export const burgerPopup = document.querySelector('#burger-popup');
 export const contactsForm = document.querySelector('#contacts-form');
 export const anchors = document.querySelectorAll('.header__link');
 export const formInputs = document.querySelectorAll('.contacts__form-input');
+
+export const secondMainBgImgThree = document.querySelector('.main__image_type_three');
+export const secondMainBgImgSeven = document.querySelector('.main__image_type_seven');
+export const secondMainBgArrows = document.querySelector('.main__image_type_arrows');

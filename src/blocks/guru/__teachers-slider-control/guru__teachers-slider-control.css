@@ -5,7 +5,6 @@
   margin: 0 0 -40px 0;
   display: block;
   height: 40px;
-	/* width: 25px; */
 }
 
 #switch2:checked ~ #controls .guru__teachers-slider-control:nth-child(1),
@@ -15,7 +14,6 @@
   margin: -40px 0 0 0;
   display: block;
   height: 40px;
-	/* width: 25px; */
 }
 
 

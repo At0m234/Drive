@@ -28,8 +28,12 @@ import {
   burgerPopup,
   contactsForm,
   anchors,
-  formInputs
+  formInputs,
+  secondMainBgImgThree,
+  secondMainBgImgSeven,
+  secondMainBgArrows,
 } from '../utils/constants';
+
 
 // ЦИКЛ ДЛЯ ПЛАВНОГО СКРОЛА ПО ЯКОРНЫМ ССЫЛКАМ
 for (let anchor of anchors) {
@@ -59,11 +63,6 @@ function openPopup(popup) {
 // ФУНКЦИЯ ЗАКРЫТИЯ ПОПАПОВ
 function closePopup(e) {
   if((e.target.classList.contains('popup') || e.target.classList.contains('popup__cross') || (e.key === 'Escape'))) {
-
-    // console.log(popups);
-    // for(let i; i < popups.length; i++){
-    //   popups[i].classList.remove('popup_visible');
-    // }
     popups[0].classList.remove('popup_visible');
     popups[1].classList.remove('popup_visible');
     popups[2].classList.remove('popup_visible');
@@ -85,7 +84,7 @@ function consultFormSubmitHandler(e) {
 }
 
 // ФУНКЦИЯ ДОБАВЛЕНИЯ БЛОКА С КНОПКАМИ: "ЛИЦЕНЗИЯ 1" И "ЛИЦЕНЗИЯ 2" ПРИ РАЗРЕШЕНИИ ЭКРАНА МЕНЕЕ 768PX
-function addMobileLicensesBtns() {
+function addMobileLicensesBtns(windowWidth) {
   if (windowWidth < 768) {
     clubLicenseTitle.insertAdjacentHTML('afterend', `
     <div class="club__licenses">
@@ -112,7 +111,7 @@ function addMobileLicensesBtns() {
 addMobileLicensesBtns();
 
 // ФУНКЦИЯ ДОБАВЛЕНИЯ КНОПКИ ОТКРЫТИЯ ПОПАПА "КОНСУЛЬТАЦИИ" ПРИ РАЗРЕШЕНИИ ЭКРАНА МЕНЕЕ 768PX
-function addMobileConsultBtn() {
+function addMobileConsultBtn(windowWidth) {
   if (windowWidth < 768) {
     contactsForm.remove();
 
@@ -128,10 +127,11 @@ function addMobileConsultBtn() {
   }
 }
 
+
 addMobileConsultBtn();
 
 // ФУНКЦИЯ ДОБАВЛЕНИЯ КНОПКИ БУРГЕРНОГО МЕНЮ ПРИ РАЗРЕШЕНИИ ЭКРАНА МЕНЕЕ 768PX
-function addMobileBurger() {
+function addMobileBurger(windowWidth) {
   if (windowWidth < 768) {
     headerLinks.remove();
 
@@ -158,17 +158,23 @@ function addMobileBurger() {
   }
 }
 
+
 addMobileBurger();
 
 
 document.body.getElementsByClassName("main__bg-second")[0].onmouseenter = (e) => {
-  document.getElementsByClassName("main__bg-first")[0].classList.add("margin-class");
+  document.getElementsByClassName("main__bg-first")[0].classList.add("animation");
+  secondMainBgImgThree.classList.add("animated");
+  secondMainBgImgSeven.classList.add("animated");
+  secondMainBgArrows.classList.add("animated-arrows");
 }
 
 document.body.getElementsByClassName("main__bg-second")[0].onmouseleave = (e) => {
-  document.getElementsByClassName("main__bg-first")[0].classList.remove("margin-class");
+  document.getElementsByClassName("main__bg-first")[0].classList.remove("animation");
+  secondMainBgImgThree.classList.remove("animated");
+  secondMainBgImgSeven.classList.remove("animated");
+  secondMainBgArrows.classList.remove("animated-arrows");
 }
-
 
 // ---------------------------------СЛУШАТЕЛИ СОБЫТИЙ--------------------------------- //
 

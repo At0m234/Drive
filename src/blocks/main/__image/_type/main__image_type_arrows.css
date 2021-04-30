@@ -10,6 +10,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  transition: transform 1000ms ease-out;
 }
 
 .main__image_type_arrows:focus, .main__image_type_arrows:active {
@@ -19,6 +20,10 @@
 .main__image_type_arrows:hover {
   opacity: .3;
   transition: opacity .5s ease-out .05s;
+}
+
+.animated-arrows {
+  transform: translateY(10000%);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1365px) {
