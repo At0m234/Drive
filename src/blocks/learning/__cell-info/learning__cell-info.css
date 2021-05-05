@@ -4,4 +4,204 @@
   align-items: center;
   justify-self: flex-start;
   width: 100%;
+  transition: opacity .5s ease-out;
+  transition: visibility .5s ease-out;
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .learning__cell-info:hover ~ .learning__question ~ span {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    transition: opacity .5s ease-out;
+    transition: visibility .5s ease-out;
+  }
+
+  .learning__cell-info:hover ~ .learning__question ~ div {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    transition: opacity .5s ease-out;
+    transition: visibility .5s ease-out;
+  }
+
+  .learning__cell-info:focus ~ .learning__question ~ span {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    transition: opacity .5s ease-out;
+    transition: visibility .5s ease-out;
+  }
+
+  .learning__cell-info:focus ~ .learning__question ~ div {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    transition: opacity .5s ease-out;
+    transition: visibility .5s ease-out;
+  }
+
+  .learning__cell-info:active ~ .learning__question ~ span {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    transition: opacity .5s ease-out;
+    transition: visibility .5s ease-out;
+  }
+
+  .learning__cell-info:active ~ .learning__question ~ div {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    transition: opacity .5s ease-out;
+    transition: visibility .5s ease-out;
+  }
+
+
+
+  .learning__stage:hover ~ .learning__question ~ span {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    transition: opacity .5s ease-out;
+    transition: visibility .5s ease-out;
+  }
+
+  .learning__stage:hover ~ .learning__question ~ div {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    transition: opacity .5s ease-out;
+    transition: visibility .5s ease-out;
+  }
+
+  .learning__stage:focus ~ .learning__question ~ span {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    transition: opacity .5s ease-out;
+    transition: visibility .5s ease-out;
+  }
+
+  .learning__stage:focus ~ .learning__question ~ div {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    transition: opacity .5s ease-out;
+    transition: visibility .5s ease-out;
+  }
+
+  .learning__stage:active ~ .learning__question ~ span {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    transition: opacity .5s ease-out;
+    transition: visibility .5s ease-out;
+  }
+
+  .learning__stage:active ~ .learning__question ~ div {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    transition: opacity .5s ease-out;
+    transition: visibility .5s ease-out;
+  }
+
+
+  .learning__subtitle:hover ~ .learning__question ~ span {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    transition: opacity .5s ease-out;
+    transition: visibility .5s ease-out;
+  }
+
+  .learning__subtitle:hover ~ .learning__question ~ div {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    transition: opacity .5s ease-out;
+    transition: visibility .5s ease-out;
+  }
+
+  .learning__subtitle:focus ~ .learning__question ~ span {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    transition: opacity .5s ease-out;
+    transition: visibility .5s ease-out;
+  }
+
+  .learning__subtitle:focus ~ .learning__question ~ div {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    transition: opacity .5s ease-out;
+    transition: visibility .5s ease-out;
+  }
+
+  .learning__subtitle:active ~ .learning__question ~ span {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    transition: opacity .5s ease-out;
+    transition: visibility .5s ease-out;
+  }
+
+  .learning__subtitle:active ~ .learning__question ~ div {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    transition: opacity .5s ease-out;
+    transition: visibility .5s ease-out;
+  }
+
+
+  .learning__image:hover ~ .learning__question ~ span {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    transition: opacity .5s ease-out;
+    transition: visibility .5s ease-out;
+  }
+
+  .learning__image:hover ~ .learning__question ~ div {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    transition: opacity .5s ease-out;
+    transition: visibility .5s ease-out;
+  }
+
+  .learning__image:focus ~ .learning__question ~ span {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    transition: opacity .5s ease-out;
+    transition: visibility .5s ease-out;
+  }
+
+  .learning__image:focus ~ .learning__question ~ div {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    transition: opacity .5s ease-out;
+    transition: visibility .5s ease-out;
+  }
+
+  .learning__image:active ~ .learning__question ~ span {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    transition: opacity .5s ease-out;
+    transition: visibility .5s ease-out;
+  }
+
+  .learning__image:active ~ .learning__question ~ div {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    transition: opacity .5s ease-out;
+    transition: visibility .5s ease-out;
+  }
 }

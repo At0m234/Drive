@@ -3,6 +3,7 @@
 @import url('__title/contacts__title.css');
 @import url('__subtitle/contacts__subtitle.css');
 @import url('__form/contacts__form.css');
+@import url('contacts__form-popup/contacts__form-popup.css');
 @import url('__input-container/contacts__input-container.css');
 @import url('__form-input/contacts__form-input.css');
 @import url('__content/contacts__content.css');

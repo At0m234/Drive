@@ -32,7 +32,7 @@
     width: 190px;
   }
 
-  .header__link {
+  .burger-menu__link {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -45,14 +45,14 @@
     transition: 1s;
   }
 
-  .header__link:hover {
+  .burger-menu__link:hover {
     transition: .1s linear .05s;
     opacity: .5;
     color: #F4C245;
   }
 
-  .header__link:active, .header__link:focus  {
-    padding-bottom: 6px;
+  .burger-menu__link:active, .burger-menu__link:focus  {
+    /* padding-bottom: 6px; */
     color: #F4C245;
   }
 

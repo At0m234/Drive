@@ -1,5 +1,4 @@
 import './index.css';
-// import '../utils/parallax.js';
 
 import {
   windowWidth,
@@ -21,54 +20,88 @@ import {
   tebletComputerLicensesPopup,
   mobileLicenseOnePopup,
   mobileLicenseTwoPopup,
-  consultPopup,
   license,
   contactsSubtitle,
   header,
   headerLinks,
   headerLogo,
+  logoHeaderImg,
   burgerPopup,
   contactsForm,
-  anchors,
-  formInputs,
+  contactsFormPopup,
   secondMainBgImgThree,
   secondMainBgImgSeven,
   secondMainBgArrows,
+  teachersImages,
+  consultPopupBtns,
+  contactsPopup,
+  undergroundImage,
+  easyDriveString,
+  mainFirstBg,
+  mainSecondBg,
 } from '../utils/constants';
 
+// ФУНКЦИЯ ПРОВЕРКИ УТРОЙСТВА ПОЛЬЗОВАТЕЛЯ
 let isMobile = () => {
   let data = navigator.userAgent.toLowerCase();
 
-  if ((data.indexOf("Android".toLowerCase()) != -1) || (data.indexOf("IOS".toLowerCase()) != -1)){
+  if ((data.indexOf("Android".toLowerCase()) != -1) || (data.indexOf("IOS".toLowerCase()) != -1)) {
     return true
   } else {
     return false
   }
 }
 
-
-// БЛОК ДЕКЛАРАЦИИ
+// БЛОК ДЕКЛАРАЦИИ ДЛЯ ЕДИНОРАЗОВОГО ВЫЗОВА ФУНКЦИЙ ОТРИСОВКИ КНОПОК ЛИЦЕНЗИЙ, КОНСУЛЬТАЦИИ И БУРГЕРНОГО МЕНЮ ДЛЯ МОБИЛЬНОЙ ВЕРСИИ
 let buttonAdditional = [false,false,false]
 
-// ЦИКЛ ДЛЯ ПЛАВНОГО СКРОЛА ПО ЯКОРНЫМ ССЫЛКАМ
-for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-      e.preventDefault();
+// ЦИКЛ ПЕРЕБОРА ФОТОГРАФИЙ ИНСТРУКТОРОВ
+for (let i = 0; i < teachersImages.length; i++) {
+  showTeacherExpierence(teachersImages[i])
+}
 
-      const blockID = anchor.getAttribute('href').substring(1)
+// ФУНКЦИЯ ОТОБОРАЖЕНИЯ ФОНОВОГО СЛОЯ С ОПЫТОМ ИНСТРУКТОРА
+function showTeacherExpierence(image) {
+  image.addEventListener('mouseenter', () => {
+    let teacherExpierence = image.querySelector('.guru__teacher-expearence')
 
-      document.getElementById(blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-      })
+    teacherExpierence.style.opacity = 1;
+    teacherExpierence.style.visibility = "visible";
+  })
+  image.addEventListener('mouseleave', () => {
+    let teacherExpierence = image.querySelector('.guru__teacher-expearence')
 
-      let burgerMenuBtn = document.querySelector('.burger-menu__btn');
-
-      popups[4].classList.remove('popup_visible');
-      burgerMenuBtn.classList.remove('burger-menu__btn_active');
-      burgerMenuBtn.style.position = "absolute";
+    teacherExpierence.style.opacity = 0;
+    teacherExpierence.style.visibility = "hidden";
   })
 }
+
+// ЦИКЛ ДЛЯ ПЛАВНОГО СКРОЛА ПО ЯКОРНЫМ ССЫЛКАМ
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+    let burgerMenuBtn = document.querySelector('.burger-menu__btn');
+    popups[4].classList.remove('popup_visible');
+    burgerMenuBtn.classList.remove('burger-menu__btn_active');
+  });
+// for (let anchor of anchors) {
+//   anchor.addEventListener('click', function (e) {
+//     e.preventDefault();
+//     const blockID = anchor.getAttribute('href').substring(1)
+//     document.getElementById(blockID).scrollIntoView({
+//     behavior: 'smooth',
+//     block: 'start'
+//     })
+//     let burgerMenuBtn = document.querySelector('.burger-menu__btn');
+//     popups[4].classList.remove('popup_visible');
+//     burgerMenuBtn.classList.remove('burger-menu__btn_active');
+//     burgerMenuBtn.style.position = "absolute";
+//   })
+// }
+});
 
 // ФУНКЦИЯ ОТКРЫТИЯ ПОПАПОВ
 function openPopup(popup) {
@@ -84,24 +117,41 @@ function closePopup(e) {
     popups[3].classList.remove('popup_visible');
     popups[4].classList.remove('popup_visible');
   }
+  // e.target.name.value = " ";
+  // e.target.phone.value = " ";
 }
-
 // ОБРАБОТЧИК САБМИТА ФОРМЫ КОНСУЛЬТАЦИИ
 function consultFormSubmitHandler(e) {
   e.preventDefault();
-  const name = document.querySelector('#name').value;
-  const phone = document.querySelector('#phone').value;
+  let name = document.querySelector('#name').value;
+  let phone = document.querySelector('#phone').value;
   const token = '1685594101:AAE_XcN8JKxhesOBuW6-e8M5IFsBHpdLQK8';
   const chatId = '-561913957';
   const txt = `Запрос о консультации:%0A <b>${name}</b>%0A <b>${phone}</b>`;
   fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&parse_mode=html&text=${txt}`);
+  e.target.name.value = "";
+  e.target.phone.value = "";
+  popups[3].classList.remove('popup_visible');
+}
+
+
+function popupConsultFormSubmitHandler(e) {
+  e.preventDefault();
+  let name = document.querySelector('#name-popup').value;
+  let phone = document.querySelector('#phone-popup').value;
+  const token = '1685594101:AAE_XcN8JKxhesOBuW6-e8M5IFsBHpdLQK8';
+  const chatId = '-561913957';
+  const txt = `Запрос о консультации:%0A <b>${name}</b>%0A <b>${phone}</b>`;
+  fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&parse_mode=html&text=${txt}`);
+  e.target.name.value = "";
+  e.target.phone.value = "";
   popups[3].classList.remove('popup_visible');
 }
 
 // ФУНКЦИЯ ДОБАВЛЕНИЯ БЛОКА С КНОПКАМИ: "ЛИЦЕНЗИЯ 1" И "ЛИЦЕНЗИЯ 2" ПРИ РАЗРЕШЕНИИ ЭКРАНА МЕНЕЕ 768PX
-function addMobileLicensesBtn () {
+function addMobileLicensesBtn() {
   if (!buttonAdditional[1]) {
-    if (isMobile()) {
+    if (windowWidth < 768) {
       clubLicenseTitle.insertAdjacentHTML('afterend', `
       <div class="club__licenses">
         <button class="button button_type_license" id="license-one-btn">лицензия 1</button>
@@ -126,32 +176,33 @@ function addMobileLicensesBtn () {
   }
 }
 
+addMobileLicensesBtn();
 
 // ФУНКЦИЯ ДОБАВЛЕНИЯ КНОПКИ ОТКРЫТИЯ ПОПАПА "КОНСУЛЬТАЦИИ" ПРИ РАЗРЕШЕНИИ ЭКРАНА МЕНЕЕ 768PX
-function addMobileConsultBtn () {
+function addMobileConsultBtn() {
   if (!buttonAdditional[2]) {
-    if (isMobile()) {
-    contactsForm.remove();
+    if (windowWidth < 768) {
+      contactsForm.remove();
 
-    contactsSubtitle.insertAdjacentHTML('afterend', `<button class="button button_type_consult-popup">Консультация</button>`)
-    let consultBtn = document.querySelector('.button_type_consult-popup');
+      contactsSubtitle.insertAdjacentHTML('afterend', `<button class="button button_type_consult-popup">Консультация</button>`);
 
-    consultBtn.addEventListener('click', () => {
-      openPopup(consultPopup);
-    })
+      let consultBtn = document.querySelector('.button_type_consult-popup');
 
-    let contactsFormPopup = document.querySelector('#contacts-form-popup');
-    contactsFormPopup.addEventListener('submit', consultFormSubmitHandler);
+      consultBtn.addEventListener('click', () => {
+        openPopup(contactsPopup);
+      })
+
     }
     buttonAdditional[2] = true
   }
 }
 
+addMobileConsultBtn();
 
 // ФУНКЦИЯ ДОБАВЛЕНИЯ КНОПКИ БУРГЕРНОГО МЕНЮ ПРИ РАЗРЕШЕНИИ ЭКРАНА МЕНЕЕ 768PX
 function addMobileBurger() {
   if (!buttonAdditional[0]) {
-    if (isMobile()) {
+    if (windowWidth < 768) {
       headerLinks.remove();
 
       headerLogo.insertAdjacentHTML('afterend', `
@@ -178,98 +229,112 @@ function addMobileBurger() {
     }
   }
 }
-let elemes = document.body.getElementsByClassName("header__link")
-for(var a of elemes){
-  a.style.fontSize = "12px"
+
+addMobileBurger();
+
+const getEleme = (tag) => {
+  return document.body.getElementsByClassName(tag)
 }
-const getEleme = (sukaTag) => {
-  return document.body.getElementsByClassName(sukaTag)
+
+function changeColor(elem, color, timing) {
+  elem.style.transition =  timing +  "s linear";
+  elem.style.color = color;
 }
-document.body.getElementsByClassName("main__bg-second")[0].onmouseenter = (e) => {
-  document.getElementsByClassName("main__bg-first")[0].classList.add("animation");
+
+// АНИМАЦИЯ ПРИ НАВЕДЕНИИ КУРСОРА МЫШКИ НА ВТОРОЕ(ГРАДИЕНТНОЕ) ФОНОВОЕ ИЗОБРАЖЕНИЕ
+mainSecondBg.onmouseenter = (e) => {
+  mainFirstBg.classList.add("animation");
   secondMainBgImgThree.classList.add("animated");
   secondMainBgImgSeven.classList.add("animated");
   secondMainBgArrows.classList.add("animated-arrows");
-  let elemes = document.body.getElementsByClassName("header__link")
-  for(var a of elemes){
+  let elemes = document.body.getElementsByClassName("header__link");
+  for(let a of elemes) {
     changeColor(a, "#181818", 0.5);
   }
-  changeColor(getEleme("header__connection")[0], "#181818", 0.5)
+  changeColor(getEleme("header__connection")[0], "#181818", 0.5);
+  logoHeaderImg.style.opacity = 0;
+}
 
-}
-function changeColor(elem, color, timing){
-  elem.style.transition =  timing +  "s linear"
-  elem.style.color = color
-}
-document.body.getElementsByClassName("main__bg-second")[0].onmouseleave = (e) => {
-  document.getElementsByClassName("main__bg-first")[0].classList.remove("animation");
+// АНИМАЦИЯ ПРИ ОТВЕДЕНИИ КУРСОРА МЫШКИ СО ВТОРОГО(ГРАДИЕНТНОГО) ФОНОВОГО ИЗОБРАЖЕНИЯ
+mainSecondBg.onmouseleave = (e) => {
+  mainFirstBg.classList.remove("animation");
   secondMainBgImgThree.classList.remove("animated");
   secondMainBgImgSeven.classList.remove("animated");
   secondMainBgArrows.classList.remove("animated-arrows");
-  let elemes = document.body.getElementsByClassName("header__link")
-  for(var a of elemes){
+  let elemes = document.body.getElementsByClassName("header__link");
+  for(let a of elemes) {
     changeColor(a, "#f8f8f8", 0.5);
   }
-  changeColor(getEleme("header__connection")[0], "#FFF", 1)
+  changeColor(getEleme("header__connection")[0], "#FFF", 0.5);
+  logoHeaderImg.style.opacity = 1;
 }
 
+// --------------------------------------------------- СКРИПТ ДЛЯ ДВИЖЕНИЯ ИЗОБРАЖЕНИЙ И ПОЯВЛЕНИЯ HEADER ПО СКРОЛУ ПО ОСИ Y --------------------------------------------------- //
+// ЗАПИСЫВАЕМ НАЧАЛЬНОЕ ПОЛОЖЕНИЕ ПО ОСИ Y
+let lastOffsetY = 0;
 
-var lastOffsetY = 0;
+// ЗАДАЕМ НАЧАЛЬНОЕ ПОЛОЖЕНИЕ ДЛЯ ИЗОБРАЖЕНИЙ
+undergroundImage.style.backgroundPosition = "0px 0px"
+easyDriveString.style.backgroundPosition = "0px 0px"
 
-document.body.getElementsByClassName("club__underground-svg")[0].style.backgroundPosition = "0px 0px"
-document.body.getElementsByClassName("club__background-string")[0].style.backgroundPosition = "0px 0px"
-
-
-
-const isUp = () => {
-  if (lastOffsetY > window.pageYOffset)
-  {
+// ПРОВЕРКА СКРОЛА ВНИЗ ИЛИ ВВЕРХ ПО ОСИ Y
+const isScrollYIsUp = () => {
+  if (lastOffsetY > window.pageYOffset) {
     lastOffsetY =  window.pageYOffset
     return true
-  }
-  else
-  {
+  } else {
     lastOffsetY =  window.pageYOffset
     return false
   }
 }
-let mapMoveOnScroll = (element, size,rightMarg, leftMarg) => {
+
+let mapMoveOnScroll = (element, size, rightMargin, leftMargin) => {
   let start = element.style.backgroundPosition
   let xS = start.split(' ')[0]
   let x = xS.substring(0, xS.length - 2)
   let yS = start.split(' ')[1]
   let y = yS.substring(0, yS.length - 2)
   let xN = x
-  if ((rightMarg < (Number(x)+size) && size < 0)|| (leftMarg > (Number(x)+size) && size > 0)){
+  if ((rightMargin < (Number(x)+size) && size < 0)|| (leftMargin > (Number(x)+size) && size > 0)) {
     xN = (Number(x)+size)
   }
   element.style.backgroundPosition = String(xN)  + "px " + y + "px";
 }
-
-// element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
-function getSize(logic , size){
+function isVisible(element1, element2){
+  let getOffTop = element1.offsetTop + element2.offsetTop;
+  if (getOffTop < pageYOffset + window.innerHeight)
+  return true
+  return false
+}
+function getSize(logic, size) {
   if (logic) {
     return size
-  }
-  else
-  {
+  } else {
     return size *-1
   }
 }
 
-// ---------------------------------СЛУШАТЕЛИ СОБЫТИЙ--------------------------------- //
-
 window.onscroll = (e) => {
-  let scrollCheck = isUp();
+  let scrollCheck = isScrollYIsUp();
+  let rightMarg = (windowWidth / 100) * 47;
+  let rightMargM = (windowWidth / 100) * 78;
+  let speed = (windowWidth / 100);
+  if (isVisible(document.getElementsByClassName("club__underground-image")[0], document.getElementsByClassName("club")[0])){
+    if(isMobile()) {
+      mapMoveOnScroll(easyDriveString, getSize(scrollCheck, -1), -1200, 1200);
+      mapMoveOnScroll(undergroundImage, getSize(scrollCheck, speed), -rightMargM, 0)
+    } else {
+      mapMoveOnScroll(easyDriveString, getSize(scrollCheck, -1), -1200, 1200);
+      mapMoveOnScroll(undergroundImage, getSize(scrollCheck, speed), -rightMarg, 0)
+    }
+  }
 
-  mapMoveOnScroll(document.body.getElementsByClassName("club__background-string")[0], getSize(scrollCheck, -1), -1200, 1200);
-  mapMoveOnScroll(document.body.getElementsByClassName("club__underground-svg")[0], getSize(scrollCheck, 1), -850, 0);
-
+  // УСЛОВИЕ ДЛЯ ОТОБРАЖЕНИЯ ХЕДЕРА ПО СКРОЛЛУ
   if (lastOffsetY > 700) {
     header.style.display = "none"
     header.style.position = 'fixed';
     header.style.display = "flex"
-    header.style.transition = "all 1500ms ease-out .5s";
+    header.style.transition = "all 500ms ease-out";
     header.style.opacity = "1";
     header.style.backgroundColor = "#181818";
   } else {
@@ -279,6 +344,53 @@ window.onscroll = (e) => {
     header.style.display = "flex"
   }
 }
+// --------------------------------------------------- СКРИПТ ДЛЯ ДВИЖЕНИЯ ИЗОБРАЖЕНИЙ И ПОЯВЛЕНИЯ HEADER ПО СКРОЛУ ПО ОСИ Y--------------------------------------------------- //
+
+// ----------------------------------------------------------------------------- СЛУШАТЕЛИ СОБЫТИЙ ---------------------------------------------------------------------------- //
+
+// СКРИПТ МАСКИ И ВАЛИДАЦИИ НОМЕРА ТЕЛЕФОНА ДЛЯ ФОРМЫ ЗАПРОСА НА КОНСУЛЬТАЦИЮ
+window.addEventListener("DOMContentLoaded", function() {
+  [].forEach.call(document.querySelectorAll('.contacts__form-input'), function(input) {
+  var keyCode;
+  function mask(event) {
+    event.keyCode && (keyCode = event.keyCode);
+    var pos = this.selectionStart;
+    if (pos < 3) event.preventDefault();
+    var matrix = "+7 (___) ___ __ __",
+      i = 0,
+      def = matrix.replace(/\D/g, ""),
+      val = this.value.replace(/\D/g, ""),
+      new_value = matrix.replace(/[_\d]/g, function(a) {
+        return i < val.length ? val.charAt(i++) || def.charAt(i) : a
+      });
+    i = new_value.indexOf("_");
+    if (i != -1) {
+      i < 5 && (i = 3);
+      new_value = new_value.slice(0, i)
+    }
+    var reg = matrix.substr(0, this.value.length).replace(/_+/g,
+      function(a) {
+        return "\\d{1," + a.length + "}"
+      }).replace(/[+()]/g, "\\$&");
+    reg = new RegExp("^" + reg + "$");
+    if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) this.value = new_value;
+    if (event.type == "blur" && this.value.length < 5)  this.value = ""
+  }
+  if (input.id == "phone") {
+    input.addEventListener("input", mask, false);
+    input.addEventListener("focus", mask, false);
+    input.addEventListener("blur", mask, false);
+    input.addEventListener("keydown", mask, false)
+  }
+
+  if (input.id == "phone-popup") {
+    input.addEventListener("input", mask, false);
+    input.addEventListener("focus", mask, false);
+    input.addEventListener("blur", mask, false);
+    input.addEventListener("keydown", mask, false)
+  }
+  });
+});
 
 window.addEventListener('load', () => {
   addMobileLicensesBtn();
@@ -298,26 +410,39 @@ window.addEventListener('orientationchange', () => {
   addMobileBurger();
 })
 
-window.addEventListener('click', closePopup);
-window.addEventListener('touchstart', closePopup);
-window.addEventListener('touchend', closePopup);
-window.addEventListener('keydown', closePopup);
-
-contactsForm.addEventListener('submit', consultFormSubmitHandler);
-
-formInputs[1].addEventListener('click', () => {
-  formInputs[1].value = '+7';
-})
-
-formInputs[3].addEventListener('click', () => {
-  formInputs[3].value = '+7';
-})
-
+// СЛУШАТЕЛЬ КЛИКА НА ЖЕЛТЫЙ ТЕКСТ "ЛИЦЕНЗИИ"
 license.addEventListener('click', () => {
   if (windowWidth > 767) {
     openPopup(tebletComputerLicensesPopup)
   }
 })
+
+// ВЕШАЕМ СЛУШАТЕЛЬ ОТКРЫТИЯ ПОПАПА "КОНСУЛЬТАЦИИ" ПО КЛИКУ НА КНОПКИ
+consultPopupBtns.forEach(button => {
+  button.addEventListener('click', () => {
+    openPopup(contactsPopup);
+  })
+})
+
+// ВЕШАЕМ СЛУШАТЕЛЬ САБМИТА НА ФОРМУ ЗАПРОСА О КОНСУЛЬТАЦИИ
+contactsForm.addEventListener('submit', consultFormSubmitHandler);
+contactsFormPopup.addEventListener('submit', popupConsultFormSubmitHandler);
+
+// ВЕШАЕМ СЛУШАТЕЛЬ КЛИКА ИЛИ ТАЧА НА ЗАКРЫТИЕ ПОПАПА ЗАПРОСА НА КОНСУЛЬТАЦИЮ
+contactsPopup.addEventListener('click', closePopup);
+contactsPopup.addEventListener('touchstart', closePopup);
+contactsPopup.addEventListener('touchend', closePopup);
+
+// ВЕШАЕМ СЛУШАТЕЛИ КЛИКА ИЛИ ТАЧА НА ЗАКРЫТИЕ ПОПАПОВ С ЛИЦЕНЗИЯМИ
+tebletComputerLicensesPopup.addEventListener('click', closePopup);
+
+mobileLicenseOnePopup.addEventListener('click', closePopup);
+mobileLicenseOnePopup.addEventListener('touchstart', closePopup);
+mobileLicenseOnePopup.addEventListener('touchend', closePopup);
+
+mobileLicenseTwoPopup.addEventListener('click', closePopup);
+mobileLicenseTwoPopup.addEventListener('touchstart', closePopup);
+mobileLicenseTwoPopup.addEventListener('touchend', closePopup);
 
 // ДОБАВЛЯЕМ СЛУШАТЕЛЬ КНОПКЕ КАТЕГОРИЯ-A
 ACatBtn.addEventListener('click', () => {
@@ -327,6 +452,7 @@ ACatBtn.addEventListener('click', () => {
   DContainer.classList.remove('prices__D-container_visible');
   OnlyWithUsContainer.classList.remove('prices__only-with-us-container_visible');
   AdditionalClassesContainer.classList.remove('prices__additional-classes-container_visible');
+  // МЕНЯЕМ ВЫСОТУ БЛОКА С ВЫБОРОМ ТАРИФОВ ПО СООТВЕТСТВУЮЩИМ КАТЕГОРИЯМ
   if (windowWidth > 1365) {
     pricesInfo.style.height = 512 + 'px';
   }
@@ -346,6 +472,7 @@ BCatBtn.addEventListener('click', () => {
   DContainer.classList.remove('prices__D-container_visible');
   OnlyWithUsContainer.classList.remove('prices__only-with-us-container_visible');
   AdditionalClassesContainer.classList.remove('prices__additional-classes-container_visible');
+  // МЕНЯЕМ ВЫСОТУ БЛОКА С ВЫБОРОМ ТАРИФОВ ПО СООТВЕТСТВУЮЩИМ КАТЕГОРИЯМ
   if (windowWidth > 1365) {
     pricesInfo.style.height = 512 + 'px';
   }
@@ -365,6 +492,7 @@ CCatBtn.addEventListener('click', () => {
   DContainer.classList.remove('prices__D-container_visible');
   OnlyWithUsContainer.classList.remove('prices__only-with-us-container_visible');
   AdditionalClassesContainer.classList.remove('prices__additional-classes-container_visible');
+  // МЕНЯЕМ ВЫСОТУ БЛОКА С ВЫБОРОМ ТАРИФОВ ПО СООТВЕТСТВУЮЩИМ КАТЕГОРИЯМ
   if (windowWidth > 1365) {
     pricesInfo.style.height = 238 + 'px';
   }
@@ -384,6 +512,7 @@ DCatBtn.addEventListener('click', () => {
   DContainer.classList.add('prices__D-container_visible');
   OnlyWithUsContainer.classList.remove('prices__only-with-us-container_visible');
   AdditionalClassesContainer.classList.remove('prices__additional-classes-container_visible');
+  // МЕНЯЕМ ВЫСОТУ БЛОКА С ВЫБОРОМ ТАРИФОВ ПО СООТВЕТСТВУЮЩИМ КАТЕГОРИЯМ
   if (windowWidth > 1365) {
     pricesInfo.style.height = 238 + 'px';
   }
@@ -403,6 +532,7 @@ OnlyWithUsBtn.addEventListener('click', () => {
   DContainer.classList.remove('prices__D-container_visible');
   OnlyWithUsContainer.classList.add('prices__only-with-us-container_visible');
   AdditionalClassesContainer.classList.remove('prices__additional-classes-container_visible');
+  // МЕНЯЕМ ВЫСОТУ БЛОКА С ВЫБОРОМ ТАРИФОВ ПО СООТВЕТСТВУЮЩИМ КАТЕГОРИЯМ
   if (windowWidth > 1365) {
     pricesInfo.style.height = 518 + 'px';
   }
@@ -422,6 +552,7 @@ AdditionalClassesBtn.addEventListener('click', () => {
   DContainer.classList.remove('prices__D-container_visible');
   OnlyWithUsContainer.classList.remove('prices__only-with-us-container_visible');
   AdditionalClassesContainer.classList.add('prices__additional-classes-container_visible');
+  // МЕНЯЕМ ВЫСОТУ БЛОКА С ВЫБОРОМ ТАРИФОВ ПО СООТВЕТСТВУЮЩИМ КАТЕГОРИЯМ
   if (windowWidth > 1365) {
     pricesInfo.style.height = 452 + 'px';
   }
@@ -432,4 +563,3 @@ AdditionalClassesBtn.addEventListener('click', () => {
     pricesInfo.style.height = 415 + 'px';
   }
 })
-

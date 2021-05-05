@@ -1,0 +1,15 @@
+.popup__cross_type_licenses {
+  background-image: url('../../../../images/Club/PopupCross.svg');
+}
+
+/* @media screen and (min-width: 768px) and (max-width: 1365px) {
+  .popup__cross_type_licenses {
+
+  }
+}
+
+@media screen and (min-width: 50px) and (max-width: 767px) {
+  .popup__cross_type_licenses {
+
+  }
+} */

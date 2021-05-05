@@ -1,0 +1,5 @@
+.header__logo-black {
+  position: absolute;
+  transition: opacity .5s ease-in-out;
+  z-index: 15;
+}

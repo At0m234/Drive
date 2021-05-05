@@ -7,15 +7,16 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 180%;
-  margin: 0 0 85px 9.74%;
-  width: 46.49%;
+  /* margin: 0 0 85px 9.74%; */
+  margin: 0 0 85px 0;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1365px) {
   .main__subtitle {
     font-size: 18px;
     margin: 0 0 66px 3.52%;
-    width: 46.88%;
+    width: 48.88%;
   }
 }
 

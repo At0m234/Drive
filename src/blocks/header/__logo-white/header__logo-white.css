@@ -1,0 +1,6 @@
+.header__logo-white {
+  position: absolute;
+  opacity: 1;
+  transition: opacity .5s ease-in-out;
+  z-index: 25;
+}

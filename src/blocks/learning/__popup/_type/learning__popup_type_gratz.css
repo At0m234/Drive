@@ -8,6 +8,10 @@
   padding: 7px 6px 7px 13px;
   top: -57px;
   right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s ease-out;
+  transition: visibility .5s ease-out;
 }
 
 .learning__popup_type_gratz img {

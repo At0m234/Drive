@@ -22,4 +22,16 @@
     max-height: 182px;
     margin: 0 25px 25px 0;
   }
+
+  .guru__teacher:nth-of-type(3) {
+    margin-right: 30px;
+  }
+
+  .guru__teacher:nth-of-type(5) {
+    display: none;
+  }
+  
+  .guru__teacher:nth-of-type(6) {
+    display: none;
+  }
 }

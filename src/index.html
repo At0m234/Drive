@@ -67,7 +67,9 @@
 
     <header class="header">
       <div class="header__info">
-        <a href="/" class="logo logo_type_header"><img src="<%=require('./images/Header/Logo.svg')%>" alt="Логотип EasyDrive"></a>
+        <a href="#main" class="logo logo_type_header"><img class="header__logo-white" src="<%=require('./images/Header/Logo.svg')%>" alt="Логотип EasyDrive">
+          <img class="header__logo-black" src="<%=require('./images/Header/LogoBlack.svg')%>" alt="Логотип EasyDrive">
+        </a>
         <nav class="header__links">
           <a class="header__link" href="#prices">цены</a>
           <a class="header__link" href="#advantages">преимущества</a>
@@ -82,24 +84,29 @@
     </header>
 
     <main class="content">
+
       <section class="main" id="main">
+
         <div class="main__bg-first">
-          <h1 class="main__title main__title_type_white">Автошкола Easydrive<br>Мы научим тебя водить</h1>
-          <h2 class="main__subtitle main__subtitle_type_white">теоретический курс онлайн<br>практика в удобном для тебя
-            районе</h2>
-          <div class="main__btns">
-            <button class="button button_type_main-first" onclick="window.location.href = '#contacts';">Записаться</button>
-            <button class="button button_type_callback" onclick="window.location.href = '#contacts';">Перезвонить</button>
+          <div class="main__info">
+            <h1 class="main__title main__title_type_white">Автошкола Easydrive<br>Мы научим тебя водить</h1>
+            <h2 class="main__subtitle main__subtitle_type_white">теоретический курс онлайн<br>практика в удобном для тебя районе</h2>
+            <div class="main__btns">
+              <button class="button button_type_main-first button_type_consult-form">Записаться</button>
+              <button class="button button_type_callback button_type_consult-form">Перезвонить</button>
+            </div>
           </div>
         </div>
 
         <div class="main__bg-second">
-          <h1 class="main__title main__title_type_black">Обучаем на водительские категории A, B, C и D</h1>
-          <h2 class="main__subtitle main__subtitle_type_black">все автошколы гарантируют, что ты получишь права мы
-            гарантируем, что это будет изи</h2>
-          <div class="main__btns">
-            <button class="button button_type_main-second" onclick="window.location.href = '#contacts';">Записаться</button>
-            <button class="button button_type_callback" onclick="window.location.href = '#contacts';">Перезвонить</button>
+          <div class="main__info">
+            <h1 class="main__title main__title_type_black">Обучаем на водительские категории A, B, C и D</h1>
+            <h2 class="main__subtitle main__subtitle_type_black">все автошколы гарантируют, что ты получишь права мы
+              гарантируем, что это будет изи</h2>
+            <div class="main__btns">
+              <button class="button button_type_main-second button_type_consult-form">Записаться</button>
+              <button class="button button_type_callback button_type_consult-form">Перезвонить</button>
+            </div>
           </div>
           <button class="main__image main__image_type_arrows"></button>
           <img class="main__image main__image_type_one" src="<%=require('../src/images/SecondMain/icon1.svg')%>"
@@ -151,7 +158,7 @@
               </div>
               <div class="prices__category-select">
                 <span class="prices__category-price" id="price-one">15 000 руб.</span>
-                <button class="button button_type_cat-A">Подходит</button>
+                <button class="button button_type_cat-A button_type_consult-form">Подходит</button>
               </div>
             </div>
 
@@ -169,7 +176,7 @@
               </div>
               <div class="prices__category-select">
                 <span class="prices__category-price" id="price-two">17 000 руб.</span>
-                <button class="button button_type_cat-A">Беру</button>
+                <button class="button button_type_cat-A button_type_consult-form">Беру</button>
               </div>
             </div>
 
@@ -188,7 +195,7 @@
               </div>
               <div class="prices__category-select">
                 <span class="prices__category-price" id="price-three">23 000 руб.</span>
-                <button class="button button_type_cat-A">Самое то</button>
+                <button class="button button_type_cat-A button_type_consult-form">Самое то</button>
               </div>
               <img class="prices__image" src="<%=require('../src/images/Prices/MedicalBoard.svg')%>"
                 alt="Мед. комиссия">
@@ -211,7 +218,7 @@
               </div>
               <div class="prices__category-select">
                 <span class="prices__category-price" id="price-four">24 000 руб.</span>
-                <button class="button button_type_cat-B">Подходит</button>
+                <button class="button button_type_cat-B button_type_consult-form">Подходит</button>
               </div>
             </div>
 
@@ -230,7 +237,7 @@
               </div>
               <div class="prices__category-select">
                 <span class="prices__category-price" id="price-five">30 000 руб.</span>
-                <button class="button button_type_cat-B">Беру</button>
+                <button class="button button_type_cat-B button_type_consult-form">Беру</button>
               </div>
               <img class="prices__image" src="<%=require('../src/images/Prices/AutoSecrets.svg')%>" alt="Авто секреты">
             </div>
@@ -252,7 +259,7 @@
               </div>
               <div class="prices__category-select">
                 <span class="prices__category-price" id="price-six">41 000 руб.</span>
-                <button class="button button_type_cat-B">Самое то</button>
+                <button class="button button_type_cat-B button_type_consult-form">Самое то</button>
               </div>
               <img class="prices__image" src="<%=require('../src/images/Prices/UniqueCourses.svg')%>"
                 alt="Уникальные курсы">
@@ -275,7 +282,7 @@
               </div>
               <div class="prices__category-select">
                 <span class="prices__category-price" id="price-seven">25 000 руб.</span>
-                <button class="button button_type_cat-С">То что нужно</button>
+                <button class="button button_type_cat-С button_type_consult-form">То что нужно</button>
               </div>
             </div>
 
@@ -296,7 +303,7 @@
               </div>
               <div class="prices__category-select">
                 <span class="prices__category-price" id="price-eight">25 000 руб.</span>
-                <button class="button button_type_cat-D">То что нужно</button>
+                <button class="button button_type_cat-D button_type_consult-form">То что нужно</button>
               </div>
             </div>
 
@@ -318,7 +325,7 @@
               </div>
               <div class="prices__category-select">
                 <span class="prices__category-price" id="price-nine">990 руб.</span>
-                <button class="button button_type_cat-only-with-us">Класс</button>
+                <button class="button button_type_cat-only-with-us button_type_consult-form">Класс</button>
               </div>
             </div>
 
@@ -336,7 +343,7 @@
               </div>
               <div class="prices__category-select">
                 <span class="prices__category-price" id="price-ten">990 руб.</span>
-                <button class="button button_type_cat-only-with-us">Класс</button>
+                <button class="button button_type_cat-only-with-us button_type_consult-form">Класс</button>
               </div>
             </div>
 
@@ -377,7 +384,7 @@
               </div>
               <div class="prices__category-select">
                 <span class="prices__category-price" id="price-eleven">1 000 руб.</span>
-                <button class="button button_type_cat-additional-classes">Надо</button>
+                <button class="button button_type_cat-additional-classes button_type_consult-form">Надо</button>
               </div>
             </div>
 
@@ -389,7 +396,7 @@
               </div>
               <div class="prices__category-select">
                 <span class="prices__category-price" id="price-twelve">1 200 руб.</span>
-                <button class="button button_type_cat-additional-classes">Надо</button>
+                <button class="button button_type_cat-additional-classes button_type_consult-form">Надо</button>
               </div>
             </div>
 
@@ -402,7 +409,7 @@
               </div>
               <div class="prices__category-select">
                 <span class="prices__category-price" id="price-thirteen">10 000 руб.</span>
-                <button class="button button_type_cat-additional-classes">Как раз</button>
+                <button class="button button_type_cat-additional-classes button_type_consult-form">Как раз</button>
               </div>
             </div>
           </div>
@@ -533,45 +540,44 @@
               дороге!</div>
             <!-- &#127881; -->
           </div>
+          <div class="club__signup">
+            <div class="club__signup-info">
+              <h2 class="club__title">Онлайн обучение</h2>
+              <h3 class="club__subtitle">Мы обучаем теории 24 часа в сутки! Вся теория у нас онлайн</h3>
 
+              <div class="club__advantage">
+                <img class="club__image" src="<%=require('../src/images/Club/IconInteractive.svg')%>"
+                  alt="Интерактивная платформа">
+                <div class="club__paragraph">
+                  <h4 class="club__heading">Интерактивная платформа</h4>
+                  <h5 class="club__text">Интерактивное обучение повышает эффективность обучения</h5>
+                </div>
+              </div>
+
+              <div class="club__advantage">
+                <img class="club__image" src="<%=require('../src/images/Club/IconPlanet.svg')%>" alt="В любом месте">
+                <div class="club__paragraph">
+                  <h4 class="club__heading">В любом месте</h4>
+                  <h5 class="club__text">Где и когда захочешь, главное иметь устройство с доступом в интернет</h5>
+                </div>
+              </div>
+
+              <div class="club__advantage">
+                <img class="club__image" src="<%=require('../src/images/Club/IconFeedback.svg')%>" alt="Обратная связь">
+                <div class="club__paragraph">
+                  <h4 class="club__heading">Обратная связь</h4>
+                  <h5 class="club__text">Онлайн-вебинары, на которых можно задать вопросы преподавателям</h5>
+                </div>
+              </div>
+              <button class="button button_type_club button_type_consult-form">Записаться</button>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="club" id="club">
         <div class="club__background-image">
           <div class="club__background-string"></div>
-        </div>
-        <div class="club__signup">
-          <div class="club__signup-info">
-            <h2 class="club__title">Онлайн обучение</h2>
-            <h3 class="club__subtitle">Мы обучаем теории 24 часа в сутки! Вся теория у нас онлайн</h3>
-
-            <div class="club__advantage">
-              <img class="club__image" src="<%=require('../src/images/Club/IconInteractive.svg')%>"
-                alt="Интерактивная платформа">
-              <div class="club__paragraph">
-                <h4 class="club__heading">Интерактивная платформа</h4>
-                <h5 class="club__text">Интерактивное обучение повышает эффективность обучения</h5>
-              </div>
-            </div>
-
-            <div class="club__advantage">
-              <img class="club__image" src="<%=require('../src/images/Club/IconPlanet.svg')%>" alt="В любом месте">
-              <div class="club__paragraph">
-                <h4 class="club__heading">В любом месте</h4>
-                <h5 class="club__text">Где и когда захочешь, главное иметь устройство с доступом в интернет</h5>
-              </div>
-            </div>
-
-            <div class="club__advantage">
-              <img class="club__image" src="<%=require('../src/images/Club/IconFeedback.svg')%>" alt="Обратная связь">
-              <div class="club__paragraph">
-                <h4 class="club__heading">Обратная связь</h4>
-                <h5 class="club__text">Онлайн-вебинары, на которых можно задать вопросы преподавателям</h5>
-              </div>
-            </div>
-            <button class="button button_type_club" onclick="window.location.href = '#contacts';">Записаться</button>
-          </div>
         </div>
         <div class="club__adress">
           <div class="club__adress-text">
@@ -978,12 +984,12 @@
               <label for="name">телефон</label>
               <input required type="tel" name="phone" id="phone" class="contacts__form-input"
                 placeholder="+7 (999) 999 99 99"
-                pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
+                >
             </div>
             <button class="button button_type_contacts" type="submit" id="contactsSbmt">консультация</button>
           </form>
         </div>
-
+        <!-- pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" -->
         <div class="contacts__office">
           <div class="contacts__content">
             <div class="contacts__info">
@@ -995,7 +1001,7 @@
               </p>
               <a href="tel:+74997555577" class="contacts__office-phone">8 (499) 755-55-77</a>
               <p class="contacts__questionnaire">заполни анкету для составления договора на обучение</p>
-              <button class="button button_type_office" onclick="window.location.href = '#contacts';">Записаться</button>
+              <button class="button button_type_office button_type_consult-form">Записаться</button>
             </div>
             <div class="contacts__map">
               <iframe
@@ -1009,7 +1015,7 @@
 
       <section class="popup" id="tablet-computer-licenses">
         <div class="popup__licenses">
-          <button class="popup__cross"></button>
+          <button class="popup__cross popup__cross_type_licenses"></button>
           <div class="popup__license"></div>
           <div class="popup__license"></div>
         </div>
@@ -1023,22 +1029,23 @@
         <div class="popup__license"></div>
       </section>
 
-      <section class="popup" id="consult-popup">
-        <form class="contacts__form" id="contacts-form-popup">
+      <section class="popup" id="contacts-popup">
+        <form class="contacts__form-popup" id="contacts-form-popup">
           <div class="contacts__input-container">
             <label for="name">имя</label>
-            <input type="text" name="name" id="name" class="contacts__form-input" placeholder="Константин"
+            <input type="text" name="name" id="name-popup" class="contacts__form-input" placeholder="Константин"
               pattern="[A-Za-zА-Яа-яЁё]{0,30}">
           </div>
           <div class="contacts__input-container">
             <label for="name">телефон<span>*</span></label>
-            <input required type="tel" name="phone" id="phone" class="contacts__form-input"
+            <input required type="tel" name="phone" id="phone-popup" class="contacts__form-input"
               placeholder="+7 (999) 999 99 99"
-              pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
+              >
+              <!-- pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" -->
           </div>
           <p><span>*</span>Обязательное поле для заполнения</p>
-          <button class="button button_type_contacts" type="submit" id="contactsSbmt">Подтвердить</button>
-          <button class="popup__cross"></button>
+          <button class="button button_type_contacts" type="submit" id="popupContactsSbmt">Подтвердить</button>
+          <button class="popup__cross popup__cross_type_contacts"></button>
         </form>
       </section>
       <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog"
@@ -1049,13 +1056,13 @@
               <section class="popup" id="burger-popup">
                 <div class='burger-menu'>
                   <nav class="burger-menu__links">
-                    <a class="header__link" href="#prices">цены</a>
-                    <a class="header__link" href="#advantages">преимущества</a>
-                    <a class="header__link" href="#learning">обучение</a>
-                    <a class="header__link" href="#club">клуб</a>
-                    <a class="header__link" href="#guru">гуру</a>
-                    <a class="header__link" href="#reviews">отзывы</a>
-                    <a class="header__link" href="#contacts">контакты</a>
+                    <a class="burger-menu__link" href="#prices">цены</a>
+                    <a class="burger-menu__link" href="#advantages">преимущества</a>
+                    <a class="burger-menu__link" href="#learning">обучение</a>
+                    <a class="burger-menu__link" href="#club">клуб</a>
+                    <a class="burger-menu__link" href="#guru">гуру</a>
+                    <a class="burger-menu__link" href="#reviews">отзывы</a>
+                    <a class="burger-menu__link" href="#contacts">контакты</a>
                   </nav>
                 </div>
               </section>
@@ -1067,7 +1074,7 @@
 
     <footer class="footer">
       <div class="footer__images">
-        <a href="/" class="logo logo_type_footer"><img src="<%=require('./images/Header/Logo.svg')%>" alt="Логотип EasyDrive"></a>
+        <a href="#main" class="logo logo_type_footer"><img src="<%=require('./images/Header/Logo.svg')%>" alt="Логотип EasyDrive"></a>
         <img class="footer__image" src="<%=require('./images/Footer/Image1.svg')%>" alt="картинка дорожного знака">
         <img class="footer__image" src="<%=require('./images/Footer/Image2.svg')%>" alt="картинка дорожного знака">
         <img class="footer__image" src="<%=require('./images/Footer/Image3.svg')%>" alt="картинка дорожного знака">

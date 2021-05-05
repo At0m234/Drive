@@ -7,8 +7,8 @@
   font-weight: 800;
   font-size: 54px;
   line-height: 130%;
-  margin: 229px 0 15px 9.74%;
-  width: 74.30%;
+  margin: 229px 0 15px 0;
+  width: 100%;
   max-width: 1015px;
 }
 
@@ -17,6 +17,7 @@
     font-size: 32px;
     margin: 157px 0 22px 3.52%;
     width: 75%;
+    max-width: 650px;
   }
 }
 

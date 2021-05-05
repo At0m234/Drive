@@ -10,7 +10,7 @@
   background-color: transparent;
   border: none;
   padding: 0;
-  width: 141px;
+  min-width: 141px;
   height: 20px;
   text-decoration: none;
   -webkit-text-decoration: none;
@@ -50,9 +50,9 @@
     width: 154px;
     grid-area: connection;
     justify-self: end;
+    margin-right: 500;
   }
 }
-
 @media screen and (min-width: 50px) and (max-width: 767px) {
   .header__connection {
     width: 141px;

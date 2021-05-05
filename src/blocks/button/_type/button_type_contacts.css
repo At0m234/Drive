@@ -5,7 +5,7 @@
   border-width: 1px;
   border-style: solid;
   border: 1px solid rgb(248, 248, 248);
-  margin: 0;
+  margin: 22px 0 0 0;
   padding: 0;
   font-size: 16px;
   line-height: 20px;
@@ -45,7 +45,7 @@
   background: -webkit-linear-gradient(277.54deg, #1492A1 41.65%, #BBB272 69.55%, #F4C245 100.21%);
   background: -o-linear-gradient(277.54deg, #1492A1 41.65%, #BBB272 69.55%, #F4C245 100.21%);
   background: -ms-linear-gradient(277.54deg, #1492A1 41.65%, #BBB272 69.55%, #F4C245 100.21%);
-  
+
   -webkit-text-fill-color: #181818;
 }
 

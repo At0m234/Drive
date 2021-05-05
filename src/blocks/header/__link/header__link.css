@@ -28,6 +28,10 @@
   color: #F4C245;
 }
 
+.header__link:focus {
+  color: #F4C245;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1365px) {
   .header__link {
     margin-right: 24px;

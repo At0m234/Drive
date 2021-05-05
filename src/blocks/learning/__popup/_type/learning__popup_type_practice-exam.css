@@ -4,4 +4,8 @@
   padding: 9px 6px 8px 13px;
   top: -33px;
   right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s ease-out;
+  transition: visibility .5s ease-out;
 }

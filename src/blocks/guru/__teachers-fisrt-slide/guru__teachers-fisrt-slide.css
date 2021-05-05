@@ -1,9 +1,8 @@
 .guru__teachers-fisrt-slide {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  width: 548px;
+  /* width: 548px; */
   height: 440px;
   flex-wrap: wrap;
 }
