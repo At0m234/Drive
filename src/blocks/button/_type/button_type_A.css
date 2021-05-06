@@ -15,6 +15,7 @@
 
 .button_type_A:hover {
   border: 1px solid #E08645;
+  -webkit-background-color: #E08645;
 }
 
 .button_type_A:focus, .button_type_A:active {

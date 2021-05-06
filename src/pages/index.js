@@ -1,5 +1,4 @@
 import './index.css';
-
 import {
   windowWidth,
   AContainer,
@@ -78,17 +77,17 @@ function showTeacherExpierence(image) {
 
 // ЦИКЛ ДЛЯ ПЛАВНОГО СКРОЛА ПО ЯКОРНЫМ ССЫЛКАМ
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
+  anchor.addEventListener('mousedown', function (e) {
     e.preventDefault();
     document.querySelector(this.getAttribute('href')).scrollIntoView({
       behavior: 'smooth'
     });
     let burgerMenuBtn = document.querySelector('.burger-menu__btn');
     popups[4].classList.remove('popup_visible');
-    burgerMenuBtn.classList.remove('burger-menu__btn_active');
+    burgerMenuBtn ? burgerMenuBtn.classList.remove('burger-menu__btn_active') : null;
   });
 // for (let anchor of anchors) {
-//   anchor.addEventListener('click', function (e) {
+//   anchor.addEventListener('mousedown', function (e) {
 //     e.preventDefault();
 //     const blockID = anchor.getAttribute('href').substring(1)
 //     document.getElementById(blockID).scrollIntoView({
@@ -161,11 +160,11 @@ function addMobileLicensesBtn() {
       let licenseOneBtn = document.querySelector('#license-one-btn');
       let licenseTwoBtn = document.querySelector('#license-two-btn');
 
-      licenseOneBtn.addEventListener('click', () => {
+      licenseOneBtn.addEventListener('mousedown', () => {
         openPopup(mobileLicenseOnePopup)
       })
 
-      licenseTwoBtn.addEventListener('click', () => {
+      licenseTwoBtn.addEventListener('mousedown', () => {
         openPopup(mobileLicenseTwoPopup)
       })
 
@@ -188,7 +187,7 @@ function addMobileConsultBtn() {
 
       let consultBtn = document.querySelector('.button_type_consult-popup');
 
-      consultBtn.addEventListener('click', () => {
+      consultBtn.addEventListener('mousedown', () => {
         openPopup(contactsPopup);
       })
 
@@ -213,7 +212,7 @@ function addMobileBurger() {
 
       let burgerMenuBtn = document.querySelector('.burger-menu__btn');
 
-      burgerMenuBtn.addEventListener('click', (e) => {
+      burgerMenuBtn.addEventListener('mousedown', (e) => {
         burgerMenuBtn.classList.add('burger-menu__btn_active');
         burgerMenuBtn.style.position = "fixed";
         burgerPopup.classList.add('popup_visible');
@@ -244,8 +243,8 @@ function changeColor(elem, color, timing) {
 // АНИМАЦИЯ ПРИ НАВЕДЕНИИ КУРСОРА МЫШКИ НА ВТОРОЕ(ГРАДИЕНТНОЕ) ФОНОВОЕ ИЗОБРАЖЕНИЕ
 mainSecondBg.onmouseenter = (e) => {
   mainFirstBg.classList.add("animation");
-  secondMainBgImgThree.classList.add("animated");
-  secondMainBgImgSeven.classList.add("animated");
+  // secondMainBgImgThree.classList.add("animated");
+  // secondMainBgImgSeven.classList.add("animated");
   secondMainBgArrows.classList.add("animated-arrows");
   let elemes = document.body.getElementsByClassName("header__link");
   for(let a of elemes) {
@@ -258,8 +257,8 @@ mainSecondBg.onmouseenter = (e) => {
 // АНИМАЦИЯ ПРИ ОТВЕДЕНИИ КУРСОРА МЫШКИ СО ВТОРОГО(ГРАДИЕНТНОГО) ФОНОВОГО ИЗОБРАЖЕНИЯ
 mainSecondBg.onmouseleave = (e) => {
   mainFirstBg.classList.remove("animation");
-  secondMainBgImgThree.classList.remove("animated");
-  secondMainBgImgSeven.classList.remove("animated");
+  // secondMainBgImgThree.classList.remove("animated");
+  // secondMainBgImgSeven.classList.remove("animated");
   secondMainBgArrows.classList.remove("animated-arrows");
   let elemes = document.body.getElementsByClassName("header__link");
   for(let a of elemes) {
@@ -321,9 +320,12 @@ window.onscroll = (e) => {
   let speed = (windowWidth / 100);
   if (isVisible(document.getElementsByClassName("club__underground-image")[0], document.getElementsByClassName("club")[0])){
     if(isMobile()) {
+      rightMargM = 430;
       mapMoveOnScroll(easyDriveString, getSize(scrollCheck, -1), -1200, 1200);
       mapMoveOnScroll(undergroundImage, getSize(scrollCheck, speed), -rightMargM, 0)
     } else {
+      console.log(rightMarg);
+      rightMarg = 400
       mapMoveOnScroll(easyDriveString, getSize(scrollCheck, -1), -1200, 1200);
       mapMoveOnScroll(undergroundImage, getSize(scrollCheck, speed), -rightMarg, 0)
     }
@@ -411,7 +413,7 @@ window.addEventListener('orientationchange', () => {
 })
 
 // СЛУШАТЕЛЬ КЛИКА НА ЖЕЛТЫЙ ТЕКСТ "ЛИЦЕНЗИИ"
-license.addEventListener('click', () => {
+license.addEventListener('mousedown', () => {
   if (windowWidth > 767) {
     openPopup(tebletComputerLicensesPopup)
   }
@@ -419,7 +421,7 @@ license.addEventListener('click', () => {
 
 // ВЕШАЕМ СЛУШАТЕЛЬ ОТКРЫТИЯ ПОПАПА "КОНСУЛЬТАЦИИ" ПО КЛИКУ НА КНОПКИ
 consultPopupBtns.forEach(button => {
-  button.addEventListener('click', () => {
+  button.addEventListener('mousedown', () => {
     openPopup(contactsPopup);
   })
 })
@@ -429,23 +431,23 @@ contactsForm.addEventListener('submit', consultFormSubmitHandler);
 contactsFormPopup.addEventListener('submit', popupConsultFormSubmitHandler);
 
 // ВЕШАЕМ СЛУШАТЕЛЬ КЛИКА ИЛИ ТАЧА НА ЗАКРЫТИЕ ПОПАПА ЗАПРОСА НА КОНСУЛЬТАЦИЮ
-contactsPopup.addEventListener('click', closePopup);
+contactsPopup.addEventListener('mousedown', closePopup);
 contactsPopup.addEventListener('touchstart', closePopup);
 contactsPopup.addEventListener('touchend', closePopup);
 
 // ВЕШАЕМ СЛУШАТЕЛИ КЛИКА ИЛИ ТАЧА НА ЗАКРЫТИЕ ПОПАПОВ С ЛИЦЕНЗИЯМИ
-tebletComputerLicensesPopup.addEventListener('click', closePopup);
+tebletComputerLicensesPopup.addEventListener('mousedown', closePopup);
 
-mobileLicenseOnePopup.addEventListener('click', closePopup);
+mobileLicenseOnePopup.addEventListener('mousedown', closePopup);
 mobileLicenseOnePopup.addEventListener('touchstart', closePopup);
 mobileLicenseOnePopup.addEventListener('touchend', closePopup);
 
-mobileLicenseTwoPopup.addEventListener('click', closePopup);
+mobileLicenseTwoPopup.addEventListener('mousedown', closePopup);
 mobileLicenseTwoPopup.addEventListener('touchstart', closePopup);
 mobileLicenseTwoPopup.addEventListener('touchend', closePopup);
 
 // ДОБАВЛЯЕМ СЛУШАТЕЛЬ КНОПКЕ КАТЕГОРИЯ-A
-ACatBtn.addEventListener('click', () => {
+ACatBtn.addEventListener('mousedown', () => {
   AContainer.classList.add('prices__A-container_visible');
   BContainer.classList.remove('prices__B-container_visible');
   CContainer.classList.remove('prices__C-container_visible');
@@ -465,7 +467,7 @@ ACatBtn.addEventListener('click', () => {
 })
 
 // ДОБАВЛЯЕМ СЛУШАТЕЛЬ КНОПКЕ КАТЕГОРИЯ-B
-BCatBtn.addEventListener('click', () => {
+BCatBtn.addEventListener('mousedown', () => {
   AContainer.classList.remove('prices__A-container_visible');
   BContainer.classList.add('prices__B-container_visible');
   CContainer.classList.remove('prices__C-container_visible');
@@ -485,7 +487,7 @@ BCatBtn.addEventListener('click', () => {
 })
 
 // ДОБАВЛЯЕМ СЛУШАТЕЛЬ КНОПКЕ КАТЕГОРИЯ-C
-CCatBtn.addEventListener('click', () => {
+CCatBtn.addEventListener('mousedown', () => {
   AContainer.classList.remove('prices__A-container_visible');
   BContainer.classList.remove('prices__B-container_visible');
   CContainer.classList.add('prices__C-container_visible');
@@ -505,7 +507,7 @@ CCatBtn.addEventListener('click', () => {
 })
 
 // ДОБАВЛЯЕМ СЛУШАТЕЛЬ КНОПКЕ КАТЕГОРИЯ-D
-DCatBtn.addEventListener('click', () => {
+DCatBtn.addEventListener('mousedown', () => {
   AContainer.classList.remove('prices__A-container_visible');
   BContainer.classList.remove('prices__B-container_visible');
   CContainer.classList.remove('prices__C-container_visible');
@@ -525,7 +527,7 @@ DCatBtn.addEventListener('click', () => {
 })
 
 // ДОБАВЛЯЕМ СЛУШАТЕЛЬ КНОПКЕ 'ТОЛЬКО У НАС'
-OnlyWithUsBtn.addEventListener('click', () => {
+OnlyWithUsBtn.addEventListener('mousedown', () => {
   AContainer.classList.remove('prices__A-container_visible');
   BContainer.classList.remove('prices__B-container_visible');
   CContainer.classList.remove('prices__C-container_visible');
@@ -545,7 +547,7 @@ OnlyWithUsBtn.addEventListener('click', () => {
 })
 
 // ДОБАВЛЯЕМ СЛУШАТЕЛЬ КНОПКЕ 'ДОП.ЗАНЯТИЯ'
-AdditionalClassesBtn.addEventListener('click', () => {
+AdditionalClassesBtn.addEventListener('mousedown', () => {
   AContainer.classList.remove('prices__A-container_visible');
   BContainer.classList.remove('prices__B-container_visible');
   CContainer.classList.remove('prices__C-container_visible');
