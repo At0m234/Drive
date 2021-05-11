@@ -19,7 +19,7 @@
   background-image: linear-gradient(359.54deg, #1492A1 -7.95%, #BBB272 26.96%, #F4C245 99.7%);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .main__bg-second {
     min-height: 553px;
   }

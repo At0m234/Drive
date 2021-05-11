@@ -51,9 +51,9 @@
   background-color: #BBB272;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .button_type_contacts {
-    position: absolute;
+    /* position: absolute; */
     right: -190px;
     bottom: 0;
   }

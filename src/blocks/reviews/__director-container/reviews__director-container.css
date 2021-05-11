@@ -6,7 +6,7 @@
   margin: 128px 0 0 0;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .reviews__director-container {
     justify-content: center;
     margin: 100px 0 115px 0;

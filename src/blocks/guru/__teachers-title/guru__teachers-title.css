@@ -11,7 +11,7 @@
   margin: 0 0 44px 0;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .guru__teachers-title {
     font-size: 32px;
     width: 77.1%;

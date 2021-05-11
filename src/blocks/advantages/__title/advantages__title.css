@@ -9,7 +9,7 @@
   max-width: 303px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .advantages__title {
     align-self: flex-start;
     width: 100%;

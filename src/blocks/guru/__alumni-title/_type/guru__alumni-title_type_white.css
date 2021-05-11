@@ -29,7 +29,7 @@
   background-color: #181818;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .guru__alumni-title_type_white {
     width: 36.62%;
     max-width: 156px;

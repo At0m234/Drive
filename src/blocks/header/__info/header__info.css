@@ -10,7 +10,7 @@
   justify-content: space-between;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .header__info {
     width: 96.006%;
     padding: 23px 27px 23px 27px;

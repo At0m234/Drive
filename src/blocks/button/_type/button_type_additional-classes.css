@@ -22,7 +22,7 @@
   border: 1px solid #181818;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .button_type_additional-classes {
     width: 218px;
     height: 48px;

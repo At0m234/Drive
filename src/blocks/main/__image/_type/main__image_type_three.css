@@ -10,7 +10,7 @@
   transform: translate(-80px, 1000%);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .main__image_type_three {
     width: 80px;
     height: 79px;

@@ -13,7 +13,7 @@
   z-index: 5;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .club__signup {
     /* right: 2.73%;
     left: 35.98%;

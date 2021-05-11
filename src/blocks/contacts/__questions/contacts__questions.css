@@ -7,7 +7,7 @@
   padding: 86px 9.37% 87px 9.37%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .contacts__questions {
     padding: 71px 3.52%;
     margin-left: -192px;

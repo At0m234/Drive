@@ -4,7 +4,7 @@
   margin: 0 0 0 30px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .prices__only-with-us-text {
     flex-direction: column;
     margin-bottom: 23px;

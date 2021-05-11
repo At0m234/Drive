@@ -16,7 +16,7 @@
   margin-right: 0;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .guru__teacher {
     width: 156px;
     max-height: 182px;
@@ -30,7 +30,7 @@
   .guru__teacher:nth-of-type(5) {
     display: none;
   }
-  
+
   .guru__teacher:nth-of-type(6) {
     display: none;
   }

@@ -10,7 +10,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  transition: transform 1000ms ease-out;
+  transition: 200ms;
 }
 
 .main__image_type_arrows:focus, .main__image_type_arrows:active {
@@ -19,14 +19,15 @@
 
 .main__image_type_arrows:hover {
   opacity: .3;
-  transition: opacity .5s ease-out .05s;
+  transition: 200ms;
 }
 
 .animated-arrows {
-  transform: translateY(10000%);
+  transform: rotate(180deg);
+  transition: 200ms;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .main__image_type_arrows {
     transform: rotate(180deg);
     top: 262px;
@@ -35,6 +36,7 @@
 
   .animated-arrows {
     transform: rotate(0deg);
+    transition: 200ms;
   }
 }
 

@@ -39,7 +39,8 @@ import {
   mainFirstBg,
   mainSecondBg,
 } from "../utils/constants";
-
+// Выбраный тариф
+let tariff = 'B';
 // ФУНКЦИЯ ПРОВЕРКИ УТРОЙСТВА ПОЛЬЗОВАТЕЛЯ
 let isMobile = () => {
   let data = navigator.userAgent.toLowerCase();
@@ -53,7 +54,6 @@ let isMobile = () => {
     return false;
   }
 };
-
 // Если юзер заходит с иос сделать трюк клик = фокус для корректного отображения блока с ценами
 // const isIos = () => {
 //   let data = navigator.userAgent.toLowerCase();
@@ -142,17 +142,19 @@ function closePopup(e) {
   // e.target.name.value = " ";
   // e.target.phone.value = " ";
 }
+
 // ОБРАБОТЧИК САБМИТА ФОРМЫ КОНСУЛЬТАЦИИ
 function consultFormSubmitHandler(e) {
   e.preventDefault();
-  let name = document.querySelector("#name").value;
-  let phone = document.querySelector("#phone").value;
+  const name = document.querySelector("#name").value;
+  const phone = document.querySelector("#phone").value;
   const token = "1685594101:AAE_XcN8JKxhesOBuW6-e8M5IFsBHpdLQK8";
   const chatId = "-561913957";
   const txt = `Запрос о консультации:%0A <b>${name}</b>%0A <b>${phone}</b>`;
-  fetch(
-    `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&parse_mode=html&text=${txt}`
-  );
+  // TODO
+  // fetch(
+  //   `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&parse_mode=html&text=${txt}`
+  // );
   e.target.name.value = "";
   e.target.phone.value = "";
   popups[3].classList.remove("popup_visible");
@@ -160,14 +162,20 @@ function consultFormSubmitHandler(e) {
 
 function popupConsultFormSubmitHandler(e) {
   e.preventDefault();
-  let name = document.querySelector("#name-popup").value;
-  let phone = document.querySelector("#phone-popup").value;
+  const form = document.forms.contactsFormPopup
+
+  const name = form.name.value;
+  const phone = form.phone.value;
+  const email = form.email.value;
+
   const token = "1685594101:AAE_XcN8JKxhesOBuW6-e8M5IFsBHpdLQK8";
   const chatId = "-561913957";
-  const txt = `Запрос о консультации:%0A <b>${name}</b>%0A <b>${phone}</b>`;
-  fetch(
-    `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&parse_mode=html&text=${txt}`
-  );
+  const txt = `<b>Запрос о консультации: </b>%0A ${name}%0A${phone}%0A${email ? `${email}%0A` : '' }<b>Способ связи:</b>%0A${form.elements.tele.checked ? `Телефон%0A` : ''}${form.elements.whatsApp.checked ? `WhatsApp%0A` : ''}${form.elements.telegram.checked ? `Telegram%0A` : ''}<b>Тариф: </b>%0A${tariff}`;
+
+  console.log(txt)
+  // fetch(
+  //   `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&parse_mode=html&text=${txt}`
+  // )
   e.target.name.value = "";
   e.target.phone.value = "";
   popups[3].classList.remove("popup_visible");
@@ -396,9 +404,9 @@ window.onscroll = (e) => {
     header.style.display = "flex";
   }
 };
-// --------------------------------------------------- СКРИПТ ДЛЯ ДВИЖЕНИЯ ИЗОБРАЖЕНИЙ И ПОЯВЛЕНИЯ HEADER ПО СКРОЛУ ПО ОСИ Y--------------------------------------------------- //
+// ----------------------------- СКРИПТ ДЛЯ ДВИЖЕНИЯ ИЗОБРАЖЕНИЙ И ПОЯВЛЕНИЯ HEADER ПО СКРОЛУ ПО ОСИ Y--------------------------------------------------- //
 
-// ----------------------------------------------------------------------------- СЛУШАТЕЛИ СОБЫТИЙ ---------------------------------------------------------------------------- //
+// ----------------------------------------------------- СЛУШАТЕЛИ СОБЫТИЙ ---------------------------------------------------------------------------- //
 
 // СКРИПТ МАСКИ И ВАЛИДАЦИИ НОМЕРА ТЕЛЕФОНА ДЛЯ ФОРМЫ ЗАПРОСА НА КОНСУЛЬТАЦИЮ
 window.addEventListener("DOMContentLoaded", function () {
@@ -482,6 +490,33 @@ license.addEventListener("mousedown", () => {
 // ВЕШАЕМ СЛУШАТЕЛЬ ОТКРЫТИЯ ПОПАПА "КОНСУЛЬТАЦИИ" ПО КЛИКУ НА КНОПКИ
 consultPopupBtns.forEach((button) => {
   button.addEventListener("mousedown", () => {
+    if(button.classList.contains('min')) {
+      tariff = tariff.charAt(0)
+      tariff = tariff + ' ' + 'минимум';
+    }
+    if(button.classList.contains('med')) {
+      tariff = tariff.charAt(0)
+      tariff = tariff + ' ' + 'стандарт';
+    }
+    if(button.classList.contains('max')) {
+      tariff = tariff.charAt(0)
+      tariff = tariff + ' ' + 'полный';
+    }
+    if(button.classList.contains('carsh')) {
+      tariff = 'Только у нас:' + ' ' + 'каршеринг';
+    }
+    if(button.classList.contains('useful-know')) {
+      tariff = 'Только у нас:' + ' ' + 'лайфхаки';
+    }
+    if(button.classList.contains('add-AB')) {
+      tariff = 'Доп. занятия:' + ' ' + 'A B';
+    }
+    if(button.classList.contains('add-CD')) {
+      tariff = 'Доп. занятия:' + ' ' + 'C D';
+    }
+    if(button.classList.contains('add-recovery')) {
+      tariff = 'Доп. занятия:' + ' ' + 'Восстановление';
+    }
     openPopup(contactsPopup);
   });
 });
@@ -508,6 +543,7 @@ mobileLicenseTwoPopup.addEventListener("touchend", closePopup);
 
 // ДОБАВЛЯЕМ СЛУШАТЕЛЬ КНОПКЕ КАТЕГОРИЯ-A
 ACatBtn.addEventListener("mousedown", () => {
+  tariff = 'A';
   AContainer.classList.add("prices__A-container_visible");
   BContainer.classList.remove("prices__B-container_visible");
   CContainer.classList.remove("prices__C-container_visible");
@@ -519,10 +555,10 @@ ACatBtn.addEventListener("mousedown", () => {
     "prices__additional-classes-container_visible"
   );
   // МЕНЯЕМ ВЫСОТУ БЛОКА С ВЫБОРОМ ТАРИФОВ ПО СООТВЕТСТВУЮЩИМ КАТЕГОРИЯМ
-  if (windowWidth > 1365) {
+  if (windowWidth > 1279) {
     pricesInfo.style.height = 512 + "px";
   }
-  if (windowWidth > 767 && windowWidth < 1366) {
+  if (windowWidth > 767 && windowWidth < 1280) {
     pricesInfo.style.height = 626 + "px";
   }
   if (windowWidth < 768) {
@@ -532,6 +568,7 @@ ACatBtn.addEventListener("mousedown", () => {
 
 // ДОБАВЛЯЕМ СЛУШАТЕЛЬ КНОПКЕ КАТЕГОРИЯ-B
 BCatBtn.addEventListener("mousedown", () => {
+  tariff = 'B'
   AContainer.classList.remove("prices__A-container_visible");
   BContainer.classList.add("prices__B-container_visible");
   CContainer.classList.remove("prices__C-container_visible");
@@ -543,10 +580,10 @@ BCatBtn.addEventListener("mousedown", () => {
     "prices__additional-classes-container_visible"
   );
   // МЕНЯЕМ ВЫСОТУ БЛОКА С ВЫБОРОМ ТАРИФОВ ПО СООТВЕТСТВУЮЩИМ КАТЕГОРИЯМ
-  if (windowWidth > 1365) {
+  if (windowWidth > 1279) {
     pricesInfo.style.height = 512 + "px";
   }
-  if (windowWidth > 767 && windowWidth < 1366) {
+  if (windowWidth > 767 && windowWidth < 1280) {
     pricesInfo.style.height = 697 + "px";
   }
   if (windowWidth < 768) {
@@ -556,6 +593,7 @@ BCatBtn.addEventListener("mousedown", () => {
 
 // ДОБАВЛЯЕМ СЛУШАТЕЛЬ КНОПКЕ КАТЕГОРИЯ-C
 CCatBtn.addEventListener("mousedown", () => {
+  tariff = 'C';
   AContainer.classList.remove("prices__A-container_visible");
   BContainer.classList.remove("prices__B-container_visible");
   CContainer.classList.add("prices__C-container_visible");
@@ -567,10 +605,10 @@ CCatBtn.addEventListener("mousedown", () => {
     "prices__additional-classes-container_visible"
   );
   // МЕНЯЕМ ВЫСОТУ БЛОКА С ВЫБОРОМ ТАРИФОВ ПО СООТВЕТСТВУЮЩИМ КАТЕГОРИЯМ
-  if (windowWidth > 1365) {
+  if (windowWidth > 1279) {
     pricesInfo.style.height = 238 + "px";
   }
-  if (windowWidth > 767 && windowWidth < 1366) {
+  if (windowWidth > 767 && windowWidth < 1280) {
     pricesInfo.style.height = 130 + "px";
   }
   if (windowWidth < 768) {
@@ -580,6 +618,7 @@ CCatBtn.addEventListener("mousedown", () => {
 
 // ДОБАВЛЯЕМ СЛУШАТЕЛЬ КНОПКЕ КАТЕГОРИЯ-D
 DCatBtn.addEventListener("mousedown", () => {
+  tariff = 'D'
   AContainer.classList.remove("prices__A-container_visible");
   BContainer.classList.remove("prices__B-container_visible");
   CContainer.classList.remove("prices__C-container_visible");
@@ -591,10 +630,10 @@ DCatBtn.addEventListener("mousedown", () => {
     "prices__additional-classes-container_visible"
   );
   // МЕНЯЕМ ВЫСОТУ БЛОКА С ВЫБОРОМ ТАРИФОВ ПО СООТВЕТСТВУЮЩИМ КАТЕГОРИЯМ
-  if (windowWidth > 1365) {
+  if (windowWidth > 1279) {
     pricesInfo.style.height = 238 + "px";
   }
-  if (windowWidth > 767 && windowWidth < 1366) {
+  if (windowWidth > 767 && windowWidth < 1280) {
     pricesInfo.style.height = 130 + "px";
   }
   if (windowWidth < 768) {
@@ -604,6 +643,7 @@ DCatBtn.addEventListener("mousedown", () => {
 
 // ДОБАВЛЯЕМ СЛУШАТЕЛЬ КНОПКЕ 'ТОЛЬКО У НАС'
 OnlyWithUsBtn.addEventListener("mousedown", () => {
+  tariff = 'Только у нас'
   AContainer.classList.remove("prices__A-container_visible");
   BContainer.classList.remove("prices__B-container_visible");
   CContainer.classList.remove("prices__C-container_visible");
@@ -613,10 +653,10 @@ OnlyWithUsBtn.addEventListener("mousedown", () => {
     "prices__additional-classes-container_visible"
   );
   // МЕНЯЕМ ВЫСОТУ БЛОКА С ВЫБОРОМ ТАРИФОВ ПО СООТВЕТСТВУЮЩИМ КАТЕГОРИЯМ
-  if (windowWidth > 1365) {
+  if (windowWidth > 1279) {
     pricesInfo.style.height = 518 + "px";
   }
-  if (windowWidth > 767 && windowWidth < 1366) {
+  if (windowWidth > 767 && windowWidth < 1280) {
     pricesInfo.style.height = 645 + "px";
   }
   if (windowWidth < 768) {
@@ -637,10 +677,10 @@ AdditionalClassesBtn.addEventListener("mousedown", () => {
     "prices__additional-classes-container_visible"
   );
   // МЕНЯЕМ ВЫСОТУ БЛОКА С ВЫБОРОМ ТАРИФОВ ПО СООТВЕТСТВУЮЩИМ КАТЕГОРИЯМ
-  if (windowWidth > 1365) {
+  if (windowWidth > 1279) {
     pricesInfo.style.height = 452 + "px";
   }
-  if (windowWidth > 767 && windowWidth < 1366) {
+  if (windowWidth > 767 && windowWidth < 1280) {
     pricesInfo.style.height = 533 + "px";
   }
   if (windowWidth < 768) {

@@ -11,7 +11,7 @@
   box-sizing: border-box;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .popup__licenses {
     width: 752px;
     height: 436px;

@@ -19,7 +19,7 @@
   line-height: 190%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .prices__C-container {
     position: absolute;
     top: 0;

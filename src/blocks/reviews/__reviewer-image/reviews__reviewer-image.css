@@ -8,7 +8,7 @@
   pointer-events: none;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .reviews__reviewer-image {
     width: 56px;
     height: 56px;

@@ -14,7 +14,7 @@
   margin: 0 0 16px 0;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .reviews__title {
     width: 26.33%;
     font-size: 32px;

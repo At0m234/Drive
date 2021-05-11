@@ -39,7 +39,7 @@
   -webkit-text-decoration: none;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .contacts__office-phone {
     font-size: 18px;
     margin: 0 0 43px 0;
