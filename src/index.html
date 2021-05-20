@@ -6,10 +6,33 @@
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <!-- <meta name="format-detection" content="telephone=no"> -->
-  <meta name="description" content="Автошкола ИзиДрайв. Научим вас водить. Выгодно для всех." />
+  <meta name="description" content="Автошкола Easy.Drive. Научим вас водить. Выгодно для всех." />
   <meta property="og:image" content="<%=require('./images/Header/LogoBlack.svg')%>">
   <title>Автошкола EasyDrive</title>
   <link rel="icon" href="<%=require('./images/Favicon-48x48.png')%>" type="image/png">
+  <script src="//code-ya.jivosite.com/widget/CEwZRvOT1Y" async></script>
+  <!-- Marquiz script start -->
+<script>
+(function(w, d, s, o){
+  var j = d.createElement(s); j.async = true; j.src = '//script.marquiz.ru/v2.js';j.onload = function() {
+    if (document.readyState !== 'loading') Marquiz.init(o);
+    else document.addEventListener("DOMContentLoaded", function() {
+      Marquiz.init(o);
+    });
+  };
+  d.head.insertBefore(j, d.head.firstElementChild);
+})(window, document, 'script', {
+    host: '//quiz.marquiz.ru',
+    region: 'eu',
+    id: '60941d81fab8080046d30e00',
+    autoOpen: 15,
+    autoOpenFreq: 'once',
+    openOnExit: false,
+    disableOnMobile: false
+  }
+);
+</script>
+<!-- Marquiz script end -->
 </head>
 
 <body>
@@ -92,7 +115,7 @@
 
         <div class="main__bg-first">
           <div class="main__info">
-            <h1 class="main__title main__title_type_white">Автошкола Easydrive<br>Мы научим тебя водить</h1>
+            <h1 class="main__title main__title_type_white">Автошкола Easy.Drive<br>Мы научим тебя водить</h1>
             <h2 class="main__subtitle main__subtitle_type_white">теоретический курс онлайн<br>практика в удобном для
               тебя районе</h2>
             <div class="main__btns">
@@ -133,15 +156,15 @@
         <div class="prices__categories-container">
           <div class="prices__text">
             <h2 class="prices__title">Цены на обучение</h2>
-            <h3 class="prices__subtitle">Можешь оплачивать в рассрочку. Первоначальный взнос от 8 000 руб.</h3>
+            <h3 class="prices__subtitle">Можешь оплачивать в рассрочку. Первоначальный взнос от 10 000 руб.</h3>
           </div>
           <div class="prices__categories-choise">
-            <button class="button button_type_A" id="A-btn">Категория A</button>
-            <button class="button button_type_B" id="B-btn" autofocus>Категория B</button>
-            <button class="button button_type_C" id="C-btn">Категория C</button>
-            <button class="button button_type_D" id="D-btn">Категория D</button>
-            <button class="button button_type_only-with-us" id="Only-with-us-btn"><span>Только у нас</span></button>
-            <button class="button button_type_additional-classes" id="Additional-classes-btn">Доп. занятия</button>
+            <button class="button button_type_A" id="A-btn" onclick="this.focus()">Категория A</button>
+            <button class="button button_type_B" id="B-btn"  onclick="this.focus()" autofocus>Категория B</button>
+            <button class="button button_type_C" id="C-btn" onclick="this.focus()">Категория C</button>
+            <button class="button button_type_D" id="D-btn" onclick="this.focus()">Категория D</button>
+            <button class="button button_type_only-with-us" id="Only-with-us-btn" onclick="this.focus()"><span>Только у нас</span></button>
+            <button class="button button_type_additional-classes" id="Additional-classes-btn" onclick="this.focus()">Доп. занятия</button>
           </div>
         </div>
 
@@ -221,7 +244,7 @@
                 </ul>
               </div>
               <div class="prices__category-select">
-                <span class="prices__category-price" id="price-four">24 000 руб.</span>
+                <span class="prices__category-price" id="price-four">23 400 руб.</span>
                 <button class="button button_type_cat-B button_type_consult-form min">Подходит</button>
               </div>
             </div>
@@ -240,7 +263,7 @@
                 </ul>
               </div>
               <div class="prices__category-select">
-                <span class="prices__category-price" id="price-five">30 000 руб.</span>
+                <span class="prices__category-price" id="price-five">29 400 руб.</span>
                 <button class="button button_type_cat-B button_type_consult-form med">Беру</button>
               </div>
               <img class="prices__image" src="<%=require('../src/images/Prices/AutoSecrets.svg')%>" alt="Авто секреты">
@@ -262,7 +285,7 @@
                 </ul>
               </div>
               <div class="prices__category-select">
-                <span class="prices__category-price" id="price-six">41 000 руб.</span>
+                <span class="prices__category-price" id="price-six">43 400 руб.</span>
                 <button class="button button_type_cat-B button_type_consult-form max">Самое то</button>
               </div>
               <img class="prices__image" src="<%=require('../src/images/Prices/UniqueCourses.svg')%>"
@@ -918,48 +941,38 @@
 
                 <div class="reviews__reviewer reviews__reviewer_type_one">
                   <div class="reviews__reviewer-info">
-                    <img class="reviews__reviewer-image" src="<%=require('../src/images/Reviews/Diesel.jpg')%>"
+                    <img class="reviews__reviewer-image" src="<%=require('../src/images/Reviews/polina-bevz.jpg')%>"
                       alt="Фото">
-                    <h4 class="reviews__reviewer-name">Иван<br>Иванов</h4>
+                    <h4 class="reviews__reviewer-name">Полина Бевз,<br>25 лет</h4>
                   </div>
-                  <p class="reviews__reviewer-text">Не следует, однако забывать, что рамки и место обучения кадров
-                    позволяет оценить значение дальнейших направлений развития. Задача организации,
-                    в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет
-                    выполнять важные задания по разработке дальнейших направлений развития. С другой стороны дальнейшее
-                    развитие различных форм деятельности позволяет выполнять важные задания по разработке системы
-                    обучения кадров, соответствует насущным потребностям.</p>
+                  <p class="reviews__reviewer-text">Мне очень понравилось обучаться в автошколе Easy Drive. Понравилась онлайн-платформа для обучения теории, а также возможность в любое время задать вопрос и получить на него грамотный ответ. Инструктора нашли в моём районе, что тоже очень удобно. К моменту получения прав, а я сдала с первого раза, у меня не было автомобиля, и я воспользовалась курсом «каршеринг». Оказывается, есть сервисы, где стаж вождения не нужен. До этого, когда выбирала автошколу не видела, чтобы предлагали такую услугу. Теперь я даже не знаю буду ли покупать машину)))</p>
                 </div>
 
                 <div class="reviews__reviewer reviews__reviewer_type_two">
                   <div class="reviews__reviewer-info">
-                    <img class="reviews__reviewer-image" src="<%=require('../src/images/Reviews/Diesel.jpg')%>"
+                    <img class="reviews__reviewer-image" src="<%=require('../src/images/Reviews/nikolay-erozhenko.jpg')%>"
                       alt="Фото">
-                    <h4 class="reviews__reviewer-name">Костя<br>Петров</h4>
+                    <h4 class="reviews__reviewer-name">Николай<br>Ерощенко,<br>30 лет</h4>
                   </div>
-                  <p class="reviews__reviewer-text">Разнообразный и богатый опыт постоянный количественный рост и сфера
-                    нашей активности требуют определения и уточнения позиций, занимаемых участниками в отношении
-                    поставленных задач. С другой стороны консультация с широким активом позволяет оценить значение
-                    дальнейших направлений развития.</p>
+                  <p class="reviews__reviewer-text">Выражаю огромную благодарность автошколе Easy Drive! Я сначала сомневался в эффективности онлайн-занятий по теории. Был неудачный опыт на других онлайн-курсах по программированию. Но поддержка, которая оказывалась мне, легко компенсировала занятия в классе.  Практические занятия также были на высоте. Инструктор был внимательным и требовательным. Мне удалось освоиться за рулём практически за 15 занятий. В ГИБДД сдал на права с первого раза.</p>
                 </div>
 
                 <div class="reviews__reviewer reviews__reviewer_type_three">
                   <div class="reviews__reviewer-info">
-                    <img class="reviews__reviewer-image" src="<%=require('../src/images/Reviews/Diesel.jpg')%>"
+                    <img class="reviews__reviewer-image" src="<%=require('../src/images/Reviews/karpova-anna.jpg')%>"
                       alt="Фото">
-                    <h4 class="reviews__reviewer-name">Костя<br>Петров</h4>
+                    <h4 class="reviews__reviewer-name">Карпова<br>Анна,<br>39 лет</h4>
                   </div>
-                  <p class="reviews__reviewer-text">Разнообразный и богатый опыт постоянный количественный рост и сфера
-                    нашей активности требуют определения и уточнения позиций</p>
+                  <p class="reviews__reviewer-text">Большое спасибо автошколе Easy Drive. Я раньше думала, что никогда не смогу сесть за руль, но жизненные обстоятельства заставили. Долго выбирала автошколу. Здесь понравился гибкий подход к обучению. Прошла теорию онлайн, занималась с инструктором в своём районе. Кроме того, очень понравился курс «начинающему водителю». Здорово, что автошкола готовит к различным ситуациям на дороге. Уже успела порекомендовать эту автошколу нескольким своим знакомым.</p>
                 </div>
 
                 <div class="reviews__reviewer reviews__reviewer_type_four">
                   <div class="reviews__reviewer-info">
-                    <img class="reviews__reviewer-image" src="<%=require('../src/images/Reviews/Diesel.jpg')%>"
+                    <img class="reviews__reviewer-image" src="<%=require('../src/images/Reviews/andrey-efimov.jpg')%>"
                       alt="Фото">
-                    <h4 class="reviews__reviewer-name">Иван<br>Петров</h4>
+                    <h4 class="reviews__reviewer-name">Ефимов<br>Андрей,<br>28 лет</h4>
                   </div>
-                  <p class="reviews__reviewer-text">Разнообразный и богатый опыт постоянный количественный рост и сфера
-                    нашей активности требуют определения и уточнения позиций</p>
+                  <p class="reviews__reviewer-text">Во время карантина решил заняться получением водительских прав. Поэтому обучение на онлайн-платформе мне очень подходило. После двух недель обучения теории я уже сел за руль с инструктором. Маски, санитайзеры, всё было на месте. Вначале получалось плохо, но инструктор смог найти ко мне подход, и скоро я стал чувствовать себя уверенно не только на площадке, но и в городе. На права сдал с первого раза, за что очень благодарен всему коллективу автошколы Easy Drive.</p>
                 </div>
 
               </div>
@@ -968,7 +981,7 @@
 
           <div class="reviews__director-container">
             <div class="reviews__director-photo">
-              <img class="reviews__director-image" src="<%=require('../src/images/Reviews/director.svg')%>"
+              <img class="reviews__director-image" src="<%=require('../src/images/Reviews/director2.svg')%>"
                 alt="Фото руководителя">
             </div>
             <div class="reviews__director-message">
@@ -979,6 +992,7 @@
                 времён».
               </p>
               <h2 class="reviews__director-name"><span>Белоусов Илья Юрьевич,</span>руководитель автошколы Easy Drive
+                <i>тел. +7 (926) 555-71-11</i>
               </h2>
             </div>
           </div>
@@ -995,7 +1009,7 @@
           <form class="contacts__form" id="contacts-form">
             <div class="contacts__input-container">
               <label for="name">имя</label>
-              <input type="text" name="name" id="name" class="contacts__form-input" placeholder="Константин"
+              <input type="text" name="name" id="name" class="contacts__form-input" placeholder="Твоё Имя"
                 pattern="[A-Za-zА-Яа-яЁё]{0,30}">
             </div>
             <div class="contacts__input-container">
@@ -1017,7 +1031,6 @@
                 станция метро Университет)
               </p>
               <a href="tel:+74997555577" class="contacts__office-phone">8 (499) 755-55-77</a>
-              <p class="contacts__questionnaire">заполни анкету для составления договора на обучение</p>
               <button class="button button_type_office button_type_consult-form">Записаться</button>
             </div>
             <div class="contacts__map">
@@ -1033,8 +1046,8 @@
       <section class="popup" id="tablet-computer-licenses">
         <div class="popup__licenses">
           <button class="popup__cross popup__cross_type_licenses"></button>
-          <div class="popup__license"></div>
-          <div class="popup__license"></div>
+          <div class="popup__license license-1"></div>
+          <div class="popup__license license-2"></div>
         </div>
       </section>
 
@@ -1050,7 +1063,7 @@
         <form class="contacts__form-popup" id="contacts-form-popup" name="contactsFormPopup">
           <div class="contacts__input-container">
             <label for="name">имя</label>
-            <input type="text" name="name" id="name-popup" class="contacts__form-input" placeholder="Константин"
+            <input type="text" name="name" id="name-popup" class="contacts__form-input" placeholder="Твоё Имя"
               pattern="[A-Za-zА-Яа-яЁё]{0,30}">
           </div>
           <div class="contacts__input-container">

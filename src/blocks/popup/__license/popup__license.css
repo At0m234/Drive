@@ -1,7 +1,9 @@
 .popup__license {
   width: 311px;
   height: 441px;
-  background-color: #c4c4c4;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .popup__license:nth-of-type(1) {
@@ -28,4 +30,12 @@
   .popup__license:nth-of-type(1) {
     margin: 0;
   }
+}
+
+.license-1 {
+  background-image: url('../../../images/License/license1.jpg');
+}
+
+.license-2 {
+  background-image: url('../../../images/License/license2.jpg');
 }

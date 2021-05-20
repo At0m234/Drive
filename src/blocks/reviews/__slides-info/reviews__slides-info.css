@@ -1,10 +1,10 @@
 .reviews__slides-info {
   display: grid;
   grid-template-columns: repeat(3, 350px);
-  grid-template-rows: 249px 249px;
+  /* grid-template-rows: 249px 249px; */
   grid-template-areas:
-  "one two two"
-  "one three four";
+  "one one one"
+  "two three four";
   transition: all 600ms ease-out;
   gap: 30px;
 }

@@ -1,13 +1,13 @@
 .reviews__reviewer_type_three {
   grid-area: three;
   padding: 44px;
-  width: 262px;
+  min-width: 262px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .reviews__reviewer_type_three {
-    width: 278px;
-    height: 360px;
+    min-width: 278px;
+    min-height: 360px;
     padding: 32px;
     margin-left: 50px;
     margin-right: 243px;

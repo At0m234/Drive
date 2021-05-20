@@ -1,4 +1,5 @@
 import "./index.css";
+import "../utils/parallax"
 import {
   windowWidth,
   AContainer,
@@ -141,6 +142,8 @@ function closePopup(e) {
   }
   // e.target.name.value = " ";
   // e.target.phone.value = " ";
+  // e.target.email.value = " ";
+
 }
 
 // ОБРАБОТЧИК САБМИТА ФОРМЫ КОНСУЛЬТАЦИИ
@@ -155,6 +158,7 @@ function consultFormSubmitHandler(e) {
   // fetch(
   //   `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&parse_mode=html&text=${txt}`
   // );
+  console.log(txt)
   e.target.name.value = "";
   e.target.phone.value = "";
   popups[3].classList.remove("popup_visible");
@@ -170,7 +174,7 @@ function popupConsultFormSubmitHandler(e) {
 
   const token = "1685594101:AAE_XcN8JKxhesOBuW6-e8M5IFsBHpdLQK8";
   const chatId = "-561913957";
-  const txt = `<b>Запрос о консультации: </b>%0A ${name}%0A${phone}%0A${email ? `${email}%0A` : '' }<b>Способ связи:</b>%0A${form.elements.tele.checked ? `Телефон%0A` : ''}${form.elements.whatsApp.checked ? `WhatsApp%0A` : ''}${form.elements.telegram.checked ? `Telegram%0A` : ''}<b>Тариф: </b>%0A${tariff}`;
+  const txt = `<b>Запрос о консультации: </b>%0A ${name}%0A${phone}%0A${email ? `${email}%0A` : '' }<b>Способ связи:</b>%0A${form.elements.tele.checked ? `Телефон%0A` : ''}${form.elements.whatsApp.checked ? `WhatsApp%0A` : ''}${form.elements.telegram.checked ? `Telegram%0A` : ''}${tariff ? `<b>Тариф: </b>%0A${tariff}` : ''}`;
 
   console.log(txt)
   // fetch(
@@ -178,6 +182,8 @@ function popupConsultFormSubmitHandler(e) {
   // )
   e.target.name.value = "";
   e.target.phone.value = "";
+  e.target.email.value = " ";
+
   popups[3].classList.remove("popup_visible");
 }
 
@@ -199,10 +205,12 @@ function addMobileLicensesBtn() {
 
       licenseOneBtn.addEventListener("mousedown", () => {
         openPopup(mobileLicenseOnePopup);
+        mobileLicenseOnePopup.querySelector('.popup__license').classList.add('license-1')
       });
 
       licenseTwoBtn.addEventListener("mousedown", () => {
         openPopup(mobileLicenseTwoPopup);
+        mobileLicenseTwoPopup.querySelector('.popup__license').classList.add('license-2')
       });
     } else {
       clubLicenseTitle.insertAdjacentHTML("afterend", "");
@@ -311,99 +319,99 @@ mainSecondBg.onmouseleave = (e) => {
 
 // --------------------------------------------------- СКРИПТ ДЛЯ ДВИЖЕНИЯ ИЗОБРАЖЕНИЙ И ПОЯВЛЕНИЯ HEADER ПО СКРОЛУ ПО ОСИ Y --------------------------------------------------- //
 // ЗАПИСЫВАЕМ НАЧАЛЬНОЕ ПОЛОЖЕНИЕ ПО ОСИ Y
-let lastOffsetY = 0;
+// let lastOffsetY = 0;
 
 // ЗАДАЕМ НАЧАЛЬНОЕ ПОЛОЖЕНИЕ ДЛЯ ИЗОБРАЖЕНИЙ
-undergroundImage.style.backgroundPosition = "0px 0px";
-easyDriveString.style.backgroundPosition = "0px 0px";
+// undergroundImage.style.backgroundPosition = "0px 0px";
+// easyDriveString.style.backgroundPosition = "0px 0px";
 
 // ПРОВЕРКА СКРОЛА ВНИЗ ИЛИ ВВЕРХ ПО ОСИ Y
-const isScrollYIsUp = () => {
-  if (lastOffsetY > window.pageYOffset) {
-    lastOffsetY = window.pageYOffset;
-    return true;
-  } else {
-    lastOffsetY = window.pageYOffset;
-    return false;
-  }
-};
+// const isScrollYIsUp = () => {
+//   if (lastOffsetY > window.pageYOffset) {
+//     lastOffsetY = window.pageYOffset;
+//     return true;
+//   } else {
+//     lastOffsetY = window.pageYOffset;
+//     return false;
+//   }
+// };
 
-let mapMoveOnScroll = (element, size, rightMargin, leftMargin) => {
-  let start = element.style.backgroundPosition;
-  let xS = start.split(" ")[0];
-  let x = xS.substring(0, xS.length - 2);
-  let yS = start.split(" ")[1];
-  let y = yS.substring(0, yS.length - 2);
-  let xN = x;
-  if (
-    (rightMargin < Number(x) + size && size < 0) ||
-    (leftMargin > Number(x) + size && size > 0)
-  ) {
-    xN = Number(x) + size;
-  }
-  element.style.backgroundPosition = String(xN) + "px " + y + "px";
-};
-function isVisible(element1, element2) {
-  let getOffTop = element1.offsetTop + element2.offsetTop;
-  if (getOffTop < pageYOffset + window.innerHeight) return true;
-  return false;
-}
-function getSize(logic, size) {
-  if (logic) {
-    return size;
-  } else {
-    return size * -1;
-  }
-}
+// let mapMoveOnScroll = (element, size, rightMargin, leftMargin) => {
+//   let start = element.style.backgroundPosition;
+//   let xS = start.split(" ")[0];
+//   let x = xS.substring(0, xS.length - 2);
+//   let yS = start.split(" ")[1];
+//   let y = yS.substring(0, yS.length - 2);
+//   let xN = x;
+//   if (
+//     (rightMargin < Number(x) + size && size < 0) ||
+//     (leftMargin > Number(x) + size && size > 0)
+//   ) {
+//     xN = Number(x) + size;
+//   }
+//   element.style.backgroundPosition = String(xN) + "px " + y + "px";
+// };
+// function isVisible(element1, element2) {
+//   let getOffTop = element1.offsetTop + element2.offsetTop;
+//   if (getOffTop < pageYOffset + window.innerHeight) return true;
+//   return false;
+// }
+// function getSize(logic, size) {
+//   if (logic) {
+//     return size;
+//   } else {
+//     return size * -1;
+//   }
+// }
 
-window.onscroll = (e) => {
-  let scrollCheck = isScrollYIsUp();
-  let rightMarg = (windowWidth / 100) * 47;
-  let rightMargM = (windowWidth / 100) * 78;
-  let speed = windowWidth / 100;
-  if (
-    isVisible(
-      document.getElementsByClassName("club__underground-image")[0],
-      document.getElementsByClassName("club")[0]
-    )
-  ) {
-    if (isMobile()) {
-      rightMargM = 430;
-      mapMoveOnScroll(easyDriveString, getSize(scrollCheck, -1), -1200, 1200);
-      mapMoveOnScroll(
-        undergroundImage,
-        getSize(scrollCheck, speed),
-        -rightMargM,
-        0
-      );
-    } else {
-      console.log(rightMarg);
-      rightMarg = 400;
-      mapMoveOnScroll(easyDriveString, getSize(scrollCheck, -1), -1200, 1200);
-      mapMoveOnScroll(
-        undergroundImage,
-        getSize(scrollCheck, speed),
-        -rightMarg,
-        0
-      );
-    }
-  }
+// window.onscroll = (e) => {
+//   let scrollCheck = isScrollYIsUp();
+//   let rightMarg = (windowWidth / 100) * 47;
+//   let rightMargM = (windowWidth / 100) * 78;
+//   let speed = windowWidth / 100;
+//   if (
+//     isVisible(
+//       document.getElementsByClassName("club__underground-image")[0],
+//       document.getElementsByClassName("club")[0]
+//     )
+//   ) {
+//     if (isMobile()) {
+//       rightMargM = 430;
+//       mapMoveOnScroll(easyDriveString, getSize(scrollCheck, -1), -1200, 1200);
+//       mapMoveOnScroll(
+//         undergroundImage,
+//         getSize(scrollCheck, speed),
+//         -rightMargM,
+//         0
+//       );
+//     } else {
+//       console.log(rightMarg);
+//       rightMarg = 400;
+//       mapMoveOnScroll(easyDriveString, getSize(scrollCheck, -1), -1200, 1200);
+//       mapMoveOnScroll(
+//         undergroundImage,
+//         getSize(scrollCheck, speed),
+//         -rightMarg,
+//         0
+//       );
+//     }
+//   }
 
-  // УСЛОВИЕ ДЛЯ ОТОБРАЖЕНИЯ ХЕДЕРА ПО СКРОЛЛУ
-  if (lastOffsetY > 700) {
-    header.style.display = "none";
-    header.style.position = "fixed";
-    header.style.display = "flex";
-    header.style.transition = "all 500ms ease-out";
-    header.style.opacity = "1";
-    header.style.backgroundColor = "#181818";
-  } else {
-    header.style.display = "none";
-    header.style.position = "absolute";
-    header.style.backgroundColor = "transparent";
-    header.style.display = "flex";
-  }
-};
+//   // УСЛОВИЕ ДЛЯ ОТОБРАЖЕНИЯ ХЕДЕРА ПО СКРОЛЛУ
+//   if (lastOffsetY > 700) {
+//     header.style.display = "none";
+//     header.style.position = "fixed";
+//     header.style.display = "flex";
+//     header.style.transition = "all 500ms ease-out";
+//     header.style.opacity = "1";
+//     header.style.backgroundColor = "#181818";
+//   } else {
+//     header.style.display = "none";
+//     header.style.position = "absolute";
+//     header.style.backgroundColor = "transparent";
+//     header.style.display = "flex";
+//   }
+// };
 // ----------------------------- СКРИПТ ДЛЯ ДВИЖЕНИЯ ИЗОБРАЖЕНИЙ И ПОЯВЛЕНИЯ HEADER ПО СКРОЛУ ПО ОСИ Y--------------------------------------------------- //
 
 // ----------------------------------------------------- СЛУШАТЕЛИ СОБЫТИЙ ---------------------------------------------------------------------------- //
