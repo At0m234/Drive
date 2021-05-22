@@ -9,6 +9,7 @@ export const OnlyWithUsBtn = document.querySelector('#Only-with-us-btn');
 export const AdditionalClassesBtn = document.querySelector('#Additional-classes-btn');
 
 // ЗАПИСЫВАЕМ БЛОКИ С ТАРИФАМИ ПО КАТЕГОРИЯМ В ПЕРЕМЕННЫЕ
+export const pricesBlock = document.querySelector(".prices__categories-choise");
 export const pricesInfo = document.querySelector('.prices__info');
 export const AContainer = document.querySelector('.prices__A-container');
 export const BContainer = document.querySelector('.prices__B-container');

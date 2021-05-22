@@ -39,6 +39,7 @@ import {
   easyDriveString,
   mainFirstBg,
   mainSecondBg,
+  pricesBlock,
 } from "../utils/constants";
 // Выбраный тариф
 let tariff = 'B';
@@ -155,9 +156,9 @@ function consultFormSubmitHandler(e) {
   const chatId = "-561913957";
   const txt = `Запрос о консультации:%0A <b>${name}</b>%0A <b>${phone}</b>`;
   // TODO
-  // fetch(
-  //   `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&parse_mode=html&text=${txt}`
-  // );
+  fetch(
+    `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&parse_mode=html&text=${txt}`
+  );
   console.log(txt)
   e.target.name.value = "";
   e.target.phone.value = "";
@@ -177,9 +178,9 @@ function popupConsultFormSubmitHandler(e) {
   const txt = `<b>Запрос о консультации: </b>%0A ${name}%0A${phone}%0A${email ? `${email}%0A` : '' }<b>Способ связи:</b>%0A${form.elements.tele.checked ? `Телефон%0A` : ''}${form.elements.whatsApp.checked ? `WhatsApp%0A` : ''}${form.elements.telegram.checked ? `Telegram%0A` : ''}${tariff ? `<b>Тариф: </b>%0A${tariff}` : ''}`;
 
   console.log(txt)
-  // fetch(
-  //   `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&parse_mode=html&text=${txt}`
-  // )
+  fetch(
+    `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&parse_mode=html&text=${txt}`
+  )
   e.target.name.value = "";
   e.target.phone.value = "";
   e.target.email.value = " ";
@@ -288,6 +289,19 @@ function changeColor(elem, color, timing) {
   elem.style.transition = timing + "s linear";
   elem.style.color = color;
 }
+
+
+// Функиця навешивания снятия класса актив на кнопках цен
+
+function activePriceBtn(){
+  pricesBlock.querySelector('#B-btn').classList.remove('button_type_B_active')
+  pricesBlock.querySelector('#A-btn').classList.remove('button_type_A_active')
+  pricesBlock.querySelector('#C-btn').classList.remove('button_type_C_active')
+  pricesBlock.querySelector('#D-btn').classList.remove('button_type_D_active')
+  pricesBlock.querySelector('#Only-with-us-btn').classList.remove('button_type_only-with-us_active')
+  pricesBlock.querySelector('#Additional-classes-btn').classList.remove('button_type_additional-classes_active')
+}
+
 
 // АНИМАЦИЯ ПРИ НАВЕДЕНИИ КУРСОРА МЫШКИ НА ВТОРОЕ(ГРАДИЕНТНОЕ) ФОНОВОЕ ИЗОБРАЖЕНИЕ
 mainSecondBg.onmouseenter = (e) => {
@@ -551,6 +565,9 @@ mobileLicenseTwoPopup.addEventListener("touchend", closePopup);
 
 // ДОБАВЛЯЕМ СЛУШАТЕЛЬ КНОПКЕ КАТЕГОРИЯ-A
 ACatBtn.addEventListener("mousedown", () => {
+  activePriceBtn();
+  ACatBtn.classList.add('button_type_A_active');
+
   tariff = 'A';
   AContainer.classList.add("prices__A-container_visible");
   BContainer.classList.remove("prices__B-container_visible");
@@ -576,6 +593,9 @@ ACatBtn.addEventListener("mousedown", () => {
 
 // ДОБАВЛЯЕМ СЛУШАТЕЛЬ КНОПКЕ КАТЕГОРИЯ-B
 BCatBtn.addEventListener("mousedown", () => {
+  activePriceBtn();
+  BCatBtn.classList.add('button_type_B_active');
+
   tariff = 'B'
   AContainer.classList.remove("prices__A-container_visible");
   BContainer.classList.add("prices__B-container_visible");
@@ -601,6 +621,9 @@ BCatBtn.addEventListener("mousedown", () => {
 
 // ДОБАВЛЯЕМ СЛУШАТЕЛЬ КНОПКЕ КАТЕГОРИЯ-C
 CCatBtn.addEventListener("mousedown", () => {
+  activePriceBtn();
+  CCatBtn.classList.add('button_type_C_active');
+
   tariff = 'C';
   AContainer.classList.remove("prices__A-container_visible");
   BContainer.classList.remove("prices__B-container_visible");
@@ -626,6 +649,8 @@ CCatBtn.addEventListener("mousedown", () => {
 
 // ДОБАВЛЯЕМ СЛУШАТЕЛЬ КНОПКЕ КАТЕГОРИЯ-D
 DCatBtn.addEventListener("mousedown", () => {
+  activePriceBtn();
+  DCatBtn.classList.add('button_type_D_active');
   tariff = 'D'
   AContainer.classList.remove("prices__A-container_visible");
   BContainer.classList.remove("prices__B-container_visible");
@@ -651,6 +676,8 @@ DCatBtn.addEventListener("mousedown", () => {
 
 // ДОБАВЛЯЕМ СЛУШАТЕЛЬ КНОПКЕ 'ТОЛЬКО У НАС'
 OnlyWithUsBtn.addEventListener("mousedown", () => {
+  activePriceBtn()
+  OnlyWithUsBtn.classList.add('button_type_only-with-us_active')
   tariff = 'Только у нас'
   AContainer.classList.remove("prices__A-container_visible");
   BContainer.classList.remove("prices__B-container_visible");
@@ -674,6 +701,8 @@ OnlyWithUsBtn.addEventListener("mousedown", () => {
 
 // ДОБАВЛЯЕМ СЛУШАТЕЛЬ КНОПКЕ 'ДОП.ЗАНЯТИЯ'
 AdditionalClassesBtn.addEventListener("mousedown", () => {
+  activePriceBtn();
+  AdditionalClassesBtn.classList.add('button_type_additional-classes_active')
   AContainer.classList.remove("prices__A-container_visible");
   BContainer.classList.remove("prices__B-container_visible");
   CContainer.classList.remove("prices__C-container_visible");

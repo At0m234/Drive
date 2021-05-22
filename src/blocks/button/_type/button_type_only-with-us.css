@@ -24,9 +24,9 @@
   border-color: #F4C245;
 }
 
-.button_type_only-with-us:focus {
+.button_type_only-with-us_active {
   border: 1px solid #181818;
-  background: #181818;
+  background: #181818 !important;
 }
 
 .button_type_only-with-us span {

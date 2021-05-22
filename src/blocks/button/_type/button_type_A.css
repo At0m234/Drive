@@ -18,6 +18,11 @@
   -webkit-background-color: #E08645;
 }
 
+.button_type_A_active {
+  border: 1px solid #181818;
+  background-color: #E08645;
+}
+
 .button_type_A:focus, .button_type_A:active {
   -webkit-background-color: #E08645;
   background-color: #E08645;

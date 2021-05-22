@@ -17,8 +17,8 @@
   border: 1px solid #5BAFCA;
 }
 
-.button_type_D:focus {
-  background: #5BAFCA;
+.button_type_D_active {
+  background: #5BAFCA !important;
   border: 1px solid #181818;
 }
 
