@@ -11,7 +11,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 50px;
+    width: 30px;
   }
 
   #switch4:checked ~ #reviews-circles .reviews__slider-circle:nth-child(1),

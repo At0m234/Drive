@@ -9,7 +9,10 @@
     flex-wrap: nowrap;
     /*max-width: 768px;*/
     height: 430px;
-    overflow: hidden;
+    overflow-y: hidden;
+  }
+  .reviews__slides::-webkit-scrollbar {
+    display: none;
   }
 }
 

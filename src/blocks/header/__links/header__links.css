@@ -9,6 +9,15 @@
   max-width: 563px;
 }
 
+.header__icons {
+  grid-area: icons;
+  text-decoration: none;
+}
+
+.header__icons a {
+  text-decoration: none;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .header__links {
     margin: 0;
