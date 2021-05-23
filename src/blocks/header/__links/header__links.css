@@ -12,6 +12,7 @@
 .header__icons {
   grid-area: icons;
   text-decoration: none;
+  display: none;
 }
 
 .header__icons a {
