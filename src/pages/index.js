@@ -42,7 +42,7 @@ import {
   pricesBlock,
 } from "../utils/constants";
 // Выбраный тариф
-let tariff = 'B';
+let tariff = 'Консультация';
 // ФУНКЦИЯ ПРОВЕРКИ УТРОЙСТВА ПОЛЬЗОВАТЕЛЯ
 let isMobile = () => {
   let data = navigator.userAgent.toLowerCase();
@@ -64,7 +64,7 @@ let isMobile = () => {
 //     let pricesBtns = pricesBlock.querySelectorAll(".button");
 
 //     pricesBtns.forEach((i) => {
-//       i.setAttribute("onlick", "this.focus()");
+//       i.setAttribute("onclick", "this.focus()");
 //     });
 //   }
 // };
@@ -302,12 +302,10 @@ function activePriceBtn(){
   pricesBlock.querySelector('#Additional-classes-btn').classList.remove('button_type_additional-classes_active')
 }
 
-
 // АНИМАЦИЯ ПРИ НАВЕДЕНИИ КУРСОРА МЫШКИ НА ВТОРОЕ(ГРАДИЕНТНОЕ) ФОНОВОЕ ИЗОБРАЖЕНИЕ
 mainSecondBg.onmouseenter = (e) => {
+  console.log(mainSecondBg)
   mainFirstBg.classList.add("animation");
-  // secondMainBgImgThree.classList.add("animated");
-  // secondMainBgImgSeven.classList.add("animated");
   secondMainBgArrows.classList.add("animated-arrows");
   let elemes = document.body.getElementsByClassName("header__link");
   for (let a of elemes) {
@@ -724,3 +722,7 @@ AdditionalClassesBtn.addEventListener("mousedown", () => {
     pricesInfo.style.height = 415 + "px";
   }
 });
+
+if(windowWidth < 1279) {
+  document.querySelector('.header__connection').remove()
+}

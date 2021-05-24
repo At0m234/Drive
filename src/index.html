@@ -107,13 +107,13 @@
         </nav>
 
         <div class=header__icons>
-          <a href="tel:+74997555577">
+          <a href="tel:+74997555577" target="_blank">
             <img src="<%=require('./images/Header/phone.svg')%>" alt="phone">
           </a>
-          <a href="https://wa.me/79309609083?text=Интересует%20ваше%20обучение">
+          <a href="https://wa.me/79309609083?text=Интересует%20ваше%20обучение" target="_blank">
             <img src="<%=require('./images/Header/whatsApp.svg')%>" alt="whatsApp">
           </a>
-          <a href="">
+          <a href="https://t.me/easydrive_online" target="_blank">
             <img src="<%=require('./images/Header/telegram.svg')%>" alt="telegram">
           </a>
         </div>
@@ -171,12 +171,12 @@
             <h3 class="prices__subtitle">Можешь оплачивать в рассрочку. Первоначальный взнос от 10 000 руб.</h3>
           </div>
           <div class="prices__categories-choise">
-            <button class="button button_type_A" id="A-btn" onclick="this.focus()">Категория A</button>
-            <button class="button button_type_B button button_type_B_active" id="B-btn"  onclick="this.focus()">Категория B</button>
-            <button class="button button_type_C" id="C-btn" onclick="this.focus()">Категория C</button>
-            <button class="button button_type_D" id="D-btn" onclick="this.focus()">Категория D</button>
-            <button class="button button_type_only-with-us" id="Only-with-us-btn" onclick="this.focus()"><span>Только у нас</span></button>
-            <button class="button button_type_additional-classes" id="Additional-classes-btn" onclick="this.focus()">Доп. занятия</button>
+            <button class="button button_type_A" id="A-btn">Категория A</button>
+            <button class="button button_type_B button button_type_B_active" id="B-btn">Категория B</button>
+            <button class="button button_type_C" id="C-btn">Категория C</button>
+            <button class="button button_type_D" id="D-btn">Категория D</button>
+            <button class="button button_type_only-with-us" id="Only-with-us-btn"><span>Только у нас</span></button>
+            <button class="button button_type_additional-classes" id="Additional-classes-btn">Доп. занятия</button>
           </div>
         </div>
 
@@ -1042,7 +1042,20 @@
                 (РГУ нефти и газа имени И.М. Губкина,
                 станция метро Университет)
               </p>
+              <p class="contacts__office-contacts"><img src="<%=require('./images/Header/phone.svg')%>" alt="phone"> Позвонить</p>
               <a href="tel:+74997555577" class="contacts__office-phone">8 (499) 755-55-77</a>
+
+              <p class="contacts__office-contacts"><a href="https://wa.me/79309609083?text=Интересует%20ваше%20обучение" target="_blank">
+                <img src="<%=require('./images/Header/whatsApp.svg')%>" alt="whatsApp">
+              </a>
+
+                <a href="https://t.me/easydrive_online" target="_blank">
+                  <img src="<%=require('./images/Header/telegram.svg')%>" alt="telegram">
+                </a>
+                Написать (<a href="https://wa.me/79309609083?text=Интересует%20ваше%20обучение" class="link" target="_blank">WhatsApp</a>/<a href="https://t.me/easydrive_online" class="link" target="_blank">Telegram</a>)</p>
+
+              <a href="https://wa.me/79309609083?text=Интересует%20ваше%20обучение" class="contacts__office-phone" target="_blank">8 (930) 960-90-83</a>
+
               <button class="button button_type_office button_type_consult-form">Записаться</button>
             </div>
             <div class="contacts__map">
