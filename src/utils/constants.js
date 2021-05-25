@@ -40,6 +40,7 @@ export const logoHeaderImg = logo.querySelector('img');
 // Main
 export const mainFirstBg = document.querySelector('.main__bg-first');
 export const mainSecondBg = document.querySelector('.main__bg-second');
+export const mainHover = document.querySelector('.main__hover');
 export const secondMainBgImgThree = document.querySelector('.main__image_type_three');
 export const secondMainBgImgSeven = document.querySelector('.main__image_type_seven');
 export const secondMainBgArrows = document.querySelector('.main__image_type_arrows');

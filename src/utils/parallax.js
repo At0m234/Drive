@@ -1,7 +1,7 @@
 import lax from "lax.js";
 let x = [-600, -1000,  -1050];
 if(window.innerWidth < 767){
- x = [-800, -900,  -950]
+  x = [-800, -900,  -950]
 }
 window.onload = function () {
   lax.init();

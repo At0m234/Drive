@@ -35,11 +35,12 @@ import {
   teachersImages,
   consultPopupBtns,
   contactsPopup,
-  undergroundImage,
-  easyDriveString,
+  // undergroundImage,
+  // easyDriveString,
   mainFirstBg,
   mainSecondBg,
   pricesBlock,
+  mainHover,
 } from "../utils/constants";
 // Выбраный тариф
 let tariff = 'Консультация';
@@ -286,8 +287,11 @@ const getEleme = (tag) => {
 };
 
 function changeColor(elem, color, timing) {
-  elem.style.transition = timing + "s linear";
-  elem.style.color = color;
+  if(elem){
+    elem.style.transition = timing + "s linear";
+    elem.style.color = color;
+  }
+
 }
 
 
@@ -303,8 +307,7 @@ function activePriceBtn(){
 }
 
 // АНИМАЦИЯ ПРИ НАВЕДЕНИИ КУРСОРА МЫШКИ НА ВТОРОЕ(ГРАДИЕНТНОЕ) ФОНОВОЕ ИЗОБРАЖЕНИЕ
-mainSecondBg.onmouseenter = (e) => {
-  console.log(mainSecondBg)
+mainHover.onmouseenter = (e) => {
   mainFirstBg.classList.add("animation");
   secondMainBgArrows.classList.add("animated-arrows");
   let elemes = document.body.getElementsByClassName("header__link");
@@ -316,7 +319,7 @@ mainSecondBg.onmouseenter = (e) => {
 };
 
 // АНИМАЦИЯ ПРИ ОТВЕДЕНИИ КУРСОРА МЫШКИ СО ВТОРОГО(ГРАДИЕНТНОГО) ФОНОВОГО ИЗОБРАЖЕНИЯ
-mainSecondBg.onmouseleave = (e) => {
+mainHover.onmouseleave = (e) => {
   mainFirstBg.classList.remove("animation");
   // secondMainBgImgThree.classList.remove("animated");
   // secondMainBgImgSeven.classList.remove("animated");
@@ -331,99 +334,77 @@ mainSecondBg.onmouseleave = (e) => {
 
 // --------------------------------------------------- СКРИПТ ДЛЯ ДВИЖЕНИЯ ИЗОБРАЖЕНИЙ И ПОЯВЛЕНИЯ HEADER ПО СКРОЛУ ПО ОСИ Y --------------------------------------------------- //
 // ЗАПИСЫВАЕМ НАЧАЛЬНОЕ ПОЛОЖЕНИЕ ПО ОСИ Y
-// let lastOffsetY = 0;
+let lastOffsetY = 0;
 
 // ЗАДАЕМ НАЧАЛЬНОЕ ПОЛОЖЕНИЕ ДЛЯ ИЗОБРАЖЕНИЙ
-// undergroundImage.style.backgroundPosition = "0px 0px";
-// easyDriveString.style.backgroundPosition = "0px 0px";
 
 // ПРОВЕРКА СКРОЛА ВНИЗ ИЛИ ВВЕРХ ПО ОСИ Y
-// const isScrollYIsUp = () => {
-//   if (lastOffsetY > window.pageYOffset) {
-//     lastOffsetY = window.pageYOffset;
-//     return true;
-//   } else {
-//     lastOffsetY = window.pageYOffset;
-//     return false;
-//   }
-// };
+const isScrollYIsUp = () => {
+  if (lastOffsetY > window.pageYOffset) {
+    lastOffsetY = window.pageYOffset;
+    return true;
+  } else {
+    lastOffsetY = window.pageYOffset;
+    return false;
+  }
+};
 
-// let mapMoveOnScroll = (element, size, rightMargin, leftMargin) => {
-//   let start = element.style.backgroundPosition;
-//   let xS = start.split(" ")[0];
-//   let x = xS.substring(0, xS.length - 2);
-//   let yS = start.split(" ")[1];
-//   let y = yS.substring(0, yS.length - 2);
-//   let xN = x;
-//   if (
-//     (rightMargin < Number(x) + size && size < 0) ||
-//     (leftMargin > Number(x) + size && size > 0)
-//   ) {
-//     xN = Number(x) + size;
-//   }
-//   element.style.backgroundPosition = String(xN) + "px " + y + "px";
-// };
-// function isVisible(element1, element2) {
-//   let getOffTop = element1.offsetTop + element2.offsetTop;
-//   if (getOffTop < pageYOffset + window.innerHeight) return true;
-//   return false;
-// }
-// function getSize(logic, size) {
-//   if (logic) {
-//     return size;
-//   } else {
-//     return size * -1;
-//   }
-// }
+let mapMoveOnScroll = (element, size, rightMargin, leftMargin) => {
+  let start = element.style.backgroundPosition;
+  let xS = start.split(" ")[0];
+  let x = xS.substring(0, xS.length - 2);
+  let yS = start.split(" ")[1];
+  let y = yS.substring(0, yS.length - 2);
+  let xN = x;
+  if (
+    (rightMargin < Number(x) + size && size < 0) ||
+    (leftMargin > Number(x) + size && size > 0)
+  ) {
+    xN = Number(x) + size;
+  }
+  element.style.backgroundPosition = String(xN) + "px " + y + "px";
+};
+function isVisible(element1, element2) {
+  let getOffTop = element1.offsetTop + element2.offsetTop;
+  if (getOffTop < pageYOffset + window.innerHeight) return true;
+  return false;
+}
+function getSize(logic, size) {
+  if (logic) {
+    return size;
+  } else {
+    return size * -1;
+  }
+}
 
-// window.onscroll = (e) => {
-//   let scrollCheck = isScrollYIsUp();
-//   let rightMarg = (windowWidth / 100) * 47;
-//   let rightMargM = (windowWidth / 100) * 78;
-//   let speed = windowWidth / 100;
-//   if (
-//     isVisible(
-//       document.getElementsByClassName("club__underground-image")[0],
-//       document.getElementsByClassName("club")[0]
-//     )
-//   ) {
-//     if (isMobile()) {
-//       rightMargM = 430;
-//       mapMoveOnScroll(easyDriveString, getSize(scrollCheck, -1), -1200, 1200);
-//       mapMoveOnScroll(
-//         undergroundImage,
-//         getSize(scrollCheck, speed),
-//         -rightMargM,
-//         0
-//       );
-//     } else {
-//       console.log(rightMarg);
-//       rightMarg = 400;
-//       mapMoveOnScroll(easyDriveString, getSize(scrollCheck, -1), -1200, 1200);
-//       mapMoveOnScroll(
-//         undergroundImage,
-//         getSize(scrollCheck, speed),
-//         -rightMarg,
-//         0
-//       );
-//     }
-//   }
+window.onscroll = (e) => {
+  let scrollCheck = isScrollYIsUp();
+  let rightMarg = (windowWidth / 100) * 47;
+  let rightMargM = (windowWidth / 100) * 78;
+  let speed = windowWidth / 100;
+  if (
+    isVisible(
+      document.getElementsByClassName("club__underground-image")[0],
+      document.getElementsByClassName("club")[0]
+    )
+  ) {
+  }
 
 //   // УСЛОВИЕ ДЛЯ ОТОБРАЖЕНИЯ ХЕДЕРА ПО СКРОЛЛУ
-//   if (lastOffsetY > 700) {
-//     header.style.display = "none";
-//     header.style.position = "fixed";
-//     header.style.display = "flex";
-//     header.style.transition = "all 500ms ease-out";
-//     header.style.opacity = "1";
-//     header.style.backgroundColor = "#181818";
-//   } else {
-//     header.style.display = "none";
-//     header.style.position = "absolute";
-//     header.style.backgroundColor = "transparent";
-//     header.style.display = "flex";
-//   }
-// };
+  if (lastOffsetY > 700) {
+    header.style.display = "none";
+    header.style.position = "fixed";
+    header.style.display = "flex";
+    header.style.transition = "all 500ms ease-out";
+    header.style.opacity = "1";
+    header.style.backgroundColor = "#181818";
+  } else {
+    header.style.display = "none";
+    header.style.position = "absolute";
+    header.style.backgroundColor = "transparent";
+    header.style.display = "flex";
+  }
+};
 // ----------------------------- СКРИПТ ДЛЯ ДВИЖЕНИЯ ИЗОБРАЖЕНИЙ И ПОЯВЛЕНИЯ HEADER ПО СКРОЛУ ПО ОСИ Y--------------------------------------------------- //
 
 // ----------------------------------------------------- СЛУШАТЕЛИ СОБЫТИЙ ---------------------------------------------------------------------------- //
@@ -510,32 +491,48 @@ license.addEventListener("mousedown", () => {
 // ВЕШАЕМ СЛУШАТЕЛЬ ОТКРЫТИЯ ПОПАПА "КОНСУЛЬТАЦИИ" ПО КЛИКУ НА КНОПКИ
 consultPopupBtns.forEach((button) => {
   button.addEventListener("mousedown", () => {
-    if(button.classList.contains('min')) {
-      tariff = tariff.charAt(0)
-      tariff = tariff + ' ' + 'минимум';
+    if(button.classList.contains('a-min')) {
+      tariff = 'A минимум';
     }
-    if(button.classList.contains('med')) {
-      tariff = tariff.charAt(0)
-      tariff = tariff + ' ' + 'стандарт';
+    if(button.classList.contains('a-med')) {
+      tariff = 'A стандарт';
     }
-    if(button.classList.contains('max')) {
-      tariff = tariff.charAt(0)
-      tariff = tariff + ' ' + 'полный';
+    if(button.classList.contains('a-max')) {
+      tariff = 'A полный';
     }
-    if(button.classList.contains('carsh')) {
-      tariff = 'Только у нас:' + ' ' + 'каршеринг';
+
+    if(button.classList.contains('b-min')) {
+      tariff = 'B минимум';
     }
-    if(button.classList.contains('useful-know')) {
-      tariff = 'Только у нас:' + ' ' + 'лайфхаки';
+    if(button.classList.contains('b-med')) {
+      tariff = 'B стандарт';
+    }
+    if(button.classList.contains('b-max')) {
+      tariff = 'B полный';
+    }
+
+    if(button.classList.contains('c-med')) {
+      tariff = 'C';
+    }
+
+    if(button.classList.contains('d-med')) {
+      tariff = 'D';
+    }
+
+    if(button.classList.contains('x-carsh')) {
+      tariff = 'Только у нас: каршеринг';
+    }
+    if(button.classList.contains('x-useful-know')) {
+      tariff = 'Только у нас: лайфхаки';
     }
     if(button.classList.contains('add-AB')) {
-      tariff = 'Доп. занятия:' + ' ' + 'A B';
+      tariff = 'Доп. занятия: A B';
     }
     if(button.classList.contains('add-CD')) {
-      tariff = 'Доп. занятия:' + ' ' + 'C D';
+      tariff = 'Доп. занятия: C D';
     }
     if(button.classList.contains('add-recovery')) {
-      tariff = 'Доп. занятия:' + ' ' + 'Восстановление';
+      tariff = 'Доп. занятия: Восстановление';
     }
     openPopup(contactsPopup);
   });
@@ -566,7 +563,6 @@ ACatBtn.addEventListener("mousedown", () => {
   activePriceBtn();
   ACatBtn.classList.add('button_type_A_active');
 
-  tariff = 'A';
   AContainer.classList.add("prices__A-container_visible");
   BContainer.classList.remove("prices__B-container_visible");
   CContainer.classList.remove("prices__C-container_visible");
@@ -594,7 +590,6 @@ BCatBtn.addEventListener("mousedown", () => {
   activePriceBtn();
   BCatBtn.classList.add('button_type_B_active');
 
-  tariff = 'B'
   AContainer.classList.remove("prices__A-container_visible");
   BContainer.classList.add("prices__B-container_visible");
   CContainer.classList.remove("prices__C-container_visible");
@@ -622,7 +617,6 @@ CCatBtn.addEventListener("mousedown", () => {
   activePriceBtn();
   CCatBtn.classList.add('button_type_C_active');
 
-  tariff = 'C';
   AContainer.classList.remove("prices__A-container_visible");
   BContainer.classList.remove("prices__B-container_visible");
   CContainer.classList.add("prices__C-container_visible");
@@ -649,7 +643,6 @@ CCatBtn.addEventListener("mousedown", () => {
 DCatBtn.addEventListener("mousedown", () => {
   activePriceBtn();
   DCatBtn.classList.add('button_type_D_active');
-  tariff = 'D'
   AContainer.classList.remove("prices__A-container_visible");
   BContainer.classList.remove("prices__B-container_visible");
   CContainer.classList.remove("prices__C-container_visible");
@@ -676,7 +669,6 @@ DCatBtn.addEventListener("mousedown", () => {
 OnlyWithUsBtn.addEventListener("mousedown", () => {
   activePriceBtn()
   OnlyWithUsBtn.classList.add('button_type_only-with-us_active')
-  tariff = 'Только у нас'
   AContainer.classList.remove("prices__A-container_visible");
   BContainer.classList.remove("prices__B-container_visible");
   CContainer.classList.remove("prices__C-container_visible");

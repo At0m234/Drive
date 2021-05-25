@@ -13,11 +13,11 @@
   width: 100%;
   min-height: 768px;
   z-index: 5;
-  transition: transform 1500ms ease-out;
+  transition: transform 1000ms;
 }
 
 .animation {
-  transform: translateX(-200%);
+  transform: translateX(-100%);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {

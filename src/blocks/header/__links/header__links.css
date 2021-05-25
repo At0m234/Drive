@@ -20,12 +20,9 @@
   text-decoration: none;
   margin-left: 6px;
 }
-.header__icons img {
-  height: 20px;
-}
 
-.header__icons a:hover{
-  filter: invert(1);
+.header__icons a:hover svg path{
+  fill: #F6C343;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -39,8 +36,9 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-top: 4px;
   }
-  .header__icons img {
+  .header__icons svg {
     height: 26px;
     margin-left: 36px;
   }
@@ -57,7 +55,7 @@
   .header__icons a {
     margin-left: 0;
   }
-  .header__icons img {
+  .header__icons svg {
     height: 32px;
     margin-right: 30px;
   }
