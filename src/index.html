@@ -103,7 +103,7 @@
           <a class="header__link" href="#guru">клуб</a>
           <a class="header__link" href="#guru__teachers">гуру</a>
           <a class="header__link" href="#reviews">отзывы</a>
-          <a class="header__link" href="#contacts">контакты</a>
+          <a class="header__link" href="#contacts-content">контакты</a>
         </nav>
 
         <div class=header__icons>
@@ -1047,7 +1047,7 @@
         </div>
         <!-- pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" -->
         <div class="contacts__office">
-          <div class="contacts__content">
+          <div class="contacts__content" id="contacts-content">
             <div class="contacts__info">
               <h2 class="contacts__title contacts__title_type_black">Контакты</h2>
               <p class="contacts__subtitle contacts__subtitle_type_black">Наш центральный офис находится по адресу</p>
@@ -1084,17 +1084,33 @@
       <section class="popup" id="tablet-computer-licenses">
         <div class="popup__licenses">
           <button class="popup__cross popup__cross_type_licenses"></button>
-          <div class="popup__license license-1"></div>
+          <div class="popup__license license-1">
+
+          </div>
           <div class="popup__license license-2"></div>
         </div>
       </section>
 
       <section class="popup" id="mobile-license-one">
-        <div class="popup__license"></div>
+        <div class="popup__license">
+          <div class="license__close">
+            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="0.34751" y1="1.3075" x2="20.3475" y2="20.6407" stroke="#F8F8F8"/>
+              <line x1="20.3506" y1="0.356512" x2="0.350568" y2="20.0232" stroke="#F8F8F8"/>
+            </svg>
+          </div>
+        </div>
       </section>
 
       <section class="popup" id="mobile-license-two">
-        <div class="popup__license"></div>
+        <div class="popup__license">
+          <div class="license__close">
+            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="0.34751" y1="1.3075" x2="20.3475" y2="20.6407" stroke="#F8F8F8"/>
+              <line x1="20.3506" y1="0.356512" x2="0.350568" y2="20.0232" stroke="#F8F8F8"/>
+            </svg>
+          </div>
+        </div>
       </section>
 
       <section class="popup" id="contacts-popup">
@@ -1149,7 +1165,7 @@
                     <a class="burger-menu__link" href="#guru">клуб</a>
                     <!-- <a class="burger-menu__link" href="#guru">гуру</a> -->
                     <a class="burger-menu__link" href="#reviews">отзывы</a>
-                    <a class="burger-menu__link" href="#contacts">контакты</a>
+                    <a class="burger-menu__link" href="#contacts-content">контакты</a>
                   </nav>
                 </div>
               </section>

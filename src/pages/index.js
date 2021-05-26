@@ -29,16 +29,11 @@ import {
   burgerPopup,
   contactsForm,
   contactsFormPopup,
-  secondMainBgImgThree,
-  secondMainBgImgSeven,
   secondMainBgArrows,
   teachersImages,
   consultPopupBtns,
   contactsPopup,
-  // undergroundImage,
-  // easyDriveString,
   mainFirstBg,
-  mainSecondBg,
   pricesBlock,
   mainHover,
 } from "../utils/constants";
@@ -108,20 +103,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       ? burgerMenuBtn.classList.remove("burger-menu__btn_active")
       : null;
   });
-  // for (let anchor of anchors) {
-  //   anchor.addEventListener('mousedown', function (e) {
-  //     e.preventDefault();
-  //     const blockID = anchor.getAttribute('href').substring(1)
-  //     document.getElementById(blockID).scrollIntoView({
-  //     behavior: 'smooth',
-  //     block: 'start'
-  //     })
-  //     let burgerMenuBtn = document.querySelector('.burger-menu__btn');
-  //     popups[4].classList.remove('popup_visible');
-  //     burgerMenuBtn.classList.remove('burger-menu__btn_active');
-  //     burgerMenuBtn.style.position = "absolute";
-  //   })
-  // }
 });
 
 // ФУНКЦИЯ ОТКРЫТИЯ ПОПАПОВ
@@ -134,7 +115,8 @@ function closePopup(e) {
   if (
     e.target.classList.contains("popup") ||
     e.target.classList.contains("popup__cross") ||
-    e.key === "Escape"
+    e.key === "Escape" ||
+    e.target.closest(".license__close")
   ) {
     popups[0].classList.remove("popup_visible");
     popups[1].classList.remove("popup_visible");
@@ -308,30 +290,45 @@ function activePriceBtn(){
 
 // АНИМАЦИЯ ПРИ НАВЕДЕНИИ КУРСОРА МЫШКИ НА ВТОРОЕ(ГРАДИЕНТНОЕ) ФОНОВОЕ ИЗОБРАЖЕНИЕ
 mainHover.onmouseenter = (e) => {
+  setMainBgBlack()
+};
+
+
+
+// АНИМАЦИЯ ПРИ ОТВЕДЕНИИ КУРСОРА МЫШКИ СО ВТОРОГО(ГРАДИЕНТНОГО) ФОНОВОГО ИЗОБРАЖЕНИЯ
+mainHover.onmouseleave = (e) => {
+  setMainBgWhite()
+};
+
+function setMainBgBlack(){
   mainFirstBg.classList.add("animation");
   secondMainBgArrows.classList.add("animated-arrows");
   let elemes = document.body.getElementsByClassName("header__link");
   for (let a of elemes) {
     changeColor(a, "#181818", 0.5);
   }
+  let headerIcons = document.querySelector('.header__icons').querySelectorAll('path')
+  headerIcons.forEach(i => {
+    i.setAttribute('style', 'fill: #181818')
+  })
   changeColor(getEleme("header__connection")[0], "#181818", 0.5);
   logoHeaderImg.style.opacity = 0;
-};
+}
 
-// АНИМАЦИЯ ПРИ ОТВЕДЕНИИ КУРСОРА МЫШКИ СО ВТОРОГО(ГРАДИЕНТНОГО) ФОНОВОГО ИЗОБРАЖЕНИЯ
-mainHover.onmouseleave = (e) => {
+function setMainBgWhite() {
   mainFirstBg.classList.remove("animation");
-  // secondMainBgImgThree.classList.remove("animated");
-  // secondMainBgImgSeven.classList.remove("animated");
   secondMainBgArrows.classList.remove("animated-arrows");
   let elemes = document.body.getElementsByClassName("header__link");
   for (let a of elemes) {
     changeColor(a, "#f8f8f8", 0.5);
   }
+  let headerIcons = document.querySelector('.header__icons').querySelectorAll('path')
+  headerIcons.forEach(i => {
+    i.setAttribute('style', 'fill: #f8f8f8')
+  })
   changeColor(getEleme("header__connection")[0], "#FFF", 0.5);
   logoHeaderImg.style.opacity = 1;
-};
-
+}
 // --------------------------------------------------- СКРИПТ ДЛЯ ДВИЖЕНИЯ ИЗОБРАЖЕНИЙ И ПОЯВЛЕНИЯ HEADER ПО СКРОЛУ ПО ОСИ Y --------------------------------------------------- //
 // ЗАПИСЫВАЕМ НАЧАЛЬНОЕ ПОЛОЖЕНИЕ ПО ОСИ Y
 let lastOffsetY = 0;
@@ -398,6 +395,7 @@ window.onscroll = (e) => {
     header.style.transition = "all 500ms ease-out";
     header.style.opacity = "1";
     header.style.backgroundColor = "#181818";
+    setMainBgWhite();
   } else {
     header.style.display = "none";
     header.style.position = "absolute";
