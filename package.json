@@ -29,6 +29,7 @@
     "@popperjs/core": "^2.9.2",
     "bootstrap": "^5.0.0-beta3",
     "core-js": "^3.10.1",
-    "lax.js": "^2.0.3"
+    "lax.js": "^2.0.3",
+    "smoothscroll-polyfill": "^0.4.4"
   }
 }

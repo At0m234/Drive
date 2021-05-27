@@ -37,6 +37,10 @@ import {
   pricesBlock,
   mainHover,
 } from "../utils/constants";
+
+// Полифил плавного скрола для safari
+import smoothScroll from 'smoothscroll-polyfill';
+smoothScroll.polyfill();
 // Выбраный тариф
 let tariff = 'Консультация';
 // ФУНКЦИЯ ПРОВЕРКИ УТРОЙСТВА ПОЛЬЗОВАТЕЛЯ
@@ -94,9 +98,10 @@ function showTeacherExpierence(image) {
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("mousedown", function (e) {
     e.preventDefault();
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth",
-    });
+    console.log({easyScroll})
+    // document.querySelector(this.getAttribute("href")).scrollIntoView({
+    //   behavior: "smooth",
+    // });
     let burgerMenuBtn = document.querySelector(".burger-menu__btn");
     popups[4].classList.remove("popup_visible");
     burgerMenuBtn

@@ -1,5 +1,12 @@
-# **EasyDrive Автошкола**
-[https://github.com/At0m234/EasyDrive]
+#  **EasyDrive Автошкола**
 
-### Сайт
+Как запустить проект с помощью терминала
+
+`npm i` - уставновить зависимости
+
+`npm run dev` - запустить сайт локально в режиме разработчика
+
+`npm run build` - собрать сборку в папку под названием **easydrive-online.ru**
+
+### Домен
 [https://easydrive-online.ru]
