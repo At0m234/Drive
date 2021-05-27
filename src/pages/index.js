@@ -98,10 +98,6 @@ function showTeacherExpierence(image) {
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("mousedown", function (e) {
     e.preventDefault();
-    console.log({easyScroll})
-    // document.querySelector(this.getAttribute("href")).scrollIntoView({
-    //   behavior: "smooth",
-    // });
     let burgerMenuBtn = document.querySelector(".burger-menu__btn");
     popups[4].classList.remove("popup_visible");
     burgerMenuBtn
