@@ -30,6 +30,7 @@
     "bootstrap": "^5.0.0-beta3",
     "core-js": "^3.10.1",
     "lax.js": "^2.0.3",
+    "scroll-behavior-polyfill": "^2.0.13",
     "smoothscroll-polyfill": "^0.4.4"
   }
 }

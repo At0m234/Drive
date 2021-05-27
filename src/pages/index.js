@@ -39,8 +39,7 @@ import {
 } from "../utils/constants";
 
 // Полифил плавного скрола для safari
-import smoothScroll from 'smoothscroll-polyfill';
-smoothScroll.polyfill();
+import "scroll-behavior-polyfill";
 // Выбраный тариф
 let tariff = 'Консультация';
 // ФУНКЦИЯ ПРОВЕРКИ УТРОЙСТВА ПОЛЬЗОВАТЕЛЯ
@@ -98,6 +97,10 @@ function showTeacherExpierence(image) {
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("mousedown", function (e) {
     e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+    });
+
     let burgerMenuBtn = document.querySelector(".burger-menu__btn");
     popups[4].classList.remove("popup_visible");
     burgerMenuBtn
@@ -310,7 +313,9 @@ function setMainBgBlack(){
   }
   let headerIcons = document.querySelector('.header__icons').querySelectorAll('path')
   headerIcons.forEach(i => {
-    i.setAttribute('style', 'fill: #181818')
+    i.classList.remove('header__icons_light')
+    i.classList.add('header__icons_dark')
+    // i.setAttribute('style', 'fill: #181818')
   })
   changeColor(getEleme("header__connection")[0], "#181818", 0.5);
   logoHeaderImg.style.opacity = 0;
@@ -325,8 +330,12 @@ function setMainBgWhite() {
   }
   let headerIcons = document.querySelector('.header__icons').querySelectorAll('path')
   headerIcons.forEach(i => {
-    i.setAttribute('style', 'fill: #f8f8f8')
+    console.log('>>>>',i)
+    i.classList.remove('header__icons_dark')
+    i.classList.add('header__icons_light')
+    // i.setAttribute('style', 'fill: #f8f8f8')
   })
+
   changeColor(getEleme("header__connection")[0], "#FFF", 0.5);
   logoHeaderImg.style.opacity = 1;
 }
