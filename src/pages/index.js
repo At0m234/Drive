@@ -146,7 +146,6 @@ function consultFormSubmitHandler(e) {
   fetch(
     `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&parse_mode=html&text=${txt}`
   );
-  console.log(txt)
   e.target.name.value = "";
   e.target.phone.value = "";
   popups[3].classList.remove("popup_visible");
@@ -164,7 +163,6 @@ function popupConsultFormSubmitHandler(e) {
   const chatId = "-561913957";
   const txt = `<b>Запрос о консультации: </b>%0A ${name}%0A${phone}%0A${email ? `${email}%0A` : '' }<b>Способ связи:</b>%0A${form.elements.tele.checked ? `Телефон%0A` : ''}${form.elements.whatsApp.checked ? `WhatsApp%0A` : ''}${form.elements.telegram.checked ? `Telegram%0A` : ''}${tariff ? `<b>Тариф: </b>%0A${tariff}` : ''}`;
 
-  console.log(txt)
   fetch(
     `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&parse_mode=html&text=${txt}`
   )
