@@ -315,7 +315,6 @@ function setMainBgBlack(){
   headerIcons.forEach(i => {
     i.classList.remove('header__icons_light')
     i.classList.add('header__icons_dark')
-    // i.setAttribute('style', 'fill: #181818')
   })
   changeColor(getEleme("header__connection")[0], "#181818", 0.5);
   logoHeaderImg.style.opacity = 0;
@@ -330,10 +329,8 @@ function setMainBgWhite() {
   }
   let headerIcons = document.querySelector('.header__icons').querySelectorAll('path')
   headerIcons.forEach(i => {
-    console.log('>>>>',i)
     i.classList.remove('header__icons_dark')
     i.classList.add('header__icons_light')
-    // i.setAttribute('style', 'fill: #f8f8f8')
   })
 
   changeColor(getEleme("header__connection")[0], "#FFF", 0.5);

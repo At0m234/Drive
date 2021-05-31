@@ -22,8 +22,8 @@
 }
 
 .header__icons a:hover svg path{
-  fill: #F6C343;
-  transition: 0.5s;
+  fill: #F6C343 !important;
+  transition: 0.2s;
 }
 
 .header__icons_light {

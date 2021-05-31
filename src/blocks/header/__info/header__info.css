@@ -29,7 +29,7 @@
     width: 86.67%;
     display: grid;
     gap: 9px 0;
-    padding: 20px 6.67% 20px 6.67%;
+    padding: 20px 6.67% 28px 6.67%;
     grid-template-areas:
     'logo burger'
     'connection burger';
