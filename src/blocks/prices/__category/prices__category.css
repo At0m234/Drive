@@ -1,10 +1,10 @@
-@import url('_type/prices__category_type_A.css');
-@import url('_type/prices__category_type_B.css');
-@import url('_type/prices__category_type_C.css');
-@import url('_type/prices__category_type_D.css');
-@import url('_type/prices__category_type_only-with-us.css');
-@import url('_type/prices__category_type_additional-classes.css');
-@import url('_type/prices__category_type_restoring-skills.css');
+@import url('./_type/prices__category_type_A.css');
+@import url('./_type/prices__category_type_B.css');
+@import url('./_type/prices__category_type_C.css');
+@import url('./_type/prices__category_type_D.css');
+@import url('./_type/prices__category_type_only-with-us.css');
+@import url('./_type/prices__category_type_additional-classes.css');
+@import url('./_type/prices__category_type_restoring-skills.css');
 
 .prices__category {
   position: relative;

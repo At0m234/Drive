@@ -39,7 +39,7 @@ import {
   easyDriveString,
   mainFirstBg,
   mainSecondBg,
-} from '../utils/constants';
+} from '../utils/constants.js';
 
 // ФУНКЦИЯ ПРОВЕРКИ УТРОЙСТВА ПОЛЬЗОВАТЕЛЯ
 let isMobile = () => {

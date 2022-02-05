@@ -1,10 +1,10 @@
-@import url('_type/learning__popup_type_contract.css');
-@import url('_type/learning__popup_type_theory.css');
-@import url('_type/learning__popup_type_practice.css');
-@import url('_type/learning__popup_theory-exam.css');
-@import url('_type/learning__popup_type_practice-exam.css');
-@import url('_type/learning__popup_type_GIBDD.css');
-@import url('_type/learning__popup_type_gratz.css');
+@import url('./_type/learning__popup_type_contract.css');
+@import url('./_type/learning__popup_type_theory.css');
+@import url('./_type/learning__popup_type_practice.css');
+@import url('./_type/learning__popup_theory-exam.css');
+@import url('./_type/learning__popup_type_practice-exam.css');
+@import url('./_type/learning__popup_type_GIBDD.css');
+@import url('./_type/learning__popup_type_gratz.css');
 
 .learning__popup {
   position: absolute;
@@ -25,15 +25,3 @@
   transition: opacity .5s ease-out;
   transition: visibility .5s ease-out;
 }
-
-/* @media screen and (min-width: 768px) and (max-width: 1365px) {
-  .learning__popup {
-
-  }
-} */
-
-/* @media screen and (min-width: 50px) and (max-width: 767px) {
-  .learning__popup {
-
-  }
-} */

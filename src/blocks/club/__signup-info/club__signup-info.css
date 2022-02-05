@@ -3,12 +3,6 @@
   flex-direction: column;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
-  .club__signup-info {
-
-  }
-}
-
 @media screen and (min-width: 50px) and (max-width: 767px) {
   .club__signup-info {
     max-height: 594px;

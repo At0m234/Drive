@@ -1,5 +1,5 @@
-@import url('_type/club__license-link_type_normal.css');
-@import url('_type/club__license-link_type_bold.css');
+@import url('./_type/club__license-link_type_normal.css');
+@import url('./_type/club__license-link_type_bold.css');
 
 .club__license-link {
   font-family: Montserrat;

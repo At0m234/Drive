@@ -1,14 +1,14 @@
-@import url('_type/guru__image_type_message-one.css');
-@import url('_type/guru__image_type_message-two.css');
-@import url('_type/guru__image_type_message-three.css');
-@import url('_type/guru__image_type_message-four.css');
-@import url('_type/guru__image_type_message-five.css');
-@import url('_type/guru__image_type_message-six.css');
-@import url('_type/guru__image_type_message-seven.css');
+@import url('./_type/guru__image_type_message-one.css');
+@import url('./_type/guru__image_type_message-two.css');
+@import url('./_type/guru__image_type_message-three.css');
+@import url('./_type/guru__image_type_message-four.css');
+@import url('./_type/guru__image_type_message-five.css');
+@import url('./_type/guru__image_type_message-six.css');
+@import url('./_type/guru__image_type_message-seven.css');
 
-@import url('_type/guru__image_type_icon-one.css');
-@import url('_type/guru__image_type_icon-two.css');
-@import url('_type/guru__image_type_icon-three.css');
+@import url('./_type/guru__image_type_icon-one.css');
+@import url('./_type/guru__image_type_icon-two.css');
+@import url('./_type/guru__image_type_icon-three.css');
 
 .guru__image {
   position: absolute;

@@ -1,5 +1,5 @@
-@import url('_type/popup__cross_type_licenses.css');
-@import url('_type/popup__cross_type_contacts.css');
+@import url('./_type/popup__cross_type_licenses.css');
+@import url('./_type/popup__cross_type_contacts.css');
 
 .popup__cross {
   position: absolute;

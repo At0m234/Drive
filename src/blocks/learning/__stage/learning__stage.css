@@ -1,5 +1,5 @@
-@import url('_type/learning__stage_type_white.css');
-@import url('_type/learning__stage_type_black.css');
+@import url('./_type/learning__stage_type_white.css');
+@import url('./_type/learning__stage_type_black.css');
 
 .learning__stage {
   font-family: Montserrat;

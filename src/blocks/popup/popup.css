@@ -1,6 +1,6 @@
-@import url('__licenses/popup__licenses.css');
-@import url('__cross/popup__cross.css');
-@import url('__license/popup__license.css');
+@import url('./__licenses/popup__licenses.css');
+@import url('./__cross/popup__cross.css');
+@import url('./__license/popup__license.css');
 
 .popup {
   display: flex;

@@ -8,11 +8,9 @@
   width: 160px;
   height: 48px;
   padding: 0;
-
   border: 1px solid;
   border-image-source: linear-gradient(275.85deg, #1492A1 21.19%, #BBB272 66.07%, #F4C245 100%);
   border-image-slice: 1;
-
   transition: all .8s ease-out;
 }
 
@@ -38,20 +36,20 @@
 
 .button_type_only-with-us span {
   background: linear-gradient(272.45deg, #1492A1 17.58%, #BBB272 75.77%, #F4C245 100%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 
 .button_type_only-with-us span:hover {
   background: linear-gradient(87.16deg, #1492A1 7.23%, #BBB272 84.8%, #F4C245 117.11%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .button_type_only-with-us span:focus {
   background: linear-gradient(272.45deg, #1492A1 17.58%, #BBB272 75.77%, #F4C245 100%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 

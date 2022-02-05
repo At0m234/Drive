@@ -1,7 +1,6 @@
 .guru__teachers-second-slide {
   display: flex;
   flex-direction: row;
-  /* width: 548px; */
   height: 440px;
   flex-wrap: wrap;
 }

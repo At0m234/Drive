@@ -1,6 +1,6 @@
 .club__background-image {
   position: relative;
-  background-image: url(../../../images/Club/ClubBGImg_edited.jpg);
+  background-image: url('../../../images/Club/ClubBGImg_edited.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;

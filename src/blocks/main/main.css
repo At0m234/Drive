@@ -1,11 +1,11 @@
 
-@import url('__info/main__info.css');
-@import url('__title/main__title.css');
-@import url('__subtitle/main__subtitle.css');
-@import url('__btns/main__btns.css');
-@import url('__bg-first/main__bg-first.css');
-@import url('__bg-second/main__bg-second.css');
-@import url('__image/main__image.css');
+@import url('./__info/main__info.css');
+@import url('./__title/main__title.css');
+@import url('./__subtitle/main__subtitle.css');
+@import url('./__btns/main__btns.css');
+@import url('./__bg-first/main__bg-first.css');
+@import url('./__bg-second/main__bg-second.css');
+@import url('./__image/main__image.css');
 
 .main {
   display: flex;

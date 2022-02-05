@@ -1,9 +1,9 @@
-@import url('__info/header__info.css');
-@import url('__links/header__links.css');
-@import url('__link/header__link.css');
-@import url('__logo-white/header__logo-white.css');
-@import url('__logo-black/header__logo-black.css');
-@import url('__connection/header__connection.css');
+@import url('./__info/header__info.css');
+@import url('./__links/header__links.css');
+@import url('./__link/header__link.css');
+@import url('./__logo-white/header__logo-white.css');
+@import url('./__logo-black/header__logo-black.css');
+@import url('./__connection/header__connection.css');
 @import url('../burgerMenu/burgerMenu.css');
 
 .header {
@@ -15,16 +15,3 @@
   z-index: 10;
   width: 100%;
 }
-
-/*
-@media screen and (min-width: 768px) and (max-width: 1365px) {
-  .header {
-    max-width: 1365px;
-  }
-}
-
-@media screen and (min-width: 50px) and (max-width: 767px) {
-  .header {
-    width: 86.67%;
-  }
-} */

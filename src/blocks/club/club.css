@@ -1,28 +1,28 @@
-@import url('__background-image/club__background-image.css');
-@import url('__background-string/club__background-string.css');
+@import url('./__background-image/club__background-image.css');
+@import url('./__background-string/club__background-string.css');
 
-@import url('__signup/club__signup.css');
-@import url('__signup-info/club__signup-info.css');
-@import url('__title/club__title.css');
-@import url('__subtitle/club__subtitle.css');
+@import url('./__signup/club__signup.css');
+@import url('./__signup-info/club__signup-info.css');
+@import url('./__title/club__title.css');
+@import url('./__subtitle/club__subtitle.css');
 
-@import url('__advantage/club__advantage.css');
-@import url('__image/club__image.css');
-@import url('__paragraph/club__paragraph.css');
-@import url('__heading/club__heading.css');
-@import url('__text/club__text.css');
+@import url('./__advantage/club__advantage.css');
+@import url('./__image/club__image.css');
+@import url('./__paragraph/club__paragraph.css');
+@import url('./__heading/club__heading.css');
+@import url('./__text/club__text.css');
 
-@import url('__adress/club__adress.css');
-@import url('__adress-text/club__adress-text.css');
-@import url('__adress-paragraph/club__adress-paragraph.css');
-@import url('__location-image/club__location-image.css');
-@import url('__underground-image/club__underground-image.css');
+@import url('./__adress/club__adress.css');
+@import url('./__adress-text/club__adress-text.css');
+@import url('./__adress-paragraph/club__adress-paragraph.css');
+@import url('./__location-image/club__location-image.css');
+@import url('./__underground-image/club__underground-image.css');
 
-@import url('__license/club__license.css');
-@import url('__license-title/club__license-title.css');
-@import url('__license-link/club__license-link.css');
-@import url('__licenses/club__licenses.css');
-@import url('__license-paragraph/club__license-paragraph.css');
+@import url('./__license/club__license.css');
+@import url('./__license-title/club__license-title.css');
+@import url('./__license-link/club__license-link.css');
+@import url('./__licenses/club__licenses.css');
+@import url('./__license-paragraph/club__license-paragraph.css');
 
 .club {
   position: relative;

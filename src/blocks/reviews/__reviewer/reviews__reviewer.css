@@ -1,7 +1,7 @@
-@import url('_type/reviews__reviewer_type_one.css');
-@import url('_type/reviews__reviewer_type_two.css');
-@import url('_type/reviews__reviewer_type_three.css');
-@import url('_type/reviews__reviewer_type_four.css');
+@import url('./_type/reviews__reviewer_type_one.css');
+@import url('./_type/reviews__reviewer_type_two.css');
+@import url('./_type/reviews__reviewer_type_three.css');
+@import url('./_type/reviews__reviewer_type_four.css');
 
 .reviews__reviewer {
   background: #FFFFFF;

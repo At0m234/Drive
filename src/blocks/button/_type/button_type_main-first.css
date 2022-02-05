@@ -21,19 +21,15 @@
   background: -webkit-linear-gradient(277.54deg, #1492A1 41.65%, #BBB272 69.55%, #F4C245 100.21%);
   background: -o-linear-gradient(277.54deg, #1492A1 41.65%, #BBB272 69.55%, #F4C245 100.21%);
   background: -ms-linear-gradient(277.54deg, #1492A1 41.65%, #BBB272 69.55%, #F4C245 100.21%);
-
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
-
   border-width: 1px;
   border-style: solid;
   border: 1px solid transparent;
-
   border-image: linear-gradient(277.54deg, #1492A1 41.65%, #BBB272 69.55%, #F4C245 100.21%);
   -moz-border-image: linear-gradient(277.54deg, #1492A1 41.65%, #BBB272 69.55%, #F4C245 100.21%);
   -webkit-border-image: linear-gradient(277.54deg, #1492A1 41.65%, #BBB272 69.55%, #F4C245 100.21%);
   -o-border-image: linear-gradient(277.54deg, #1492A1 41.65%, #BBB272 69.55%, #F4C245 100.21%);
-
   border-image-slice: 1;
   -webkit-border-image-slice: 1;
 }
@@ -44,7 +40,6 @@
   background: -webkit-linear-gradient(277.54deg, #1492A1 41.65%, #BBB272 69.55%, #F4C245 100.21%);
   background: -o-linear-gradient(277.54deg, #1492A1 41.65%, #BBB272 69.55%, #F4C245 100.21%);
   background: -ms-linear-gradient(277.54deg, #1492A1 41.65%, #BBB272 69.55%, #F4C245 100.21%);
-
   -webkit-text-fill-color: #181818;
 }
 

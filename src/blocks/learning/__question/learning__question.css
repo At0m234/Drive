@@ -24,7 +24,6 @@
   transition: visibility .5s ease-out;
 }
 
-
 .learning__question:focus ~ span {
   opacity: 1;
   visibility: visible;
@@ -41,7 +40,6 @@
   transition: visibility .5s ease-out;
 }
 
-
 .learning__question:active ~ span {
   opacity: 1;
   visibility: visible;
@@ -57,18 +55,3 @@
   transition: opacity .5s ease-out;
   transition: visibility .5s ease-out;
 }
-
-/*
-@media screen and (min-width: 768px) and (max-width: 1365px) {
-  .learning__question {
-    width: ;
-    height: ;
-  }
-}
-
-@media screen and (min-width: 50px) and (max-width: 767px) {
-  .learning__question {
-    width: ;
-    height: ;
-  }
-} */

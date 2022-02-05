@@ -32,7 +32,6 @@
   outline: none;
   cursor: pointer;
   box-sizing: border-box;
-
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none;   /* Chrome/Safari/Opera */
   -khtml-user-select: none;    /* Konqueror */

@@ -1,12 +1,12 @@
-@import url('__title/learning__title.css');
-@import url('__steps/learning__steps.css');
-@import url('__cell/learning__cell.css');
-@import url('__cell-info/learning__cell-info.css');
-@import url('__stage/learning__stage.css');
-@import url('__subtitle/learning__subtitle.css');
-@import url('__image/learning__image.css');
-@import url('__question/learning__question.css');
-@import url('__popup/learning__popup.css');
+@import url('./__title/learning__title.css');
+@import url('./__steps/learning__steps.css');
+@import url('./__cell/learning__cell.css');
+@import url('./__cell-info/learning__cell-info.css');
+@import url('./__stage/learning__stage.css');
+@import url('./__subtitle/learning__subtitle.css');
+@import url('./__image/learning__image.css');
+@import url('./__question/learning__question.css');
+@import url('./__popup/learning__popup.css');
 
 .learning {
   display: flex;

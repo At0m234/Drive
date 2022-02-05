@@ -1,5 +1,5 @@
-@import url('_type/guru__alumni-title_type_grad.css');
-@import url('_type/guru__alumni-title_type_white.css');
+@import url('./_type/guru__alumni-title_type_grad.css');
+@import url('./_type/guru__alumni-title_type_white.css');
 
 .guru__alumni-title {
   position: relative;

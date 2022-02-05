@@ -7,7 +7,7 @@
   height: 410px;
 }
 
-.guru__teachers-slider input{
+.guru__teachers-slider input {
 	display: none;
 }
 
@@ -31,7 +31,6 @@
     width: 385px;
     height: 410px;
   }
-
 }
 
 @media screen and (min-width: 50px) and (max-width: 767px) {

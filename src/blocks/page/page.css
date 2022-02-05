@@ -11,8 +11,6 @@
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
   z-index: -5;
-  /* max-width: 2560px; */
-
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none;   /* Chrome/Safari/Opera */
   -khtml-user-select: none;    /* Konqueror */
@@ -34,7 +32,6 @@
     max-width: 767px;
   }
 }
-
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,

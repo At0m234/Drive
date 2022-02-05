@@ -1,33 +1,33 @@
-@import url('__info/prices__info.css');
-@import url('__text/prices__text.css');
-@import url('__title/prices__title.css');
-@import url('__subtitle/prices__subtitle.css');
-@import url('__categories-choise/prices__categories-choise.css');
-@import url('__categories-container/prices__categories-container.css');
+@import url('./__info/prices__info.css');
+@import url('./__text/prices__text.css');
+@import url('./__title/prices__title.css');
+@import url('./__subtitle/prices__subtitle.css');
+@import url('./__categories-choise/prices__categories-choise.css');
+@import url('./__categories-container/prices__categories-container.css');
 
-@import url('__A-container/prices__A-container.css');
-@import url('__B-container/prices__B-container.css');
-@import url('__C-container/prices__C-container.css');
-@import url('__D-container/prices__D-container.css');
-@import url('__only-with-us-container/prices__only-with-us-container.css');
-@import url('__additional-classes-container/prices__additional-classes-container.css');
+@import url('./__A-container/prices__A-container.css');
+@import url('./__B-container/prices__B-container.css');
+@import url('./__C-container/prices__C-container.css');
+@import url('./__D-container/prices__D-container.css');
+@import url('./__only-with-us-container/prices__only-with-us-container.css');
+@import url('./__additional-classes-container/prices__additional-classes-container.css');
 
-@import url('__category/prices__category.css');
-@import url('__category-info/prices__category-info.css');
-@import url('__category-vehicle/prices__category-vehicle.css');
-@import url('__category-heading/prices__category-heading.css');
-@import url('__category-steps/prices__category-steps.css');
-@import url('__category-step/prices__category-step.css');
-@import url('__category-select/prices__category-select.css');
-@import url('__category-price/prices__category-price.css');
-@import url('__image/prices__image.css');
+@import url('./__category/prices__category.css');
+@import url('./__category-info/prices__category-info.css');
+@import url('./__category-vehicle/prices__category-vehicle.css');
+@import url('./__category-heading/prices__category-heading.css');
+@import url('./__category-steps/prices__category-steps.css');
+@import url('./__category-step/prices__category-step.css');
+@import url('./__category-select/prices__category-select.css');
+@import url('./__category-price/prices__category-price.css');
+@import url('./__image/prices__image.css');
 
-@import url('__only-with-us/prices__only-with-us.css');
-@import url('__only-with-us-subtitle/prices__only-with-us-subtitle.css');
-@import url('__only-with-us-title/prices__only-with-us-title.css');
-@import url('__only-with-us-text/prices__only-with-us-text.css');
-@import url('__only-with-us-paragraph/prices__only-with-us-paragraph.css');
-@import url('__only-with-us-image/prices__only-with-us-image.css');
+@import url('./__only-with-us/prices__only-with-us.css');
+@import url('./__only-with-us-subtitle/prices__only-with-us-subtitle.css');
+@import url('./__only-with-us-title/prices__only-with-us-title.css');
+@import url('./__only-with-us-text/prices__only-with-us-text.css');
+@import url('./__only-with-us-paragraph/prices__only-with-us-paragraph.css');
+@import url('./__only-with-us-image/prices__only-with-us-image.css');
 
 .prices {
   display: flex;
@@ -38,7 +38,6 @@
   background-color: #f8f8f8;
   position: relative;
   height: auto;
-
   -webkit-touch-callout: text; /* iOS Safari */
   -webkit-user-select: text;   /* Chrome/Safari/Opera */
   -khtml-user-select: text;    /* Konqueror */

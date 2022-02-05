@@ -1,10 +1,10 @@
-@import url('_type/learning__cell_type_contract.css');
-@import url('_type/learning__cell_type_GIBDD.css');
-@import url('_type/learning__cell_type_gratz.css');
-@import url('_type/learning__cell_type_practice.css');
-@import url('_type/learning__cell_type_practice-exam.css');
-@import url('_type/learning__cell_type_theory.css');
-@import url('_type/learning__cell_type_theory-exam.css');
+@import url('./_type/learning__cell_type_contract.css');
+@import url('./_type/learning__cell_type_GIBDD.css');
+@import url('./_type/learning__cell_type_gratz.css');
+@import url('./_type/learning__cell_type_practice.css');
+@import url('./_type/learning__cell_type_practice-exam.css');
+@import url('./_type/learning__cell_type_theory.css');
+@import url('./_type/learning__cell_type_theory-exam.css');
 
 .learning__cell {
   position: absolute;

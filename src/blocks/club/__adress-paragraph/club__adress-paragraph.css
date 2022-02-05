@@ -1,5 +1,5 @@
-@import url('_type/club__adress-paragraph_type_normal.css');
-@import url('_type/club__adress-paragraph_type_bold.css');
+@import url('./_type/club__adress-paragraph_type_normal.css');
+@import url('./_type/club__adress-paragraph_type_bold.css');
 
 .club__adress-paragraph {
   font-family: Montserrat;

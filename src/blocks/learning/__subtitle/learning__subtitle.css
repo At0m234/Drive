@@ -1,5 +1,5 @@
-@import url('_type/learning__subtitle_type_black.css');
-@import url('_type/learning__subtitle_type_white.css');
+@import url('./_type/learning__subtitle_type_black.css');
+@import url('./_type/learning__subtitle_type_white.css');
 
 .learning__subtitle {
   justify-self: left;

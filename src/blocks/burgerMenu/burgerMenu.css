@@ -1,118 +1,105 @@
-/* .burger-menu {
-  display: none;
+.burger-menu {
+  position: absolute;
+  top: 133px;
+  right: 6.67%;
+  width: 325px;
+  height: 590px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #181818;
+  z-index: 5;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
-  .burger-menu {
-    display: none;
-  }
+.burger-menu__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 465px;
+  width: 190px;
 }
 
-@media screen and (min-width: 50px) and (max-width: 767px) { */
-  .burger-menu {
-    position: absolute;
-    top: 133px;
-    right: 6.67%;
-    width: 325px;
-    height: 590px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #181818;
-    z-index: 5;
-  }
+.burger-menu__link {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #F8F8F8;
+  text-decoration: none;
+  transition: 1s;
+}
 
-  .burger-menu__links {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 465px;
-    width: 190px;
-  }
+.burger-menu__link:hover {
+  transition: .1s linear .05s;
+  opacity: .5;
+  color: #F4C245;
+}
 
-  .burger-menu__link {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #F8F8F8;
-    text-decoration: none;
-    transition: 1s;
-  }
+.burger-menu__link:active, .burger-menu__link:focus  {
+  color: #F4C245;
+}
 
-  .burger-menu__link:hover {
-    transition: .1s linear .05s;
-    opacity: .5;
-    color: #F4C245;
-  }
+/* стили кнопки бургера */
+.burger-menu__btn {
+  position: absolute;
+  background: linear-gradient(323.19deg, #1492A1 -23.68%, #BBB272 34.18%, #F4C245 97.76%);
+  background: -moz-linear-gradient(323.19deg, #1492A1 -23.68%, #BBB272 34.18%, #F4C245 97.76%);
+  background: -webkit-linear-gradient(323.19deg, #1492A1 -23.68%, #BBB272 34.18%, #F4C245 97.76%);
+  background: -o-linear-gradient(323.19deg, #1492A1 -23.68%, #BBB272 34.18%, #F4C245 97.76%);
+  background: -ms-linear-gradient(323.19deg, #1492A1 -23.68%, #BBB272 34.18%, #F4C245 97.76%);
+  border: none;
+  width: 54px;
+  height: 54px;
+  z-index: 11;
+  grid-area: burger;
+  top: 22px;
+  right: 6.67%;
+}
 
-  .burger-menu__link:active, .burger-menu__link:focus  {
-    /* padding-bottom: 6px; */
-    color: #F4C245;
-  }
+.burger-menu__btn:active, .burger-menu__btn:focus  {
+  outline: none;
+}
 
-  /* стили кнопки бургера */
-  .burger-menu__btn {
-    position: absolute;
-    background: linear-gradient(323.19deg, #1492A1 -23.68%, #BBB272 34.18%, #F4C245 97.76%);
-    background: -moz-linear-gradient(323.19deg, #1492A1 -23.68%, #BBB272 34.18%, #F4C245 97.76%);
-    background: -webkit-linear-gradient(323.19deg, #1492A1 -23.68%, #BBB272 34.18%, #F4C245 97.76%);
-    background: -o-linear-gradient(323.19deg, #1492A1 -23.68%, #BBB272 34.18%, #F4C245 97.76%);
-    background: -ms-linear-gradient(323.19deg, #1492A1 -23.68%, #BBB272 34.18%, #F4C245 97.76%);
-    border: none;
-    width: 54px;
-    height: 54px;
-    z-index: 11;
-    grid-area: burger;
-    top: 22px;
-    right: 6.67%;
-  }
+/* стили и анимация отрытия и закрытия кнопки "бургера" */
+.burger-menu__btn span,
+.burger-menu__btn span::before,
+.burger-menu__btn span::after {
+  position: absolute;
+  top: 50%; margin-top: -1px;
+  left: 50%; margin-left: -16px;
+  width: 32px;
+  height: 2px;
+  background-color: #181818;
+}
 
-  .burger-menu__btn:active, .burger-menu__btn:focus  {
-    outline: none;
-  }
+.burger-menu__btn span::before,
+.burger-menu__btn span::after {
+  content: '';
+  display: block;
+  transition: .5s;
+}
 
-  /* стили и анимация отрытия и закрытия кнопки "бургера" */
-  .burger-menu__btn span,
-  .burger-menu__btn span::before,
-  .burger-menu__btn span::after {
-    position: absolute;
-    top: 50%; margin-top: -1px;
-    left: 50%; margin-left: -16px;
-    width: 32px;
-    height: 2px;
-    background-color: #181818;
-  }
+.burger-menu__btn span::before {
+  transform: translateY(-11px);
+}
 
-  .burger-menu__btn span::before,
-  .burger-menu__btn span::after {
-    content: '';
-    display: block;
-    transition: .5s;
-  }
+.burger-menu__btn span::after {
+  transform: translateY(11px);
+}
 
-  .burger-menu__btn span::before {
-    transform: translateY(-11px);
-  }
+.burger-menu__btn_active span {
+  height: 0;
+}
 
-  .burger-menu__btn span::after {
-    transform: translateY(11px);
-  }
+.burger-menu__btn_active span:before {
+  transform: rotate(45deg);
+}
 
-  .burger-menu__btn_active span {
-    height: 0;
-  }
-
-  .burger-menu__btn_active span:before {
-    transform: rotate(45deg);
-  }
-
-  .burger-menu__btn_active span:after {
-    transform: rotate(-45deg);
-  }
-/* } */
+.burger-menu__btn_active span:after {
+  transform: rotate(-45deg);
+}

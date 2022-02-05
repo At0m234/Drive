@@ -14,7 +14,6 @@
   height: 20px;
   text-decoration: none;
   -webkit-text-decoration: none;
-
   -webkit-touch-callout: text; /* iOS Safari */
   -webkit-user-select: text;   /* Chrome/Safari/Opera */
   -khtml-user-select: text;    /* Konqueror */
@@ -53,6 +52,7 @@
     margin-right: 500;
   }
 }
+
 @media screen and (min-width: 50px) and (max-width: 767px) {
   .header__connection {
     width: 141px;

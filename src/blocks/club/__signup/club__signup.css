@@ -1,8 +1,5 @@
 .club__signup {
   position: absolute;
-  /* right: 9.37%; */
-  /* left: 52.8%;
-  top: -62px; */
   bottom: -930px;
   display: flex;
   flex-direction: column;
@@ -15,9 +12,6 @@
 
 @media screen and (min-width: 768px) and (max-width: 1365px) {
   .club__signup {
-    /* right: 2.73%;
-    left: 35.98%;
-    top: -41px; */
     max-width: 466px;
     max-height: 694px;
     height: 694px;
@@ -27,13 +21,9 @@
 
 @media screen and (min-width: 50px) and (max-width: 767px) {
   .club__signup {
-    /* top: 191px;
-    right: 0;
-    left: 0; */
     width: 100%;
     width: 375px;
     height: 594px;
-    /* justify-content: center; */
     bottom: -845px;
     align-self: center;
   }
