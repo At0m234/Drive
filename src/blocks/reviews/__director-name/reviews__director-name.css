@@ -18,7 +18,7 @@ h2 span {
   margin-bottom: 10px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .reviews__director-name {
     width: 100%;
     font-size: 14px;
@@ -38,6 +38,7 @@ h2 span {
     font-size: 12px;
     line-height: 15px;
     margin: 0 4.92% 39px 52.31%;
+    max-height: 80px;
   }
 
   h2 span {

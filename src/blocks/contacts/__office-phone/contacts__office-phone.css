@@ -5,7 +5,7 @@
   font-size: 20px;
   line-height: 140%;
   color: #181818;
-  margin: 0 0 64px 0;
+  margin: 0 0 15px 0;
   width: 100%;
   text-decoration: none;
   -webkit-text-decoration: none;
@@ -38,7 +38,7 @@
   -webkit-text-decoration: none;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .contacts__office-phone {
     font-size: 18px;
     margin: 0 0 43px 0;

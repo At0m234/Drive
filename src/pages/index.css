@@ -16,3 +16,7 @@
 @import url('../blocks/footer/footer.css');
 @import url('../blocks/popup/popup.css');
 @import url('../blocks/burgerMenu/burgerMenu.css');
+
+html {
+  scroll-behavior: smooth;
+}

@@ -9,20 +9,22 @@
   height: 48px;
   padding: 0;
   border: 1px solid;
-  border-image-source: linear-gradient(275.85deg, #1492A1 21.19%, #BBB272 66.07%, #F4C245 100%);
-  border-image-slice: 1;
+  /* border-image-source: linear-gradient(275.85deg, #1492A1 21.19%, #BBB272 66.07%, #F4C245 100%);
+  border-image-slice: 1; */
+  border-color: #1492A1;
   transition: all .8s ease-out;
 }
 
 .button_type_only-with-us:hover {
   border: 1px solid;
-  border-image-source: linear-gradient(84.86deg, #1492A1 0%, #BBB272 56.95%, #F4C245 100%);
-  border-image-slice: 1;
+  /* border-image-source: linear-gradient(84.86deg, #1492A1 0%, #BBB272 56.95%, #F4C245 100%);
+  border-image-slice: 1; */
+  border-color: #F4C245;
 }
 
-.button_type_only-with-us:focus {
+.button_type_only-with-us_active {
   border: 1px solid #181818;
-  background: #181818;
+  background: #181818 !important;
 }
 
 .button_type_only-with-us span {
@@ -35,25 +37,28 @@
 }
 
 .button_type_only-with-us span {
-  background: linear-gradient(272.45deg, #1492A1 17.58%, #BBB272 75.77%, #F4C245 100%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* background: linear-gradient(272.45deg, #1492A1 17.58%, #BBB272 75.77%, #F4C245 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  color: #1492A1;
 }
 
 
 .button_type_only-with-us span:hover {
-  background: linear-gradient(87.16deg, #1492A1 7.23%, #BBB272 84.8%, #F4C245 117.11%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* background: linear-gradient(87.16deg, #1492A1 7.23%, #BBB272 84.8%, #F4C245 117.11%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  color: #F4C245
 }
 
 .button_type_only-with-us span:focus {
-  background: linear-gradient(272.45deg, #1492A1 17.58%, #BBB272 75.77%, #F4C245 100%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* background: linear-gradient(272.45deg, #1492A1 17.58%, #BBB272 75.77%, #F4C245 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  color: #1492A1;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .button_type_only-with-us {
     width: 218px;
     height: 48px;

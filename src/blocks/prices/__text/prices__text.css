@@ -7,7 +7,7 @@
   max-width: 540px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .prices__text {
     width: 100%;
     margin: 0 0 44px 0;

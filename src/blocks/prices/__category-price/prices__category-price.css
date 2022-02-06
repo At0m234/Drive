@@ -66,9 +66,7 @@
   align-self: center;
 }
 
-
-
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .prices__category-price {
     font-size: 24px;
     line-height: 29px;

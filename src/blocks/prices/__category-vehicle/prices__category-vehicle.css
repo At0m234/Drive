@@ -5,10 +5,10 @@
   font-size: 12px;
   line-height: 144%;
   color: #737373;
-  margin: 26px auto 8px 0;
+  margin: 16px auto 8px 0;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .prices__category-vehicle {
     font-size: 10px;
     margin: 13px auto 2px 0;
@@ -21,4 +21,5 @@
     font-size: 10px;
     margin: 0 0 5px 0;
   }
+
 }

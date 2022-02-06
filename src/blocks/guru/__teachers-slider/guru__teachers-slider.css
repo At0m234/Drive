@@ -25,12 +25,13 @@
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .guru__teachers-slider {
     justify-content: center;
     width: 385px;
     height: 410px;
   }
+
 }
 
 @media screen and (min-width: 50px) and (max-width: 767px) {

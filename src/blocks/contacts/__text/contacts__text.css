@@ -6,7 +6,7 @@
   margin: 0;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .contacts__text {
     width: 42.02%;
     max-width: 300px;

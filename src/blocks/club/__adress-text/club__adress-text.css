@@ -5,7 +5,7 @@
   max-width: 1110px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .club__adress-text {
     width: 92.84%;
     flex-direction: column;

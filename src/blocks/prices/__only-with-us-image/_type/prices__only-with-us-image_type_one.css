@@ -3,7 +3,7 @@
   right: 234.38px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .prices__only-with-us-image_type_one {
     width: 34px;
     height: 34px;

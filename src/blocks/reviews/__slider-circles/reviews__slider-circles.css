@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .reviews__slider-circles {
     position: absolute;
     bottom: -15px;
@@ -11,7 +11,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 50px;
+    width: 30px;
   }
 
   #switch4:checked ~ #reviews-circles .reviews__slider-circle:nth-child(1),
@@ -23,11 +23,5 @@
 
   .reviews__slider-circles label {
     margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 50px) and (max-width: 767px) {
-  .reviews__slider-circles {
-    display: none;
   }
 }

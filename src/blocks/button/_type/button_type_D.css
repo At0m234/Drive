@@ -17,12 +17,12 @@
   border: 1px solid #5BAFCA;
 }
 
-.button_type_D:focus {
-  background: #5BAFCA;
+.button_type_D_active {
+  background: #5BAFCA !important;
   border: 1px solid #181818;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .button_type_D {
     width: 218px;
     height: 48px;

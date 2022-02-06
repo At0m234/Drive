@@ -15,6 +15,12 @@
 
 .button_type_A:hover {
   border: 1px solid #E08645;
+  -webkit-background-color: #E08645;
+}
+
+.button_type_A_active {
+  border: 1px solid #181818;
+  background-color: #E08645 !important;
 }
 
 .button_type_A:focus, .button_type_A:active {
@@ -22,12 +28,12 @@
   background-color: #E08645;
   background: #E08645;
   background: rgba(224, 134, 69, 1);
-  background-clip: border-box;
+  -webkit-background-clip: border-box;
   -webkit-tap-highlight-color: #E08645;
   border: 1px solid #181818;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .button_type_A {
     width: 218px;
     height: 48px;

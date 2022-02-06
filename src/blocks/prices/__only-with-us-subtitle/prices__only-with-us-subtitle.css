@@ -8,7 +8,7 @@
   margin: 26px 0 8px 30px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .prices__only-with-us-subtitle {
     font-size: 10px;
     margin: 13px 0 2px 30px;

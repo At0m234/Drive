@@ -13,7 +13,7 @@
   margin: 0;
 }
 
-@media screen and (max-width: 1365px) {
+@media screen and (max-width: 1279px) {
   .guru__teachers-slider-controls {
     display: none;
   }

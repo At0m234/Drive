@@ -5,7 +5,7 @@
   left: 18.01%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .guru__image_type_icon-two {
     width: 104px;
     height: 31px;

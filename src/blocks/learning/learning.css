@@ -16,7 +16,7 @@
   background-image:linear-gradient(270deg, #1492A1 1.44%, #BBB272 47.36%, #F4C245 97.81%);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .learning {
     padding: 0 0 66px 0;
     flex-direction: column;

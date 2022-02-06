@@ -10,7 +10,7 @@
   justify-content: space-between;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .header__info {
     width: 96.006%;
     padding: 23px 27px 23px 27px;
@@ -29,7 +29,7 @@
     width: 86.67%;
     display: grid;
     gap: 9px 0;
-    padding: 20px 6.67% 20px 6.67%;
+    padding: 20px 6.67% 28px 6.67%;
     grid-template-areas:
     'logo burger'
     'connection burger';

@@ -11,7 +11,7 @@
   border: 1px solid #181818;
 }
 
-.guru__teachers-third-slide span {
+.guru__teachers-third-slide span{
   background-image: url('../../../images/Guru/Smile.svg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -19,7 +19,7 @@
   height: 64px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .guru__teachers-third-slide {
     width: 348px;
     height: 410px;

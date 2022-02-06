@@ -18,10 +18,44 @@ label {
   margin-bottom: 12px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .contacts__form {
     position: relative;
     flex-direction: column;
     margin: 0 0 0 72px;
   }
 }
+
+/* @media screen and (min-width: 50px) and (max-width: 767px) {
+  .contacts__form {
+    width: 278px;
+    height: 250px;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #181818;
+    padding: 60px 36px 40px 36px;
+    border-radius: 10px;
+  }
+
+  .contacts__form p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    color: #F8F8F8;
+    margin: 16px 0 0 0;
+    justify-self: flex-start;
+    align-self: flex-start;
+  }
+
+  .contacts__form span {
+    color: #F4C245;
+  }
+} */

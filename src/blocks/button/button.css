@@ -1,27 +1,27 @@
-@import url('_type/button_type_main-first.css');
-@import url('_type/button_type_main-second.css');
-@import url('_type/button_type_callback.css');
-@import url('_type/button_type_club.css');
-@import url('_type/button_type_contacts.css');
-@import url('_type/button_type_office.css');
+@import url('./_type/button_type_main-first.css');
+@import url('./_type/button_type_main-second.css');
+@import url('./_type/button_type_callback.css');
+@import url('./_type/button_type_club.css');
+@import url('./_type/button_type_contacts.css');
+@import url('./_type/button_type_office.css');
 
-@import url('_type/button_type_A.css');
-@import url('_type/button_type_B.css');
-@import url('_type/button_type_C.css');
-@import url('_type/button_type_D.css');
-@import url('_type/button_type_only-with-us.css');
-@import url('_type/button_type_additional-classes.css');
+@import url('./_type/button_type_A.css');
+@import url('./_type/button_type_B.css');
+@import url('./_type/button_type_C.css');
+@import url('./_type/button_type_D.css');
+@import url('./_type/button_type_only-with-us.css');
+@import url('./_type/button_type_additional-classes.css');
 
-@import url('_type/button_type_cat-A.css');
-@import url('_type/button_type_cat-B.css');
-@import url('_type/button_type_cat-С.css');
-@import url('_type/button_type_cat-D.css');
-@import url('_type/button_type_cat-only-with-us.css');
-@import url('_type/button_type_cat-additional-classes.css');
+@import url('./_type/button_type_cat-A.css');
+@import url('./_type/button_type_cat-B.css');
+@import url('./_type/button_type_cat-С.css');
+@import url('./_type/button_type_cat-D.css');
+@import url('./_type/button_type_cat-only-with-us.css');
+@import url('./_type/button_type_cat-additional-classes.css');
 
-@import url('_type/button_type_license.css');
-@import url('_type/button_type_consult-popup.css');
-@import url('_type/button_type_consult.css');
+@import url('./_type/button_type_license.css');
+@import url('./_type/button_type_consult-popup.css');
+@import url('./_type/button_type_consult.css');
 
 .button {
   background-color: transparent;

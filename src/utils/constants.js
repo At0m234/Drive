@@ -9,6 +9,7 @@ export const OnlyWithUsBtn = document.querySelector('#Only-with-us-btn');
 export const AdditionalClassesBtn = document.querySelector('#Additional-classes-btn');
 
 // ЗАПИСЫВАЕМ БЛОКИ С ТАРИФАМИ ПО КАТЕГОРИЯМ В ПЕРЕМЕННЫЕ
+export const pricesBlock = document.querySelector(".prices__categories-choise");
 export const pricesInfo = document.querySelector('.prices__info');
 export const AContainer = document.querySelector('.prices__A-container');
 export const BContainer = document.querySelector('.prices__B-container');
@@ -39,6 +40,7 @@ export const logoHeaderImg = logo.querySelector('img');
 // Main
 export const mainFirstBg = document.querySelector('.main__bg-first');
 export const mainSecondBg = document.querySelector('.main__bg-second');
+export const mainHover = document.querySelector('.main__hover');
 export const secondMainBgImgThree = document.querySelector('.main__image_type_three');
 export const secondMainBgImgSeven = document.querySelector('.main__image_type_seven');
 export const secondMainBgArrows = document.querySelector('.main__image_type_arrows');

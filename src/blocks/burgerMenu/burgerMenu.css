@@ -3,7 +3,7 @@
   top: 133px;
   right: 6.67%;
   width: 325px;
-  height: 590px;
+  padding: 32px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,8 +17,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 465px;
-  width: 190px;
 }
 
 .burger-menu__link {
@@ -34,13 +32,17 @@
   transition: 1s;
 }
 
+.burger-menu__link:not(:last-child){
+  margin-bottom: 32px;
+}
+
 .burger-menu__link:hover {
   transition: .1s linear .05s;
   opacity: .5;
   color: #F4C245;
 }
 
-.burger-menu__link:active, .burger-menu__link:focus  {
+.burger-menu__link:active, .burger-menu__link:focus {
   color: #F4C245;
 }
 
@@ -61,7 +63,7 @@
   right: 6.67%;
 }
 
-.burger-menu__btn:active, .burger-menu__btn:focus  {
+.burger-menu__btn:active, .burger-menu__btn:focus {
   outline: none;
 }
 

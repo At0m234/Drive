@@ -10,7 +10,7 @@
 /*цвет активного лейбла при активации чекбокса*/
 #switch1:checked ~ #circles .guru__teachers-slider-circle:nth-child(1),
 #switch2:checked ~ #circles .guru__teachers-slider-circle:nth-child(2),
-#switch3:checked ~ #circles .guru__teachers-slider-circle:nth-child(3) {
+#switch3:checked ~ #circles .guru__teachers-slider-circle:nth-child(3){
   background: #F4C245;
   border: 1px solid #F4C245;
 }

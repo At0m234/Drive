@@ -5,7 +5,7 @@
   margin: 0 0 16px 0;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .contacts__title_type_black {
     width: 69.35%;
     font-size: 32px;

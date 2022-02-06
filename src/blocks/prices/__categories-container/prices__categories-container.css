@@ -7,7 +7,7 @@
   margin: 0 0 26px 0;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
 .prices__categories-container {
     flex-direction: column;
     width: 100%;

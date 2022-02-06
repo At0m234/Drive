@@ -1,417 +1,472 @@
-  <!DOCTYPE html>
-  <html lang='ru'>
+<!DOCTYPE html>
+<html lang="ru">
 
   <head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, height=device-height, initial-scale=1.0'>
-    <meta name='apple-mobile-web-app-capable' content='yes'>
-    <meta name='description' content='Автошкола ИзиДрайв. Научим вас водить выгодно для всех.'/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="description" content="Автошкола Easy.Drive. Научим вас водить. Выгодно для всех." />
+    <meta property="og:image" content="<%=require('./images/Header/LogoBlack.svg')%>">
     <title>Автошкола EasyDrive</title>
+    <link rel="icon" href="<%=require('./images/Favicon-48x48.png')%>" type="image/png">
+    <!-- <script src="//code-ya.jivosite.com/widget/CEwZRvOT1Y" async></script> -->
+    <!-- Marquiz script start -->
+  <!-- <script>
+    (function(w, d, s, o){
+      var j = d.createElement(s); j.async = true; j.src = '//script.marquiz.ru/v2.js';j.onload = function() {
+        if (document.readyState !== 'loading') Marquiz.init(o);
+        else document.addEventListener("DOMContentLoaded", function() {
+          Marquiz.init(o);
+        });
+      };
+      d.head.insertBefore(j, d.head.firstElementChild);
+    })(window, document, 'script', {
+        host: '//quiz.marquiz.ru',
+        region: 'eu',
+        id: '60941d81fab8080046d30e00',
+        autoOpen: 15,
+        autoOpenFreq: 'once',
+        openOnExit: false,
+        disableOnMobile: false
+      }
+    );
+  </script> -->
+  <!-- Marquiz script end -->
   </head>
 
   <body>
-
     <!-- Yandex.Metrika counter -->
-    <script type='text/javascript'>
+    <script type="text/javascript">
       (function (m, e, t, r, i, k, a) {
         m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
         m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
       })
-        (window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-      ym(76255342, 'init', {
+      ym(76255342, "init", {
         clickmap: true,
         trackLinks: true,
         accurateTrackBounce: true,
         webvisor: true,
         trackHash: true,
-        ecommerce: 'dataLayer'
+        ecommerce: "dataLayer"
       });
     </script>
 
     <noscript>
-      <div><img src='https://mc.yandex.ru/watch/76255342' style='position:absolute; left:-9999px;' alt='' /></div>
+      <div><img src="https://mc.yandex.ru/watch/76255342" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
-
     <!-- /Yandex.Metrika counter -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src='https://www.googletagmanager.com/gtag/js?id=G-GLMQNHHF70'></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GLMQNHHF70"></script>
+
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() { dataLayer.push(arguments); }
       gtag('js', new Date());
+
       gtag('config', 'G-GLMQNHHF70');
     </script>
 
     <!-- Rating Mail.ru counter -->
-    <script type='text/javascript'>
+    <script type="text/javascript">
       var _tmr = window._tmr || (window._tmr = []);
-      _tmr.push({ id: '3215625', type: 'pageView', start: (new Date()).getTime() });
+      _tmr.push({ id: "3215625", type: "pageView", start: (new Date()).getTime() });
       (function (d, w, id) {
         if (d.getElementById(id)) return;
-        var ts = d.createElement('script'); ts.type = 'text/javascript'; ts.async = true; ts.id = id;
-        ts.src = 'https://top-fwz1.mail.ru/js/code.js';
-        var f = function () { var s = d.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ts, s); };
-        if (w.opera == '[object Opera]') { d.addEventListener('DOMContentLoaded', f, false); } else { f(); }
-      })(document, window, 'topmailru-code');
+        var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+        ts.src = "https://top-fwz1.mail.ru/js/code.js";
+        var f = function () { var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s); };
+        if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+      })(document, window, "topmailru-code");
     </script>
     <noscript>
       <div>
-        <img src='https://top-fwz1.mail.ru/counter?id=3215625;js=na' style='border:0;position:absolute;left:-9999px;' alt='Top.Mail.Ru' />
+        <img src="https://top-fwz1.mail.ru/counter?id=3215625;js=na" style="border:0;position:absolute;left:-9999px;"
+          alt="Top.Mail.Ru" />
       </div>
     </noscript>
     <!-- //Rating Mail.ru counter -->
 
-    <div class='page' id='page'>
+    <div class="page" id="page">
 
-      <header class='header'>
-        <div class='header__info'>
-          <a href='#main' class='logo logo_type_header'><img class='header__logo-white' src='<%=require('./images/Header/Logo.svg')%>' alt='Логотип EasyDrive'>
-            <img class='header__logo-black' src='<%=require('./images/Header/LogoBlack.svg')%>' alt='Логотип EasyDrive'>
+      <header class="header">
+        <div class="header__info">
+          <a href="#top" class="logo logo_type_header"><img class="header__logo-white"
+              src="<%=require('./images/Header/Logo.svg')%>" alt="Логотип EasyDrive">
+            <img class="header__logo-black" src="<%=require('./images/Header/LogoBlack.svg')%>" alt="Логотип EasyDrive">
           </a>
-          <nav class='header__links'>
-            <a class='header__link' href='#prices'>цены</a>
-            <a class='header__link' href='#advantages'>преимущества</a>
-            <a class='header__link' href='#learning'>обучение</a>
-            <a class='header__link' href='#guru'>клуб</a>
-            <a class='header__link' href='#guru__teachers'>гуру</a>
-            <a class='header__link' href='#reviews'>отзывы</a>
-            <a class='header__link' href='#contacts'>контакты</a>
+          <nav class="header__links">
+            <a class="header__link" href="#prices">цены</a>
+            <a class="header__link" href="#advantages">преимущества</a>
+            <a class="header__link" href="#learning">обучение</a>
+            <a class="header__link" href="#guru">клуб</a>
+            <a class="header__link" href="#guru__teachers">гуру</a>
+            <a class="header__link" href="#reviews">отзывы</a>
+            <a class="header__link" href="#contacts-content">контакты</a>
           </nav>
-          <a href='tel:+74997555577' class='header__connection'>+7 499 755-55-77</a>
+
+          <div class=header__icons>
+
+            <a href="tel:+74997555577">
+              <svg width="32" height="32" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M-5.90104e-07 13.5C-2.64585e-07 6.05299 6.05299 -9.15623e-07 13.5 -5.90104e-07C20.947 -2.64585e-07 27 6.05299 27 13.5C27 20.947 20.947 27 13.5 27C6.05299 27 -9.15623e-07 20.947 -5.90104e-07 13.5ZM24.8356 13.5C24.8356 7.24524 19.7548 2.1644 13.5 2.1644C7.24524 2.1644 2.1644 7.24524 2.1644 13.5C2.1644 19.7548 7.24524 24.8356 13.5 24.8356C19.7548 24.8356 24.8356 19.7548 24.8356 13.5Z" fill="#F8F8F8"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4182 20.5797C10.5649 20.488 10.6383 20.2679 10.8034 19.9377C10.9685 19.6076 11.7939 17.9384 11.9039 17.6449C12.014 17.3331 12.069 17.113 11.7389 16.8929C11.4087 16.6728 10.6383 16.0308 10.4182 15.829C10.1981 15.6273 10.1614 15.4438 10.3265 15.0953C10.4916 14.7652 10.8584 13.6646 11.9956 12.3807C12.8944 11.3718 13.995 10.6932 14.3435 10.4914C14.6736 10.2896 14.8571 10.473 15.0221 10.6381C15.1689 10.7849 15.4073 10.9683 15.6091 11.1517C15.8109 11.3168 15.9393 11.3718 16.1777 11.4819C16.3978 11.5919 16.5996 11.5369 16.7647 11.4452C16.9298 11.3535 18.5989 10.6932 19.2592 10.3997C19.9196 10.1245 19.8278 9.84941 19.8462 9.64764C19.8462 9.46422 19.8462 9.24411 19.8462 9.024C19.8462 8.80389 19.7545 8.43704 19.4243 8.12522C19.0942 7.8134 18.2687 6.95131 16.6179 6.95131C14.9671 6.95131 13.353 8.16191 13.1329 8.32699C12.9128 8.49207 9.50108 10.6932 8.05203 14.0865C7.70353 14.8936 7.50176 15.5172 7.33668 16.0125C7.07989 16.8195 7.11657 17.5532 7.20828 18.1402C7.3 18.7822 8.01535 20.1395 8.80407 20.4146C9.59279 20.6714 10.2715 20.6714 10.4182 20.5797Z" fill="#F8F8F8"/>
+              </svg>
+            </a>
+
+            <a href="https://wa.me/79309609083?text=Интересует%20ваше%20обучение">
+              <svg width="32" height="32" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M23.0671 3.93257C20.5244 1.40189 17.1585 0 13.5549 0C6.14634 0 0.109756 6.00809 0.109756 13.3817C0.109756 15.7485 0.731707 18.0425 1.90244 20.0634L0 27L7.13415 25.143C9.09146 26.2171 11.3049 26.7633 13.5549 26.7633C20.9634 26.7633 27 20.7552 27 13.3817C27 9.81322 25.6098 6.44504 23.0671 3.93257ZM13.5549 24.5057C11.5427 24.5057 9.58537 23.9777 7.86585 22.9582L7.46341 22.7215L3.2378 23.8321L4.37195 19.7357L4.09756 19.3169C2.96341 17.5327 2.37805 15.4754 2.37805 13.3817C2.37805 7.24612 7.39024 2.25759 13.5549 2.25759C16.5366 2.25759 19.3537 3.42279 21.4573 5.51652C23.561 7.61025 24.7317 10.414 24.7317 13.3817C24.7317 19.5172 19.7195 24.5057 13.5549 24.5057ZM19.6829 16.1854C19.3537 16.0216 17.689 15.2023 17.3963 15.0931C17.0854 14.9838 16.8659 14.9292 16.6463 15.2569C16.4268 15.5846 15.7866 16.3493 15.5854 16.5678C15.3841 16.7862 15.2012 16.8227 14.8537 16.6588C14.5244 16.4949 13.4268 16.1308 12.1463 15.002C11.1402 14.1099 10.4817 13.0175 10.2805 12.6898C10.0793 12.3621 10.2622 12.18 10.4268 12.0162C10.5732 11.8705 10.7561 11.6339 10.939 11.4336C11.1037 11.2333 11.1585 11.1059 11.2683 10.8692C11.378 10.6507 11.3232 10.4504 11.2317 10.2866C11.1402 10.1227 10.4817 8.46595 10.189 7.81052C9.91463 7.15509 9.64024 7.24612 9.43902 7.22792C9.2378 7.20971 9.01829 7.20971 8.79878 7.20971C8.57927 7.20971 8.21341 7.30074 7.90244 7.62846C7.59146 7.95617 6.73171 8.77546 6.73171 10.414C6.73171 12.0526 7.93902 13.6548 8.10366 13.8732C8.26829 14.0917 10.4634 17.4781 13.8476 18.9164C14.6524 19.2623 15.2744 19.4626 15.7683 19.6264C16.5732 19.8813 17.3049 19.8449 17.8902 19.7539C18.5305 19.6628 19.8841 18.9528 20.1585 18.1699C20.4329 17.3871 20.4329 16.7134 20.3598 16.586C20.25 16.4403 20.0305 16.3493 19.6829 16.1854Z" fill="#F8F8F8"/>
+              </svg>
+
+            </a>
+
+            <a href="https://t.me/easydrive_online">
+              <svg width="32" height="32" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.5 27C6.05299 27 0 20.947 0 13.5C0 6.05299 6.05299 0 13.5 0C20.947 0 27 6.05299 27 13.5C27 20.947 20.947 27 13.5 27ZM13.5 2.1644C7.24524 2.1644 2.1644 7.24524 2.1644 13.5C2.1644 19.7548 7.24524 24.8356 13.5 24.8356C19.7548 24.8356 24.8356 19.7548 24.8356 13.5C24.8356 7.24524 19.7548 2.1644 13.5 2.1644Z" fill="#F8F8F8"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.69534 13.3707C10.3088 11.7933 12.73 10.7478 13.9406 10.2525C17.389 8.82183 18.1043 8.56503 18.5812 8.56503C18.6913 8.56503 18.9114 8.58338 19.0581 8.71177C19.1865 8.82183 19.2232 8.95022 19.2415 9.04193C19.2599 9.13365 19.2782 9.35376 19.2599 9.53718C19.0765 11.4998 18.2694 16.2688 17.8475 18.4699C17.6824 19.4054 17.3339 19.7172 17.0038 19.7355C16.2884 19.8089 15.7381 19.2586 15.0411 18.8001C13.9406 18.0847 13.3353 17.6445 12.2714 16.9475C11.0425 16.1404 11.8312 15.7002 12.5466 14.9665C12.73 14.7831 15.9032 11.885 15.9766 11.6282C15.9766 11.5915 15.9949 11.4815 15.9216 11.4081C15.8482 11.3347 15.7381 11.3714 15.6648 11.3898C15.5547 11.4081 13.8122 12.5637 10.4188 14.8565C9.9236 15.205 9.48338 15.3701 9.07985 15.3517C8.63963 15.3334 7.77754 15.0949 7.1539 14.8932C6.38352 14.6364 5.75988 14.508 5.81491 14.0861C5.81491 13.8293 6.10838 13.6092 6.69534 13.3707Z" fill="#F8F8F8"/>
+              </svg>
+            </a>
+
+          </div>
+
+          <a href="tel:+74997555577" class="header__connection">+7 499 755-55-77</a>
         </div>
       </header>
 
-      <main class='content'>
+      <main class="content">
 
-        <section class='main' id='main'>
+        <section id="top"></section>
 
-          <div class='main__bg-first'>
-            <div class='main__info'>
-              <h1 class='main__title main__title_type_white'>Автошкола Easydrive<br>Мы научим тебя водить</h1>
-              <h2 class='main__subtitle main__subtitle_type_white'>теоретический курс онлайн<br>практика в удобном для тебя районе</h2>
-              <div class='main__btns'>
-                <button class='button button_type_main-first button_type_consult-form'>Записаться</button>
-                <button class='button button_type_callback button_type_consult-form'>Перезвонить</button>
+        <section class="main" id="main">
+          <div class="main__bg-first">
+            <div class="main__info">
+              <h1 class="main__title main__title_type_white">Автошкола Easy.Drive<br>Мы научим тебя водить</h1>
+              <h2 class="main__subtitle main__subtitle_type_white">теоретический курс онлайн<br>практика в удобном для
+                тебя районе</h2>
+              <div class="main__btns">
+                <button class="button button_type_main-first button_type_consult-form">Записаться</button>
+                <button class="button button_type_callback button_type_consult-form">Перезвонить</button>
               </div>
             </div>
           </div>
 
-          <div class='main__bg-second'>
-            <div class='main__info'>
-              <h1 class='main__title main__title_type_black'>Обучаем на водительские категории A, B, C и D</h1>
-              <h2 class='main__subtitle main__subtitle_type_black'>все автошколы гарантируют, что ты получишь права мы
+          <div class="main__bg-second">
+            <div class="main__info">
+              <h1 class="main__title main__title_type_black">Обучаем на водительские категории A, B, C и D</h1>
+              <h2 class="main__subtitle main__subtitle_type_black">все автошколы гарантируют, что ты получишь права мы
                 гарантируем, что это будет изи</h2>
-              <div class='main__btns'>
-                <button class='button button_type_main-second button_type_consult-form'>Записаться</button>
-                <button class='button button_type_callback button_type_consult-form'>Перезвонить</button>
+              <div class="main__btns">
+                <button class="button button_type_main-second button_type_consult-form">Записаться</button>
+                <button class="button button_type_callback button_type_consult-form">Перезвонить</button>
               </div>
             </div>
-            <button class='main__image main__image_type_arrows'></button>
-            <img class='main__image main__image_type_one' src='<%=require('../src/images/SecondMain/icon1.svg')%>'
-              alt='картинка'>
-            <img class='main__image main__image_type_two' src='<%=require('../src/images/SecondMain/icon2.svg')%>'
-              alt='картинка'>
-            <img class='main__image main__image_type_three' src='<%=require('../src/images/SecondMain/icon3.svg')%>'
-              alt='картинка'>
-            <img class='main__image main__image_type_four' src='<%=require('../src/images/SecondMain/icon4.svg')%>'
-              alt='картинка'>
-            <img class='main__image main__image_type_five' src='<%=require('../src/images/SecondMain/icon5.svg')%>'
-              alt='картинка'>
-            <img class='main__image main__image_type_six' src='<%=require('../src/images/SecondMain/icon6.svg')%>'
-              alt='картинка'>
-            <img class='main__image main__image_type_seven' src='<%=require('../src/images/SecondMain/icon7.svg')%>'
-              alt='картинка'>
+            <button class="main__image main__image_type_arrows"></button>
+            <img class="main__image main__image_type_one" src="<%=require('../src/images/SecondMain/icon1.svg')%>"
+              alt="картинка"/>
+            <img class="main__image main__image_type_two" src="<%=require('../src/images/SecondMain/icon2.svg')%>"
+              alt="картинка">
+            <img class="main__image main__image_type_three" src="<%=require('../src/images/SecondMain/icon3.svg')%>"
+              alt="картинка">
+            <img class="main__image main__image_type_four" src="<%=require('../src/images/SecondMain/icon4.svg')%>"
+              alt="картинка">
+            <img class="main__image main__image_type_five" src="<%=require('../src/images/SecondMain/icon5.svg')%>"
+              alt="картинка">
+            <img class="main__image main__image_type_six" src="<%=require('../src/images/SecondMain/icon6.svg')%>"
+              alt="картинка">
+            <img class="main__image main__image_type_seven" src="<%=require('../src/images/SecondMain/icon7.svg')%>"
+              alt="картинка">
           </div>
+
+          <div class="main__hover"></div>
         </section>
 
-        <section class='prices' id='prices'>
-
-          <div class='prices__categories-container'>
-            <div class='prices__text'>
-              <h2 class='prices__title'>Цены на обучение</h2>
-              <h3 class='prices__subtitle'>Можешь оплачивать в рассрочку. Первоначальный взнос от 8 000 руб.</h3>
+        <section class="prices" id="prices">
+          <div class="prices__categories-container">
+            <div class="prices__text">
+              <h2 class="prices__title">Цены на обучение</h2>
+              <h3 class="prices__subtitle">Можешь оплачивать в рассрочку. Первоначальный взнос от 10 000 руб.</h3>
             </div>
-            <div class='prices__categories-choise'>
-              <button class='button button_type_A' id='A-btn'>Категория A</button>
-              <button class='button button_type_B' id='B-btn' autofocus>Категория B</button>
-              <button class='button button_type_C' id='C-btn'>Категория C</button>
-              <button class='button button_type_D' id='D-btn'>Категория D</button>
-              <button class='button button_type_only-with-us' id='Only-with-us-btn'><span>Только у нас</span></button>
-              <button class='button button_type_additional-classes' id='Additional-classes-btn'>Доп. занятия</button>
+            <div class="prices__categories-choise">
+              <button class="button button_type_A" id="A-btn">Категория A</button>
+              <button class="button button_type_B button button_type_B_active" id="B-btn">Категория B</button>
+              <button class="button button_type_C" id="C-btn">Категория C</button>
+              <button class="button button_type_D" id="D-btn">Категория D</button>
+              <button class="button button_type_only-with-us" id="Only-with-us-btn"><span>Только у нас</span></button>
+              <button class="button button_type_additional-classes" id="Additional-classes-btn">Доп. занятия</button>
             </div>
           </div>
 
-          <div class='prices__info'>
+          <div class="prices__info">
 
-            <div class='prices__A-container'>
-              <div class='prices__category prices__category_type_A'>
-                <div class='prices__category-info'>
-                  <h5 class='prices__category-vehicle'>мотоцикл / мопед категория А и А1 (с 16 лет)</h5>
-                  <h4 class='prices__category-heading'>Необходимый минимум</h4>
-                  <ul class='prices__category-steps'>
-                    <li class='prices__category-step'>теория онлайн</li>
-                    <li class='prices__category-step'>вождение <span>5 занятий</span></li>
-                    <li class='prices__category-step'>подготовка документов в ГИБДД</li>
-                    <li class='prices__category-step'>сопровождение в ГИБДД</li>
-                    <li class='prices__category-step'>консультация в чате автошколы</li>
+            <div class="prices__A-container">
+              <div class="prices__category prices__category_type_A">
+                <div class="prices__category-info">
+                  <h5 class="prices__category-vehicle">мотоцикл / мопед категория А и А1 (с 16 лет)</h5>
+                  <h4 class="prices__category-heading">Необходимый минимум</h4>
+                  <ul class="prices__category-steps">
+                    <li class="prices__category-step">теория онлайн</li>
+                    <li class="prices__category-step">вождение <span>5 занятий</span></li>
+                    <li class="prices__category-step">подготовка документов в ГИБДД</li>
+                    <li class="prices__category-step">сопровождение в ГИБДД</li>
+                    <li class="prices__category-step">консультация в чате автошколы</li>
                   </ul>
                 </div>
-                <div class='prices__category-select'>
-                  <span class='prices__category-price' id='price-one'>15 000 руб.</span>
-                  <button class='button button_type_cat-A button_type_consult-form'>Подходит</button>
+                <div class="prices__category-select">
+                  <span class="prices__category-price" id="price-one">15 000 руб.</span>
+                  <button class="button button_type_cat-A button_type_consult-form a-min">Подходит</button>
                 </div>
               </div>
 
-              <div class='prices__category prices__category_type_A'>
-                <div class='prices__category-info'>
-                  <h5 class='prices__category-vehicle'>мотоцикл / мопед категория А и А1 (с 16 лет)</h5>
-                  <h4 class='prices__category-heading'>Оптимальный стандарт</h4>
-                  <ul class='prices__category-steps'>
-                    <li class='prices__category-step'>теория онлайн</li>
-                    <li class='prices__category-step'>вождение <span>10 занятий</span></li>
-                    <li class='prices__category-step'>подготовка документов в ГИБДД</li>
-                    <li class='prices__category-step'>сопровождение в ГИБДД</li>
-                    <li class='prices__category-step'>консультация в чате автошколы</li>
+              <div class="prices__category prices__category_type_A">
+                <div class="prices__category-info">
+                  <h5 class="prices__category-vehicle">мотоцикл / мопед категория А и А1 (с 16 лет)</h5>
+                  <h4 class="prices__category-heading">Оптимальный стандарт</h4>
+                  <ul class="prices__category-steps">
+                    <li class="prices__category-step">теория онлайн</li>
+                    <li class="prices__category-step">вождение <span>10 занятий</span></li>
+                    <li class="prices__category-step">подготовка документов в ГИБДД</li>
+                    <li class="prices__category-step">сопровождение в ГИБДД</li>
+                    <li class="prices__category-step">консультация в чате автошколы</li>
                   </ul>
                 </div>
-                <div class='prices__category-select'>
-                  <span class='prices__category-price' id='price-two'>17 000 руб.</span>
-                  <button class='button button_type_cat-A button_type_consult-form'>Беру</button>
+                <div class="prices__category-select">
+                  <span class="prices__category-price" id="price-two">17 000 руб.</span>
+                  <button class="button button_type_cat-A button_type_consult-form a-med">Беру</button>
                 </div>
               </div>
 
-              <div class='prices__category prices__category_type_A'>
-                <div class='prices__category-info'>
-                  <h5 class='prices__category-vehicle'>мотоцикл / мопед категория А и А1 (с 16 лет)</h5>
-                  <h4 class='prices__category-heading'>Полный знаний</h4>
-                  <ul class='prices__category-steps'>
-                    <li class='prices__category-step'>теория онлайн</li>
-                    <li class='prices__category-step'>вождение <span>18 занятий</span></li>
-                    <li class='prices__category-step'>подготовка документов в ГИБДД</li>
-                    <li class='prices__category-step'>сопровождение в ГИБДД</li>
-                    <li class='prices__category-step'>консультация в чате автошколы</li>
-                    <li class='prices__category-step'>медицинская комиссия</li>
+              <div class="prices__category prices__category_type_A">
+                <div class="prices__category-info">
+                  <h5 class="prices__category-vehicle">мотоцикл / мопед категория А и А1 (с 16 лет)</h5>
+                  <h4 class="prices__category-heading">Полный знаний</h4>
+                  <ul class="prices__category-steps">
+                    <li class="prices__category-step">теория онлайн</li>
+                    <li class="prices__category-step">вождение <span>18 занятий</span></li>
+                    <li class="prices__category-step">подготовка документов в ГИБДД</li>
+                    <li class="prices__category-step">сопровождение в ГИБДД</li>
+                    <li class="prices__category-step">консультация в чате автошколы</li>
+                    <li class="prices__category-step">медицинская комиссия</li>
                   </ul>
                 </div>
-                <div class='prices__category-select'>
-                  <span class='prices__category-price' id='price-three'>23 000 руб.</span>
-                  <button class='button button_type_cat-A button_type_consult-form'>Самое то</button>
+                <div class="prices__category-select">
+                  <span class="prices__category-price" id="price-three">23 000 руб.</span>
+                  <button class="button button_type_cat-A button_type_consult-form a-max">Самое то</button>
                 </div>
-                <img class='prices__image' src='<%=require('../src/images/Prices/MedicalBoard.svg')%>'
-                  alt='Мед. комиссия'>
+                <img class="prices__image" src="<%=require('../src/images/Prices/MedicalBoard.svg')%>"
+                  alt="Мед. комиссия">
               </div>
             </div>
 
-            <div class='prices__B-container prices__B-container_visible'>
+            <div class="prices__B-container prices__B-container_visible">
 
-              <div class='prices__category prices__category_type_B'>
-                <div class='prices__category-info'>
-                  <h5 class='prices__category-vehicle'>легковое авто (МКПП и АКПП)</h5>
-                  <h4 class='prices__category-heading'>Необходимый минимум</h4>
-                  <ul class='prices__category-steps'>
-                    <li class='prices__category-step'>теория онлайн</li>
-                    <li class='prices__category-step'>вождение <span>20 часов</span></li>
-                    <li class='prices__category-step'>подготовка документов в ГИБДД</li>
-                    <li class='prices__category-step'>сопровождение в ГИБДД</li>
-                    <li class='prices__category-step'>консультация в чате автошколы</li>
+              <div class="prices__category prices__category_type_B">
+                <div class="prices__category-info">
+                  <h5 class="prices__category-vehicle">легковое авто (МКПП и АКПП)</h5>
+                  <h4 class="prices__category-heading">Необходимый минимум</h4>
+                  <ul class="prices__category-steps">
+                    <li class="prices__category-step">теория онлайн</li>
+                    <li class="prices__category-step">вождение <span>20 часов</span></li>
+                    <li class="prices__category-step">подготовка документов в ГИБДД</li>
+                    <li class="prices__category-step">сопровождение в ГИБДД</li>
+                    <li class="prices__category-step">консультация в чате автошколы</li>
                   </ul>
                 </div>
-                <div class='prices__category-select'>
-                  <span class='prices__category-price' id='price-four'>24 000 руб.</span>
-                  <button class='button button_type_cat-B button_type_consult-form'>Подходит</button>
+                <div class="prices__category-select">
+                  <span class="prices__category-price" id="price-four">23 400 руб.</span>
+                  <button class="button button_type_cat-B button_type_consult-form b-min">Подходит</button>
                 </div>
               </div>
 
-              <div class='prices__category prices__category_type_B'>
-                <div class='prices__category-info'>
-                  <h5 class='prices__category-vehicle'>легковое авто (МКПП и АКПП)</h5>
-                  <h4 class='prices__category-heading'>Оптимальный стандарт</h4>
-                  <ul class='prices__category-steps'>
-                    <li class='prices__category-step'>теория онлайн</li>
-                    <li class='prices__category-step'>вождение <span>30 часов</span></li>
-                    <li class='prices__category-step'>подготовка документов в ГИБДД</li>
-                    <li class='prices__category-step'>сопровождение в ГИБДД</li>
-                    <li class='prices__category-step'>консультация в чате автошколы</li>
-                    <li class='prices__category-step'>курс «Лайфхаки»</li>
+              <div class="prices__category prices__category_type_B">
+                <div class="prices__category-info">
+                  <h5 class="prices__category-vehicle">легковое авто (МКПП и АКПП)</h5>
+                  <h4 class="prices__category-heading">Оптимальный стандарт</h4>
+                  <ul class="prices__category-steps">
+                    <li class="prices__category-step">теория онлайн</li>
+                    <li class="prices__category-step">вождение <span>30 часов</span></li>
+                    <li class="prices__category-step">подготовка документов в ГИБДД</li>
+                    <li class="prices__category-step">сопровождение в ГИБДД</li>
+                    <li class="prices__category-step">консультация в чате автошколы</li>
+                    <li class="prices__category-step">курс «Лайфхаки»</li>
                   </ul>
                 </div>
-                <div class='prices__category-select'>
-                  <span class='prices__category-price' id='price-five'>30 000 руб.</span>
-                  <button class='button button_type_cat-B button_type_consult-form'>Беру</button>
+                <div class="prices__category-select">
+                  <span class="prices__category-price" id="price-five">29 400 руб.</span>
+                  <button class="button button_type_cat-B button_type_consult-form b-med">Беру</button>
                 </div>
-                <img class='prices__image' src='<%=require('../src/images/Prices/AutoSecrets.svg')%>' alt='Авто секреты'>
+                <img class="prices__image" src="<%=require('../src/images/Prices/AutoSecrets.svg')%>" alt="Авто секреты">
               </div>
 
-              <div class='prices__category prices__category_type_B'>
-                <div class='prices__category-info'>
-                  <h5 class='prices__category-vehicle'>легковое авто (МКПП и АКПП)</h5>
-                  <h4 class='prices__category-heading'>Полный знаний</h4>
-                  <ul class='prices__category-steps'>
-                    <li class='prices__category-step'>теория онлайн</li>
-                    <li class='prices__category-step'>вождение <span>56 часов</span></li>
-                    <li class='prices__category-step'>подготовка документов в ГИБДД</li>
-                    <li class='prices__category-step'>сопровождение в ГИБДД</li>
-                    <li class='prices__category-step'>консультация в чате автошколы</li>
-                    <li class='prices__category-step'>курс «Лайфхаки»</li>
-                    <li class='prices__category-step'>курс «Каршеринг»</li>
-                    <li class='prices__category-step'>медицинская комиссия</li>
+              <div class="prices__category prices__category_type_B">
+                <div class="prices__category-info">
+                  <h5 class="prices__category-vehicle">легковое авто (МКПП и АКПП)</h5>
+                  <h4 class="prices__category-heading">Полный знаний</h4>
+                  <ul class="prices__category-steps">
+                    <li class="prices__category-step">теория онлайн</li>
+                    <li class="prices__category-step">вождение <span>56 часов</span></li>
+                    <li class="prices__category-step">подготовка документов в ГИБДД</li>
+                    <li class="prices__category-step">сопровождение в ГИБДД</li>
+                    <li class="prices__category-step">консультация в чате автошколы</li>
+                    <li class="prices__category-step">курс «Лайфхаки»</li>
+                    <li class="prices__category-step">курс «Каршеринг»</li>
+                    <li class="prices__category-step">медицинская комиссия</li>
                   </ul>
                 </div>
-                <div class='prices__category-select'>
-                  <span class='prices__category-price' id='price-six'>41 000 руб.</span>
-                  <button class='button button_type_cat-B button_type_consult-form'>Самое то</button>
+                <div class="prices__category-select">
+                  <span class="prices__category-price" id="price-six">43 400 руб.</span>
+                  <button class="button button_type_cat-B button_type_consult-form b-max">Самое то</button>
                 </div>
-                <img class='prices__image' src='<%=require('../src/images/Prices/UniqueCourses.svg')%>'
-                  alt='Уникальные курсы'>
-              </div>
-
-            </div>
-
-            <div class='prices__C-container'>
-
-              <div class='prices__category prices__category_type_C'>
-                <div class='prices__category-info'>
-                  <h5 class='prices__category-vehicle'>грузовое авто ≥ 3,5т / авто с прицепом ≤ 750кг</h5>
-                  <h4 class='prices__category-heading'>Необходимый минимум</h4>
-                  <ul class='prices__category-steps'>
-                    <li class='prices__category-step'>теория онлайн</li>
-                    <li class='prices__category-step'>вождение <span>5 занятий</span></li>
-                    <li class='prices__category-step'>подготовка документов в ГИБДД</li>
-                    <li class='prices__category-step'>сопровождение в ГИБДД</li>
-                  </ul>
-                </div>
-                <div class='prices__category-select'>
-                  <span class='prices__category-price' id='price-seven'>25 000 руб.</span>
-                  <button class='button button_type_cat-С button_type_consult-form'>То что нужно</button>
-                </div>
+                <img class="prices__image" src="<%=require('../src/images/Prices/UniqueCourses.svg')%>"
+                  alt="Уникальные курсы">
               </div>
 
             </div>
 
-            <div class='prices__D-container'>
+            <div class="prices__C-container">
 
-              <div class='prices__category prices__category_type_D'>
-                <div class='prices__category-info'>
-                  <h5 class='prices__category-vehicle'>автобус только с 21 года, необходимо иметь категорию В или С</h5>
-                  <h4 class='prices__category-heading'>Необходимый минимум</h4>
-                  <ul class='prices__category-steps'>
-                    <li class='prices__category-step'>теория онлайн</li>
-                    <li class='prices__category-step'>вождение <span>5 занятий</span></li>
-                    <li class='prices__category-step'>подготовка документов в ГИБДД</li>
-                    <li class='prices__category-step'>сопровождение в ГИБДД</li>
+              <div class="prices__category prices__category_type_C">
+                <div class="prices__category-info">
+                  <h5 class="prices__category-vehicle">грузовое авто ≥ 3,5т / авто с прицепом ≤ 750кг</h5>
+                  <h4 class="prices__category-heading">Необходимый минимум</h4>
+                  <ul class="prices__category-steps">
+                    <li class="prices__category-step">теория онлайн</li>
+                    <li class="prices__category-step">вождение <span>5 занятий</span></li>
+                    <li class="prices__category-step">подготовка документов в ГИБДД</li>
+                    <li class="prices__category-step">сопровождение в ГИБДД</li>
                   </ul>
                 </div>
-                <div class='prices__category-select'>
-                  <span class='prices__category-price' id='price-eight'>25 000 руб.</span>
-                  <button class='button button_type_cat-D button_type_consult-form'>То что нужно</button>
+                <div class="prices__category-select">
+                  <span class="prices__category-price" id="price-seven">25 000 руб.</span>
+                  <button class="button button_type_cat-С button_type_consult-form c-med">То что нужно</button>
                 </div>
               </div>
 
             </div>
 
-            <div class='prices__only-with-us-container'>
+            <div class="prices__D-container">
 
-              <div class='prices__category prices__category_type_only-with-us'>
-                <div class='prices__category-info'>
-                  <h5 class='prices__category-vehicle'>поминутная аренда авто</h5>
-                  <h4 class='prices__category-heading'>Каршеринг</h4>
-                  <ul class='prices__category-steps'>
-                    <li class='prices__category-step'>что такое каршеринг</li>
-                    <li class='prices__category-step'>какие бывают компании</li>
-                    <li class='prices__category-step'>сравнение цен</li>
-                    <li class='prices__category-step'>регистрация в сервисе</li>
-                    <li class='prices__category-step'>аренда и поездки</li>
+              <div class="prices__category prices__category_type_D">
+                <div class="prices__category-info">
+                  <h5 class="prices__category-vehicle">автобус только с 21 года, необходимо иметь категорию В или С</h5>
+                  <h4 class="prices__category-heading">Необходимый минимум</h4>
+                  <ul class="prices__category-steps">
+                    <li class="prices__category-step">теория онлайн</li>
+                    <li class="prices__category-step">вождение <span>5 занятий</span></li>
+                    <li class="prices__category-step">подготовка документов в ГИБДД</li>
+                    <li class="prices__category-step">сопровождение в ГИБДД</li>
                   </ul>
                 </div>
-                <div class='prices__category-select'>
-                  <span class='prices__category-price' id='price-nine'>990 руб.</span>
-                  <button class='button button_type_cat-only-with-us button_type_consult-form'>Класс</button>
+                <div class="prices__category-select">
+                  <span class="prices__category-price" id="price-eight">25 000 руб.</span>
+                  <button class="button button_type_cat-D button_type_consult-form d-med">То что нужно</button>
                 </div>
               </div>
 
-              <div class='prices__category prices__category_type_only-with-us'>
-                <div class='prices__category-info'>
-                  <h5 class='prices__category-vehicle'>полезно знать</h5>
-                  <h4 class='prices__category-heading'>Лайфхаки</h4>
-                  <ul class='prices__category-steps'>
-                    <li class='prices__category-step'>покупка авто</li>
-                    <li class='prices__category-step'>правила на АЗС</li>
-                    <li class='prices__category-step'>общение с сотрудниками ГИБДД</li>
-                    <li class='prices__category-step'>КАСКО или ОСАГО</li>
-                    <li class='prices__category-step'>и многое другое</li>
+            </div>
+
+            <div class="prices__only-with-us-container">
+
+              <div class="prices__category prices__category_type_only-with-us">
+                <div class="prices__category-info">
+                  <h5 class="prices__category-vehicle">поминутная аренда авто</h5>
+                  <h4 class="prices__category-heading">Каршеринг</h4>
+                  <ul class="prices__category-steps">
+                    <li class="prices__category-step">что такое каршеринг</li>
+                    <li class="prices__category-step">какие бывают компании</li>
+                    <li class="prices__category-step">сравнение цен</li>
+                    <li class="prices__category-step">регистрация в сервисе</li>
+                    <li class="prices__category-step">аренда и поездки</li>
                   </ul>
                 </div>
-                <div class='prices__category-select'>
-                  <span class='prices__category-price' id='price-ten'>990 руб.</span>
-                  <button class='button button_type_cat-only-with-us button_type_consult-form'>Класс</button>
+                <div class="prices__category-select">
+                  <span class="prices__category-price" id="price-nine">990 руб.</span>
+                  <button class="button button_type_cat-only-with-us button_type_consult-form x-carsh">Класс</button>
                 </div>
               </div>
 
-              <div class='prices__only-with-us'>
-                <h5 class='prices__only-with-us-subtitle'>в беде не бросим</h5>
-                <h4 class='prices__only-with-us-title'>Клуб выпускников</h4>
-                <div class='prices__only-with-us-text'>
-                  <p class='prices__only-with-us-paragraph'>Закрытое сообщество автолюбителей, готовых помогать друг другу
+              <div class="prices__category prices__category_type_only-with-us">
+                <div class="prices__category-info">
+                  <h5 class="prices__category-vehicle">полезно знать</h5>
+                  <h4 class="prices__category-heading">Лайфхаки</h4>
+                  <ul class="prices__category-steps">
+                    <li class="prices__category-step">покупка авто</li>
+                    <li class="prices__category-step">правила на АЗС</li>
+                    <li class="prices__category-step">общение с сотрудниками ГИБДД</li>
+                    <li class="prices__category-step">КАСКО или ОСАГО</li>
+                    <li class="prices__category-step">и многое другое</li>
+                  </ul>
+                </div>
+                <div class="prices__category-select">
+                  <span class="prices__category-price" id="price-ten">990 руб.</span>
+                  <button class="button button_type_cat-only-with-us button_type_consult-form x-useful-know">Класс</button>
+                </div>
+              </div>
+
+              <div class="prices__only-with-us">
+                <h5 class="prices__only-with-us-subtitle">в беде не бросим</h5>
+                <h4 class="prices__only-with-us-title">Клуб выпускников</h4>
+                <div class="prices__only-with-us-text">
+                  <p class="prices__only-with-us-paragraph">Закрытое сообщество автолюбителей, готовых помогать друг другу
                     в любую минуту.</p>
-                  <p class='prices__only-with-us-paragraph'>Пройди обучение и получи приглашение. Доступ будет бесплатный
+                  <p class="prices__only-with-us-paragraph">Пройди обучение и получи приглашение. Доступ будет бесплатный
                     и навсегда.</p>
                 </div>
-                <img class='prices__only-with-us-image prices__only-with-us-image_type_logo'
-                  src='<%=require('../src/images/Prices/OnlyWithUs/LogoOnlyWithUs.svg')%>' alt='Лого'>
-                <img class='prices__only-with-us-image prices__only-with-us-image_type_one'
-                  src='<%=require('../src/images/Prices/OnlyWithUs/PricesIcon1.svg')%>' alt='Картинка 1'>
-                <img class='prices__only-with-us-image prices__only-with-us-image_type_two'
-                  src='<%=require('../src/images/Prices/OnlyWithUs/PricesIcon2.svg')%>' alt='Картинка 2'>
-                <img class='prices__only-with-us-image prices__only-with-us-image_type_three'
-                  src='<%=require('../src/images/Prices/OnlyWithUs/PricesIcon3.svg')%>' alt='Картинка 3'>
-                <img class='prices__only-with-us-image prices__only-with-us-image_type_four'
-                  src='<%=require('../src/images/Prices/OnlyWithUs/PricesIcon4.svg')%>' alt='Картинка 4'>
-                <img class='prices__only-with-us-image prices__only-with-us-image_type_five'
-                  src='<%=require('../src/images/Prices/OnlyWithUs/PricesIcon5.svg')%>' alt='Картинка 5'>
-                <img class='prices__only-with-us-image prices__only-with-us-image_type_six'
-                  src='<%=require('../src/images/Prices/OnlyWithUs/PricesIcon6.svg')%>' alt='Картинка 6'>
+                <img class="prices__only-with-us-image prices__only-with-us-image_type_logo"
+                  src="<%=require('../src/images/Prices/OnlyWithUs/LogoOnlyWithUs.svg')%>" alt="Лого">
+                <img class="prices__only-with-us-image prices__only-with-us-image_type_one"
+                  src="<%=require('../src/images/Prices/OnlyWithUs/PricesIcon1.svg')%>" alt="Картинка 1">
+                <img class="prices__only-with-us-image prices__only-with-us-image_type_two"
+                  src="<%=require('../src/images/Prices/OnlyWithUs/PricesIcon2.svg')%>" alt="Картинка 2">
+                <img class="prices__only-with-us-image prices__only-with-us-image_type_three"
+                  src="<%=require('../src/images/Prices/OnlyWithUs/PricesIcon3.svg')%>" alt="Картинка 3">
+                <img class="prices__only-with-us-image prices__only-with-us-image_type_four"
+                  src="<%=require('../src/images/Prices/OnlyWithUs/PricesIcon4.svg')%>" alt="Картинка 4">
+                <img class="prices__only-with-us-image prices__only-with-us-image_type_five"
+                  src="<%=require('../src/images/Prices/OnlyWithUs/PricesIcon5.svg')%>" alt="Картинка 5">
+                <img class="prices__only-with-us-image prices__only-with-us-image_type_six"
+                  src="<%=require('../src/images/Prices/OnlyWithUs/PricesIcon6.svg')%>" alt="Картинка 6">
               </div>
 
             </div>
 
-            <div class='prices__additional-classes-container'>
-
-              <div class='prices__category prices__category_type_additional-classes'>
-                <div class='prices__category-info'>
-                  <h5 class='prices__category-vehicle'>если чувствуешь, что надо</h5>
-                  <h4 class='prices__category-heading'>Категория А или B</h4>
+            <div class="prices__additional-classes-container">
+              <div class="prices__category prices__category_type_additional-classes">
+                <div class="prices__category-info">
+                  <h5 class="prices__category-vehicle">если чувствуешь, что надо</h5>
+                  <h4 class="prices__category-heading">Категория А или B</h4>
                   <p>1 занятие</p>
                 </div>
-                <div class='prices__category-select'>
-                  <span class='prices__category-price' id='price-eleven'>1 000 руб.</span>
-                  <button class='button button_type_cat-additional-classes button_type_consult-form'>Надо</button>
+                <div class="prices__category-select">
+                  <span class="prices__category-price" id="price-eleven">1 000 руб.</span>
+                  <button class="button button_type_cat-additional-classes button_type_consult-form add-AB">Надо</button>
                 </div>
               </div>
 
-              <div class='prices__category prices__category_type_additional-classes'>
-                <div class='prices__category-info'>
-                  <h5 class='prices__category-vehicle'>если чувствуешь, что надо</h5>
-                  <h4 class='prices__category-heading'>Категория С или D</h4>
+              <div class="prices__category prices__category_type_additional-classes">
+                <div class="prices__category-info">
+                  <h5 class="prices__category-vehicle">если чувствуешь, что надо</h5>
+                  <h4 class="prices__category-heading">Категория С или D</h4>
                   <p>1 занятие</p>
                 </div>
-                <div class='prices__category-select'>
-                  <span class='prices__category-price' id='price-twelve'>1 200 руб.</span>
-                  <button class='button button_type_cat-additional-classes button_type_consult-form'>Надо</button>
+                <div class="prices__category-select">
+                  <span class="prices__category-price" id="price-twelve">1 200 руб.</span>
+                  <button class="button button_type_cat-additional-classes button_type_consult-form add-CD">Надо</button>
                 </div>
               </div>
 
-              <div class='prices__category prices__category_type_restoring-skills'>
-                <div class='prices__category-info'>
-                  <h5 class='prices__category-vehicle'>ну вдруг забыл, поможем вспомнить</h5>
-                  <h4 class='prices__category-heading'>Восстановление навыков</h4>
+              <div class="prices__category prices__category_type_restoring-skills">
+                <div class="prices__category-info">
+                  <h5 class="prices__category-vehicle">ну вдруг забыл, поможем вспомнить</h5>
+                  <h4 class="prices__category-heading">Восстановление навыков</h4>
                   <p>если давно не был за рулем и появилось волнение на дороге, мы поможем справится с дрожью в руках,
                     на практике подтянем знания ПДД и разберем экстремальные ситуации на дороге</p>
                 </div>
-                <div class='prices__category-select'>
-                  <span class='prices__category-price' id='price-thirteen'>10 000 руб.</span>
-                  <button class='button button_type_cat-additional-classes button_type_consult-form'>Как раз</button>
+                <div class="prices__category-select">
+                  <span class="prices__category-price" id="price-thirteen">10 000 руб.</span>
+                  <button class="button button_type_cat-additional-classes button_type_consult-form add-recovery">Как раз</button>
                 </div>
               </div>
             </div>
@@ -419,474 +474,478 @@
           </div>
         </section>
 
-        <section class='advantages' id='advantages'>
-          <div class='advantages__info'>
-            <h2 class='advantages__title'>Почему мы?</h2>
-            <div class='advantages__container'>
-              <div class='advantages__cell'>
-                <h3 class='advantages__subtitle'>Курс теории онлайн</h3>
-                <p class='advantages__text'>Теоретический курс проходит<br>онлайн в удобное для тебя время</p>
+        <section class="advantages" id="advantages">
+          <div class="advantages__info">
+            <h2 class="advantages__title">Почему мы?</h2>
+            <div class="advantages__container">
+              <div class="advantages__cell">
+                <h3 class="advantages__subtitle">Курс теории онлайн</h3>
+                <p class="advantages__text">Теоретический курс проходит<br>онлайн в удобное для тебя время</p>
               </div>
 
-              <div class='advantages__cell'>
-                <h3 class='advantages__subtitle'>Срок обучения от 2-х месяцев</h3>
-                <p class='advantages__text'>Минимальный срок обучения<br>в нашей автошколе 60 дней</p>
+              <div class="advantages__cell">
+                <h3 class="advantages__subtitle">Срок обучения от 2-х месяцев</h3>
+                <p class="advantages__text">Минимальный срок обучения<br>в нашей автошколе 60 дней</p>
               </div>
 
-              <div class='advantages__cell'>
-                <h3 class='advantages__subtitle'>Далеко ходить не придется</h3>
-                <p class='advantages__text'>Найдем инструктора в ближайшем<br>для тебя районе Москвы</p>
+              <div class="advantages__cell">
+                <h3 class="advantages__subtitle">Далеко ходить не придется</h3>
+                <p class="advantages__text">Найдем инструктора в ближайшем<br>для тебя районе Москвы</p>
               </div>
 
-              <div class='advantages__cell'>
-                <h3 class='advantages__subtitle'>Клуб выпускников автошколы</h3>
-                <p class='advantages__text'>Мы не просто автошкола —<br>мы сообщество автолюбителей</p>
+              <div class="advantages__cell">
+                <h3 class="advantages__subtitle">Клуб выпускников автошколы</h3>
+                <p class="advantages__text">Мы не просто автошкола —<br>мы сообщество автолюбителей</p>
               </div>
 
-              <div class='advantages__cell'>
-                <h3 class='advantages__subtitle'>Консультации в мессенджерах</h3>
-                <p class='advantages__text'>Не оставим в беде и ответим<br>на все интересующие вопросы</p>
+              <div class="advantages__cell">
+                <h3 class="advantages__subtitle">Консультации в мессенджерах</h3>
+                <p class="advantages__text">Не оставим в беде и ответим<br>на все интересующие вопросы</p>
               </div>
 
-              <div class='advantages__cell'>
-                <h3 class='advantages__subtitle'>Уникальные курсы только в нашей автошколе</h3>
-                <p class='advantages__text'>Курс «Каршеринг»<br>Курс «Лайфхаки»</p>
+              <div class="advantages__cell">
+                <h3 class="advantages__subtitle">Уникальные курсы только в нашей автошколе</h3>
+                <p class="advantages__text">Курс «Каршеринг»<br>Курс «Лайфхаки»</p>
               </div>
             </div>
           </div>
         </section>
 
-        <section class='learning' id='learning'>
-          <h2 class='learning__title'>Твой путь к получению водительского удостоверения</h2>
-          <div class='learning__steps'>
+        <section class="learning" id="learning">
+          <h2 class="learning__title">Твой путь к получению водительского удостоверения</h2>
+          <div class="learning__steps">
 
-            <div class='learning__cell learning__cell_type_contract'>
-              <div class='learning__cell-info'>
-                <span class='learning__stage learning__stage_type_black'>1</span>
-                <h3 class='learning__subtitle learning__subtitle_type_black'>Заключение договора</h3>
+            <div class="learning__cell learning__cell_type_contract">
+              <div class="learning__cell-info">
+                <span class="learning__stage learning__stage_type_black">1</span>
+                <h3 class="learning__subtitle learning__subtitle_type_black">Заключение договора</h3>
               </div>
-              <img class='learning__question' src='<%=require('./images/Learning/QuestionMarkTransparent.svg')%>'
-                alt='Подробнее'>
-              <span class='learning__popup learning__popup_type_contract'>Подписываем нужные документы, оплачиваешь первый
+              <img class="learning__question" src="<%=require('./images/Learning/QuestionMarkTransparent.svg')%>"
+                alt="Подробнее">
+              <span class="learning__popup learning__popup_type_contract">Подписываем нужные документы, оплачиваешь первый
                 взнос, ждешь начала занятий.</span>
             </div>
 
-            <div class='learning__cell learning__cell_type_theory'>
-              <div class='learning__cell-info'>
-                <span class='learning__stage learning__stage_type_black'>2</span>
-                <h3 class='learning__subtitle learning__subtitle_type_black'>Изучение теории</h3>
+            <div class="learning__cell learning__cell_type_theory">
+              <div class="learning__cell-info">
+                <span class="learning__stage learning__stage_type_black">2</span>
+                <h3 class="learning__subtitle learning__subtitle_type_black">Изучение теории</h3>
               </div>
-              <img class='learning__image' src='<%=require('./images/Learning/student.svg')%>' alt='Ученик'>
-              <img class='learning__question' src='<%=require('./images/Learning/QuestionMarkTransparent.svg')%>'
-                alt='Подробнее'>
-              <span class='learning__popup learning__popup_type_theory'>Получаешь доступ в ЛК интерактивной платформы для
+              <img class="learning__image" src="<%=require('./images/Learning/student.svg')%>" alt="Ученик">
+              <img class="learning__question" src="<%=require('./images/Learning/QuestionMarkTransparent.svg')%>"
+                alt="Подробнее">
+              <span class="learning__popup learning__popup_type_theory">Получаешь доступ в ЛК интерактивной платформы для
                 обучения онлайн</span>
             </div>
 
-            <div class='learning__cell learning__cell_type_practice'>
-              <div class='learning__cell-info'>
-                <span class='learning__stage learning__stage_type_black'>3</span>
-                <h3 class='learning__subtitle learning__subtitle_type_black'>Начало практики</h3>
+            <div class="learning__cell learning__cell_type_practice">
+              <div class="learning__cell-info">
+                <span class="learning__stage learning__stage_type_black">3</span>
+                <h3 class="learning__subtitle learning__subtitle_type_black">Начало практики</h3>
               </div>
-              <img class='learning__image' src='<%=require('./images/Learning/MainRoad.svg')%>' alt='Главная дорога'>
-              <img class='learning__question' src='<%=require('./images/Learning/QuestionMarkTransparent.svg')%>'
-                alt='Подробнее'>
-              <span class='learning__popup learning__popup_type_practice'>Знакомишься с инструктором и приступаешь к
+              <img class="learning__image" src="<%=require('./images/Learning/MainRoad.svg')%>" alt="Главная дорога">
+              <img class="learning__question" src="<%=require('./images/Learning/QuestionMarkTransparent.svg')%>"
+                alt="Подробнее">
+              <span class="learning__popup learning__popup_type_practice">Знакомишься с инструктором и приступаешь к
                 вождению</span>
             </div>
 
-            <div class='learning__cell learning__cell_type_theory-exam'>
-              <div class='learning__cell-info'>
-                <span class='learning__stage learning__stage_type_white'>4</span>
-                <h3 class='learning__subtitle learning__subtitle_type_white'>Экзамен по теории</h3>
+            <div class="learning__cell learning__cell_type_theory-exam">
+              <div class="learning__cell-info">
+                <span class="learning__stage learning__stage_type_white">4</span>
+                <h3 class="learning__subtitle learning__subtitle_type_white">Экзамен по теории</h3>
               </div>
-              <img class='learning__image' src='<%=require('./images/Learning/Wheel.svg')%>' alt='Колесо'>
-              <img class='learning__question' src='<%=require('./images/Learning/QuestionMarkBlack.svg')%>'
-                alt='Подробнее'>
-              <span class='learning__popup learning__popup_theory-exam'>Докажешь, что ты не зря учил теорию</span>
+              <img class="learning__image" src="<%=require('./images/Learning/Wheel.svg')%>" alt="Колесо">
+              <img class="learning__question" src="<%=require('./images/Learning/QuestionMarkBlack.svg')%>"
+                alt="Подробнее">
+              <span class="learning__popup learning__popup_theory-exam">Докажешь, что ты не зря учил теорию</span>
             </div>
 
-            <div class='learning__cell learning__cell_type_practice-exam'>
-              <div class='learning__cell-info'>
-                <span class='learning__stage learning__stage_type_white'>5</span>
-                <h3 class='learning__subtitle learning__subtitle_type_white'>Экзамен по практике</h3>
+            <div class="learning__cell learning__cell_type_practice-exam">
+              <div class="learning__cell-info">
+                <span class="learning__stage learning__stage_type_white">5</span>
+                <h3 class="learning__subtitle learning__subtitle_type_white">Экзамен по практике</h3>
               </div>
-              <img class='learning__image' src='<%=require('./images/Learning/SteeringWheel.svg')%>' alt='Рулевое колесо'>
-              <img class='learning__question' src='<%=require('./images/Learning/QuestionMarkBlack.svg')%>'
-                alt='Подробнее'>
-              <span class='learning__popup learning__popup_type_practice-exam'>Только не дрифтуй!</span>
+              <img class="learning__image" src="<%=require('./images/Learning/SteeringWheel.svg')%>" alt="Рулевое колесо">
+              <img class="learning__question" src="<%=require('./images/Learning/QuestionMarkBlack.svg')%>"
+                alt="Подробнее">
+              <span class="learning__popup learning__popup_type_practice-exam">Только не дрифтуй!</span>
             </div>
 
-            <div class='learning__cell learning__cell_type_GIBDD'>
-              <div class='learning__cell-info'>
-                <span class='learning__stage learning__stage_type_black'>6</span>
-                <h3 class='learning__subtitle learning__subtitle_type_black'>Экзамены в ГИБДД</h3>
+            <div class="learning__cell learning__cell_type_GIBDD">
+              <div class="learning__cell-info">
+                <span class="learning__stage learning__stage_type_black">6</span>
+                <h3 class="learning__subtitle learning__subtitle_type_black">Экзамены в ГИБДД</h3>
               </div>
-              <img class='learning__image' src='<%=require('./images/Learning/ExclamationMark.svg')%>'
-                alt='Восклицательный знак'>
-              <img class='learning__question' src='<%=require('./images/Learning/QuestionMarkTransparent.svg')%>'
-                alt='Подробнее'>
-              <span class='learning__popup learning__popup_type_GIBDD'>Покажешь, все чему ты научился. Они будут в
+              <img class="learning__image" src="<%=require('./images/Learning/ExclamationMark.svg')%>"
+                alt="Восклицательный знак">
+              <img class="learning__question" src="<%=require('./images/Learning/QuestionMarkTransparent.svg')%>"
+                alt="Подробнее">
+              <span class="learning__popup learning__popup_type_GIBDD">Покажешь, все чему ты научился. Они будут в
                 восторге!</span>
             </div>
 
-            <div class='learning__cell learning__cell_type_gratz'>
-              <div class='learning__cell-info'>
-                <span class='learning__stage learning__stage_type_white'>7</span>
-                <h3 class='learning__subtitle learning__subtitle_type_white'>Получение водительского<br>удостоверения</h3>
+            <div class="learning__cell learning__cell_type_gratz">
+              <div class="learning__cell-info">
+                <span class="learning__stage learning__stage_type_white">7</span>
+                <h3 class="learning__subtitle learning__subtitle_type_white">Получение водительского<br>удостоверения</h3>
               </div>
-              <img class='learning__image' src='<%=require('./images/Learning/Easy.svg')%>' alt='Easy'>
-              <img class='learning__question' src='<%=require('./images/Learning/QuestionMarkBlack.svg')%>'
-                alt='Подробнее'>
-              <div class='learning__popup learning__popup_type_gratz'>Поздравляем!!!🎉🎉🎉<br />Ты сдал!<br>Ждем тебя на
+              <img class="learning__image" src="<%=require('./images/Learning/Easy.svg')%>" alt="Easy">
+              <img class="learning__question" src="<%=require('./images/Learning/QuestionMarkBlack.svg')%>"
+                alt="Подробнее">
+              <div class="learning__popup learning__popup_type_gratz">Поздравляем!!!🎉🎉🎉<br />Ты сдал!<br>Ждем тебя на
                 дороге!</div>
-              <!-- &#127881; -->
             </div>
-            <div class='club__signup'>
-              <div class='club__signup-info'>
-                <h2 class='club__title'>Онлайн обучение</h2>
-                <h3 class='club__subtitle'>Мы обучаем теории 24 часа в сутки! Вся теория у нас онлайн</h3>
 
-                <div class='club__advantage'>
-                  <img class='club__image' src='<%=require('../src/images/Club/IconInteractive.svg')%>'
-                    alt='Интерактивная платформа'>
-                  <div class='club__paragraph'>
-                    <h4 class='club__heading'>Интерактивная платформа</h4>
-                    <h5 class='club__text'>Интерактивное обучение повышает эффективность обучения</h5>
+            <div class="club__signup">
+              <div class="club__signup-info">
+                <h2 class="club__title">Онлайн обучение</h2>
+                <h3 class="club__subtitle">Мы обучаем теории 24 часа в сутки! Вся теория у нас онлайн</h3>
+
+                <div class="club__advantage">
+                  <img class="club__image" src="<%=require('../src/images/Club/IconInteractive.svg')%>"
+                    alt="Интерактивная платформа">
+                  <div class="club__paragraph">
+                    <h4 class="club__heading">Интерактивная платформа</h4>
+                    <h5 class="club__text">Интерактивное обучение повышает эффективность обучения</h5>
                   </div>
                 </div>
 
-                <div class='club__advantage'>
-                  <img class='club__image' src='<%=require('../src/images/Club/IconPlanet.svg')%>' alt='В любом месте'>
-                  <div class='club__paragraph'>
-                    <h4 class='club__heading'>В любом месте</h4>
-                    <h5 class='club__text'>Где и когда захочешь, главное иметь устройство с доступом в интернет</h5>
+                <div class="club__advantage">
+                  <img class="club__image" src="<%=require('../src/images/Club/IconPlanet.svg')%>" alt="В любом месте">
+                  <div class="club__paragraph">
+                    <h4 class="club__heading">В любом месте</h4>
+                    <h5 class="club__text">Где и когда захочешь, главное иметь устройство с доступом в интернет</h5>
                   </div>
                 </div>
 
-                <div class='club__advantage'>
-                  <img class='club__image' src='<%=require('../src/images/Club/IconFeedback.svg')%>' alt='Обратная связь'>
-                  <div class='club__paragraph'>
-                    <h4 class='club__heading'>Обратная связь</h4>
-                    <h5 class='club__text'>Онлайн-вебинары, на которых можно задать вопросы преподавателям</h5>
+                <div class="club__advantage">
+                  <img class="club__image" src="<%=require('../src/images/Club/IconFeedback.svg')%>" alt="Обратная связь">
+                  <div class="club__paragraph">
+                    <h4 class="club__heading">Обратная связь</h4>
+                    <h5 class="club__text">Онлайн-вебинары, на которых можно задать вопросы преподавателям</h5>
                   </div>
                 </div>
-                <button class='button button_type_club button_type_consult-form'>Записаться</button>
+                <button class="button button_type_club button_type_consult-form">Записаться</button>
               </div>
             </div>
           </div>
         </section>
 
-        <section class='club' id='club'>
-          <div class='club__background-image'>
-            <div class='club__background-string'></div>
+        <section class="club" id="club">
+          <div class="club__background-image">
+            <div class="club__background-string"></div>
           </div>
-          <div class='club__adress'>
-            <div class='club__adress-text'>
-              <p class='club__adress-paragraph club__adress-paragraph_type_bold'>Если по какой-либо причине не подходит
+          <div class="club__adress">
+            <div class="club__adress-text">
+              <p class="club__adress-paragraph club__adress-paragraph_type_bold">Если по какой-либо причине не подходит
                 формат онлайн-обучения,
                 будем рады видеть тебя в учебных классах центральной автошколы.
               </p>
-              <img class='club__location-image' src='<%=require('../src/images/Club/IconLocation.svg')%>' alt='Локация'>
-              <p class='club__adress-paragraph club__adress-paragraph_type_normal'>г. Москва, Ленинский проспект д. 65 к.
+              <img class="club__location-image" src="<%=require('../src/images/Club/IconLocation.svg')%>" alt="Локация">
+              <p class="club__adress-paragraph club__adress-paragraph_type_normal">г. Москва, Ленинский проспект д. 65 к.
                 4<br>
                 (РГУ нефти и газа имени И.М. Губкина,
                 станция метро Университет)</p>
             </div>
           </div>
-          <div class='club__underground-image'>
-            <div class='club__underground-svg'></div>
+          <div class="club__underground-image">
+            <div class="club__underground-svg"></div>
           </div>
 
-          <div class='club__license'>
-            <h2 class='club__license-title'>Кстати, мы прошли аттестацию в ГИБДД.
-              Убедится в этом помогут наши <span class='club__license-link club__license-link_type_bold'
-                id='license'>лицензии<img src='<%=require('../src/images/Club/arrow.svg')%>' alt='Стрелка'></span>
+          <div class="club__license">
+            <h2 class="club__license-title">Кстати, мы прошли аттестацию в ГИБДД.
+              Убедится в этом помогут наши <span class="club__license-link club__license-link_type_bold"
+                id="license">лицензии<img src="<%=require('../src/images/Club/arrow.svg')%>" alt="Стрелка"></span>
             </h2>
-            <p class='club__license-paragraph'>Также нас можно найти на оффициальном сайте <a
-                class='club__license-link club__license-link_type_normal'
-                href='https://xn--90adear.xn--p1ai/drivingschools' target='blank'>ГИБДД</a>. В поиске введи «Ганг Люкс» и
+            <p class="club__license-paragraph">Также нас можно найти на оффициальном сайте <a
+                class="club__license-link club__license-link_type_normal"
+                href="https://xn--90adear.xn--p1ai/drivingschools" target="blank">ГИБДД</a>. В поиске введи «Ганг Люкс» и
               ты сможешь ознакомиться с адресами всех наших филиалов.</p>
-            <p class='club__license-paragraph'>Да-да, не удивляйся, «Ганг Люкс» — наше юридическое название и сеть
+            <p class="club__license-paragraph">Да-да, не удивляйся, «Ганг Люкс» — наше юридическое название и сеть
               автошкол, которая дала нам возможность создать свой бренд, специально для тебя!</p>
           </div>
-
         </section>
 
-        <section class='guru' id='guru'>
-          <div class='guru__content'>
-            <div class='guru__alumni'>
-              <div class='guru__alumni-title guru__alumni-title_type_grad'>Клуб выпускников<img class='guru__alumni-image'
-                  src='<%=require('../src/images/Guru/Wheel2.svg')%>' alt='Изображение рулевого колеса'></div>
-              <p class='guru__alumni-text'>Клуб выпускников Автошколы Easydrive — это сообщество автолюбителей, готовых
+        <section class="guru" id="guru">
+          <div class="guru__content">
+            <div class="guru__alumni">
+              <div class="guru__alumni-title guru__alumni-title_type_grad">Клуб выпускников<img class="guru__alumni-image"
+                  src="<%=require('../src/images/Guru/Wheel2.svg')%>" alt="Изображение рулевого колеса"></div>
+              <p class="guru__alumni-text">Клуб выпускников Автошколы Easydrive — это сообщество автолюбителей, готовых
                 в любой момент прийти друг другу на помощь.
                 Все выпускники автошколы получат приглашение в наш чат Telegram,
                 где смогут консультироваться по различным вопросам, связанным
                 с вождением, эксплуатацией автомобиля и другим вопросам.</p>
             </div>
 
-            <div class='guru__for-example'>
-              <div class='guru__alumni-title guru__alumni-title_type_white'>
-                <h2 class='guru__for-example-heading'>Например:</h2>
+            <div class="guru__for-example">
+              <div class="guru__alumni-title guru__alumni-title_type_white">
+                <h2 class="guru__for-example-heading">Например:</h2>
               </div>
-              <ul class='guru__examples'>
-                <li class='guru__example'>покупка/продажа автомобиля</li>
-                <li class='guru__example'>техническое обслуживание автомобиля (ТО)</li>
-                <li class='guru__example'>«нестандартные» ситуации на дороге</li>
-                <li class='guru__example'>общение с сотрудника ГИБДД</li>
+              <ul class="guru__examples">
+                <li class="guru__example">покупка/продажа автомобиля</li>
+                <li class="guru__example">техническое обслуживание автомобиля (ТО)</li>
+                <li class="guru__example">«нестандартные» ситуации на дороге</li>
+                <li class="guru__example">общение с сотрудника ГИБДД</li>
               </ul>
 
-              <img class='guru__image guru__image_type_message-one'
-                src='<%=require('../src/images/Guru/MessageOne.svg')%>' alt='Картинка с сообщением'>
-              <img class='guru__image guru__image_type_message-two'
-                src='<%=require('../src/images/Guru/MessageTwo.svg')%>' alt='Картинка с сообщением'>
-              <img class='guru__image guru__image_type_message-three'
-                src='<%=require('../src/images/Guru/MessageThree.svg')%>' alt='Картинка с сообщением'>
-              <img class='guru__image guru__image_type_message-four'
-                src='<%=require('../src/images/Guru/MessageFour.svg')%>' alt='Картинка с сообщением'>
-              <img class='guru__image guru__image_type_message-five'
-                src='<%=require('../src/images/Guru/MessageFive.svg')%>' alt='Картинка с сообщением'>
-              <img class='guru__image guru__image_type_message-six'
-                src='<%=require('../src/images/Guru/MessageSix.svg')%>' alt='Картинка с сообщением'>
-              <img class='guru__image guru__image_type_message-seven'
-                src='<%=require('../src/images/Guru/MessagSeeven.svg')%>' alt='Картинка с сообщением'>
+              <img class="guru__image guru__image_type_message-one"
+                src="<%=require('../src/images/Guru/MessageOne.svg')%>" alt="Картинка с сообщением">
+              <img class="guru__image guru__image_type_message-two"
+                src="<%=require('../src/images/Guru/MessageTwo.svg')%>" alt="Картинка с сообщением">
+              <img class="guru__image guru__image_type_message-three"
+                src="<%=require('../src/images/Guru/MessageThree.svg')%>" alt="Картинка с сообщением">
+              <img class="guru__image guru__image_type_message-four"
+                src="<%=require('../src/images/Guru/MessageFour.svg')%>" alt="Картинка с сообщением">
+              <img class="guru__image guru__image_type_message-five"
+                src="<%=require('../src/images/Guru/MessageFive.svg')%>" alt="Картинка с сообщением">
+              <img class="guru__image guru__image_type_message-six"
+                src="<%=require('../src/images/Guru/MessageSix.svg')%>" alt="Картинка с сообщением">
+              <img class="guru__image guru__image_type_message-seven"
+                src="<%=require('../src/images/Guru/MessagSeeven.svg')%>" alt="Картинка с сообщением">
 
-              <img class='guru__image guru__image_type_icon-one' src='<%=require('../src/images/Guru/Spasibo.svg')%>'
-                alt='Картинка с надписью:'Спасибо''>
-              <img class='guru__image guru__image_type_icon-two' src='<%=require('../src/images/Guru/Easy.svg')%>'
-                alt='Картинка с надписью:'Easy''>
-              <img class='guru__image guru__image_type_icon-three' src='<%=require('../src/images/Guru/LetsGo.svg')%>'
-                alt='Картинка с надписью:'Погнали''>
+              <img class="guru__image guru__image_type_icon-one" src="<%=require('../src/images/Guru/Spasibo.svg')%>"
+                alt="Картинка с надписью:'Спасибо'">
+              <img class="guru__image guru__image_type_icon-two" src="<%=require('../src/images/Guru/Easy.svg')%>"
+                alt="Картинка с надписью:'Easy'">
+              <img class="guru__image guru__image_type_icon-three" src="<%=require('../src/images/Guru/LetsGo.svg')%>"
+                alt="Картинка с надписью:'Погнали'">
 
             </div>
           </div>
-          <div class='guru__teachers' id='guru__teachers'>
-            <div class='guru__teachers-text'>
-              <h2 class='guru__teachers-title'>Инструкторы</h2>
+          <div class="guru__teachers" id="guru__teachers">
+            <div class="guru__teachers-text">
+              <h2 class="guru__teachers-title">Инструкторы</h2>
 
-              <h3 class='guru__teachers-heading'>Аттестация инструкторов</h3>
-              <p class='guru__teachers-paragraph'>Каждый инструктор проходит ежегодную аттестации на профессиональную
+              <h3 class="guru__teachers-heading">Аттестация инструкторов</h3>
+              <p class="guru__teachers-paragraph">Каждый инструктор проходит ежегодную аттестации на профессиональную
                 пригодность.</p>
 
-              <h3 class='guru__teachers-heading'>Индивидуальное расписание</h3>
-              <p class='guru__teachers-paragraph'>Ты сам выбираешь время своих практических занятий с инструктором.</p>
+              <h3 class="guru__teachers-heading">Индивидуальное расписание</h3>
+              <p class="guru__teachers-paragraph">Ты сам выбираешь время своих практических занятий с инструктором.</p>
 
-              <h3 class='guru__teachers-heading'>Автомобили</h3>
-              <p class='guru__teachers-paragraph'>Перед каждым занятием мы тщательно дезинфицируем салон автомобиля.</p>
+              <h3 class="guru__teachers-heading">Автомобили</h3>
+              <p class="guru__teachers-paragraph">Перед каждым занятием мы тщательно дезинфицируем салон автомобиля.</p>
             </div>
 
-            <article class='guru__teachers-slider' id='slider'>
+            <article class="guru__teachers-slider" id="slider">
 
-              <input type='radio' name='teachers-slider' id='switch1' checked>
-              <input type='radio' name='teachers-slider' id='switch2'>
-              <input type='radio' name='teachers-slider' id='switch3'>
+              <input type="radio" name="teachers-slider" id="switch1" checked>
+              <input type="radio" name="teachers-slider" id="switch2">
+              <input type="radio" name="teachers-slider" id="switch3">
 
-              <div class='guru__teachers-slider-circles' id='circles'>
-                <label class='guru__teachers-slider-circle' for='switch1'></label>
-                <label class='guru__teachers-slider-circle' for='switch2'></label>
-                <label class='guru__teachers-slider-circle' for='switch3'></label>
+              <div class="guru__teachers-slider-circles" id="circles">
+                <label class="guru__teachers-slider-circle" for="switch1"></label>
+                <label class="guru__teachers-slider-circle" for="switch2"></label>
+                <label class="guru__teachers-slider-circle" for="switch3"></label>
               </div>
 
-              <div class='guru__teachers-slider-controls' id='controls'>
-                <label class='guru__teachers-slider-control' for='switch1'></label>
-                <label class='guru__teachers-slider-control' for='switch2'></label>
-                <label class='guru__teachers-slider-control' for='switch3'></label>
+              <div class="guru__teachers-slider-controls" id="controls">
+                <label class="guru__teachers-slider-control" for="switch1"></label>
+                <label class="guru__teachers-slider-control" for="switch2"></label>
+                <label class="guru__teachers-slider-control" for="switch3"></label>
               </div>
 
-              <div class='guru__teachers-slides' id=slides>
-                <div class='guru__teachers-info'>
+              <div class="guru__teachers-slides" id=slides>
+                <div class="guru__teachers-info">
 
-                  <article class='guru__teachers-fisrt-slide' id='first'>
-                    <div class='guru__teacher'>
-                      <img class='guru__teacher-image' src='<%=require('../src/images/Reviews/Diesel.jpg')%>'
-                        alt='Фото инструктора'>
-                      <p class='guru__teacher-name'>Имя<br>Фамилия</p>
-                      <div class='guru__teacher-expearence'>
-                        <label for='driving'>за рулем</label>
-                        <span name='driving'>22 года</span>
+                  <article class="guru__teachers-fisrt-slide" id="first">
 
-                        <label for='teaching'>преподает</label>
-                        <span name='teaching'>13 лет</span>
+                    <div class="guru__teacher">
+                      <img class="guru__teacher-image" src="<%=require('../src/images/Guru/1.jpg')%>"
+                        alt="Фото инструктора">
+                      <p class="guru__teacher-name">Александр</p>
+                      <div class="guru__teacher-expearence">
+                        <label for="driving">за рулем</label>
+                        <span name="driving">28 лет</span>
 
-                        <label for='categories'>категория</label>
-                        <span name='categories'>A, B</span>
+                        <label for="teaching">преподает</label>
+                        <span name="teaching">15 лет</span>
+
+                        <label for="categories">категория</label>
+                        <span name="categories">B, C</span>
                       </div>
                     </div>
-                    <div class='guru__teacher'>
-                      <img class='guru__teacher-image' src='<%=require('../src/images/Reviews/Diesel.jpg')%>'
-                        alt='Фото инструктора'>
-                      <p class='guru__teacher-name'>Имя<br>Фамилия</p>
-                      <div class='guru__teacher-expearence'>
-                        <label for='driving'>за рулем</label>
-                        <span name='driving'>22 года</span>
 
-                        <label for='teaching'>преподает</label>
-                        <span name='teaching'>13 лет</span>
+                    <div class="guru__teacher">
+                      <img class="guru__teacher-image" src="<%=require('../src/images/Guru/2.jpg')%>"
+                          alt="Фото инструктора">
+                      <p class="guru__teacher-name">Тамара</p>
+                      <div class="guru__teacher-expearence">
+                        <label for="driving">за рулем</label>
+                        <span name="driving">16 лет</span>
 
-                        <label for='categories'>категория</label>
-                        <span name='categories'>A, B</span>
+                        <label for="teaching">преподает</label>
+                        <span name="teaching">6 лет</span>
+
+                        <label for="categories">категория</label>
+                        <span name="categories">B</span>
                       </div>
                     </div>
-                    <div class='guru__teacher'>
-                      <img class='guru__teacher-image' src='<%=require('../src/images/Reviews/Diesel.jpg')%>'
-                        alt='Фото инструктора'>
-                      <p class='guru__teacher-name'>Имя<br>Фамилия</p>
-                      <div class='guru__teacher-expearence'>
-                        <label for='driving'>за рулем</label>
-                        <span name='driving'>22 года</span>
 
-                        <label for='teaching'>преподает</label>
-                        <span name='teaching'>13 лет</span>
+                    <div class="guru__teacher">
+                      <img class="guru__teacher-image" src="<%=require('../src/images/Guru/3.jpg')%>"
+                        alt="Фото инструктора">
+                      <p class="guru__teacher-name">Георгий</p>
+                      <div class="guru__teacher-expearence">
+                        <label for="driving">за рулем</label>
+                        <span name="driving">32 года</span>
 
-                        <label for='categories'>категория</label>
-                        <span name='categories'>A, B</span>
+                        <label for="teaching">преподает</label>
+                        <span name="teaching">10 лет</span>
+
+                        <label for="categories">категория</label>
+                        <span name="categories">B</span>
                       </div>
                     </div>
-                    <div class='guru__teacher'>
-                      <img class='guru__teacher-image' src='<%=require('../src/images/Reviews/Diesel.jpg')%>'
-                        alt='Фото инструктора'>
-                      <p class='guru__teacher-name'>Имя<br>Фамилия</p>
-                      <div class='guru__teacher-expearence'>
-                        <label for='driving'>за рулем</label>
-                        <span name='driving'>22 года</span>
 
-                        <label for='teaching'>преподает</label>
-                        <span name='teaching'>13 лет</span>
+                    <div class="guru__teacher">
+                      <img class="guru__teacher-image" src="<%=require('../src/images/Guru/4.jpg')%>"
+                        alt="Фото инструктора">
+                      <p class="guru__teacher-name">Дмитрий</p>
+                      <div class="guru__teacher-expearence">
+                        <label for="driving">за рулем</label>
+                        <span name="driving">23 года</span>
 
-                        <label for='categories'>категория</label>
-                        <span name='categories'>A, B</span>
+                        <label for="teaching">преподает</label>
+                        <span name="teaching">9 лет</span>
+
+                        <label for="categories">категория</label>
+                        <span name="categories">B</span>
                       </div>
                     </div>
-                    <div class='guru__teacher'>
-                      <img class='guru__teacher-image' src='<%=require('../src/images/Reviews/Diesel.jpg')%>'
-                        alt='Фото инструктора'>
-                      <p class='guru__teacher-name'>Имя<br>Фамилия</p>
-                      <div class='guru__teacher-expearence'>
-                        <label for='driving'>за рулем</label>
-                        <span name='driving'>22 года</span>
 
-                        <label for='teaching'>преподает</label>
-                        <span name='teaching'>13 лет</span>
+                    <div class="guru__teacher">
+                      <img class="guru__teacher-image" src="<%=require('../src/images/Guru/5.jpg')%>"
+                        alt="Фото инструктора">
+                      <p class="guru__teacher-name">Юрий</p>
+                      <div class="guru__teacher-expearence">
+                        <label for="driving">за рулем</label>
+                        <span name="driving">28 лет</span>
 
-                        <label for='categories'>категория</label>
-                        <span name='categories'>A, B</span>
+                        <label for="teaching">преподает</label>
+                        <span name="teaching">15 лет</span>
+
+                        <label for="categories">категория</label>
+                        <span name="categories">C, D</span>
                       </div>
                     </div>
-                    <div class='guru__teacher'>
-                      <img class='guru__teacher-image' src='<%=require('../src/images/Reviews/Diesel.jpg')%>'
-                        alt='Фото инструктора'>
-                      <p class='guru__teacher-name'>Имя<br>Фамилия</p>
-                      <div class='guru__teacher-expearence'>
-                        <label for='driving'>за рулем</label>
-                        <span name='driving'>22 года</span>
+                    <div class="guru__teacher">
+                      <img class="guru__teacher-image" src="<%=require('../src/images/Guru/f2.jpg')%>"
+                        alt="Фото инструктора">
+                      <p class="guru__teacher-name">Владимир</p>
+                      <div class="guru__teacher-expearence">
+                        <label for="driving">за рулем</label>
+                        <span name="driving">26 лет</span>
 
-                        <label for='teaching'>преподает</label>
-                        <span name='teaching'>13 лет</span>
+                        <label for="teaching">преподает</label>
+                        <span name="teaching">11 лет</span>
 
-                        <label for='categories'>категория</label>
-                        <span name='categories'>A, B</span>
+                        <label for="categories">категория</label>
+                        <span name="categories">B</span>
                       </div>
                     </div>
                   </article>
 
-                  <article class='guru__teachers-second-slide' id='second'>
-                    <div class='guru__teacher'>
-                      <img class='guru__teacher-image' src='<%=require('../src/images/Reviews/Rock.jpg')%>'
-                        alt='Фото инструктора'>
-                      <p class='guru__teacher-name'>Имя<br>Фамилия</p>
-                      <div class='guru__teacher-expearence'>
-                        <label for='driving'>за рулем</label>
-                        <span name='driving'>22 года</span>
+                  <article class="guru__teachers-second-slide" id="second">
+                    <div class="guru__teacher">
+                      <img class="guru__teacher-image" src="<%=require('../src/images/Guru/f3.jpg')%>"
+                        alt="Фото инструктора">
+                      <p class="guru__teacher-name">Светалана</p>
+                      <div class="guru__teacher-expearence">
+                        <label for="driving">за рулем</label>
+                        <span name="driving">17 лет</span>
 
-                        <label for='teaching'>преподает</label>
-                        <span name='teaching'>13 лет</span>
+                        <label for="teaching">преподает</label>
+                        <span name="teaching">8 лет</span>
 
-                        <label for='categories'>категория</label>
-                        <span name='categories'>A, B</span>
+                        <label for="categories">категория</label>
+                        <span name="categories">B</span>
                       </div>
                     </div>
-                    <div class='guru__teacher'>
-                      <img class='guru__teacher-image' src='<%=require('../src/images/Reviews/Rock.jpg')%>'
-                        alt='Фото инструктора'>
-                      <p class='guru__teacher-name'>Имя<br>Фамилия</p>
-                      <div class='guru__teacher-expearence'>
-                        <label for='driving'>за рулем</label>
-                        <span name='driving'>22 года</span>
+                    <div class="guru__teacher">
+                      <img class="guru__teacher-image" src="<%=require('../src/images/Guru/f4.jpg')%>"
+                        alt="Фото инструктора">
+                      <p class="guru__teacher-name">Владислав</p>
+                      <div class="guru__teacher-expearence">
+                        <label for="driving">за рулем</label>
+                        <span name="driving">33 года</span>
 
-                        <label for='teaching'>преподает</label>
-                        <span name='teaching'>13 лет</span>
+                        <label for="teaching">преподает</label>
+                        <span name="teaching">13 лет</span>
 
-                        <label for='categories'>категория</label>
-                        <span name='categories'>A, B</span>
+                        <label for="categories">категория</label>
+                        <span name="categories">A, B</span>
                       </div>
                     </div>
-                    <div class='guru__teacher'>
-                      <img class='guru__teacher-image' src='<%=require('../src/images/Reviews/Rock.jpg')%>'
-                        alt='Фото инструктора'>
-                      <p class='guru__teacher-name'>Имя<br>Фамилия</p>
-                      <div class='guru__teacher-expearence'>
-                        <label for='driving'>за рулем</label>
-                        <span name='driving'>22 года</span>
+                    <div class="guru__teacher">
+                      <img class="guru__teacher-image" src="<%=require('../src/images/Guru/6.jpg')%>"
+                        alt="Фото инструктора">
+                      <p class="guru__teacher-name">Александр</p>
+                      <div class="guru__teacher-expearence">
+                        <label for="driving">за рулем</label>
+                        <span name="driving">13 лет</span>
 
-                        <label for='teaching'>преподает</label>
-                        <span name='teaching'>13 лет</span>
+                        <label for="teaching">преподает</label>
+                        <span name="teaching">7 лет</span>
 
-                        <label for='categories'>категория</label>
-                        <span name='categories'>A, B</span>
+                        <label for="categories">категория</label>
+                        <span name="categories">A</span>
                       </div>
                     </div>
-                    <div class='guru__teacher'>
-                      <img class='guru__teacher-image' src='<%=require('../src/images/Reviews/Rock.jpg')%>'
-                        alt='Фото инструктора'>
-                      <p class='guru__teacher-name'>Имя<br>Фамилия</p>
-                      <div class='guru__teacher-expearence'>
-                        <label for='driving'>за рулем</label>
-                        <span name='driving'>22 года</span>
+                    <div class="guru__teacher">
+                      <img class="guru__teacher-image" src="<%=require('../src/images/Guru/f6.jpg')%>"
+                        alt="Фото инструктора">
+                      <p class="guru__teacher-name">Владимир</p>
+                      <div class="guru__teacher-expearence">
+                        <label for="driving">за рулем</label>
+                        <span name="driving">16 лет</span>
 
-                        <label for='teaching'>преподает</label>
-                        <span name='teaching'>13 лет</span>
+                        <label for="teaching">преподает</label>
+                        <span name="teaching">8 лет</span>
 
-                        <label for='categories'>категория</label>
-                        <span name='categories'>A, B</span>
+                        <label for="categories">категория</label>
+                        <span name="categories">B</span>
                       </div>
                     </div>
-                    <div class='guru__teacher'>
-                      <img class='guru__teacher-image' src='<%=require('../src/images/Reviews/Rock.jpg')%>'
-                        alt='Фото инструктора'>
-                      <p class='guru__teacher-name'>Имя<br>Фамилия</p>
-                      <div class='guru__teacher-expearence'>
-                        <label for='driving'>за рулем</label>
-                        <span name='driving'>22 года</span>
+                    <div class="guru__teacher">
+                      <img class="guru__teacher-image" src="<%=require('../src/images/Guru/f7.jpg')%>"
+                        alt="Фото инструктора">
+                      <p class="guru__teacher-name">Кирилл</p>
+                      <div class="guru__teacher-expearence">
+                        <label for="driving">за рулем</label>
+                        <span name="driving">18 лет</span>
 
-                        <label for='teaching'>преподает</label>
-                        <span name='teaching'>13 лет</span>
+                        <label for="teaching">преподает</label>
+                        <span name="teaching">11 лет</span>
 
-                        <label for='categories'>категория</label>
-                        <span name='categories'>A, B</span>
+                        <label for="categories">категория</label>
+                        <span name="categories">A, B</span>
                       </div>
                     </div>
-                    <div class='guru__teacher'>
-                      <img class='guru__teacher-image' src='<%=require('../src/images/Reviews/Rock.jpg')%>'
-                        alt='Фото инструктора'>
-                      <p class='guru__teacher-name'>Имя<br>Фамилия</p>
-                      <div class='guru__teacher-expearence'>
-                        <label for='driving'>за рулем</label>
-                        <span name='driving'>22 года</span>
+                    <div class="guru__teacher">
+                      <img class="guru__teacher-image" src="<%=require('../src/images/Guru/f8.jpg')%>"
+                        alt="Фото инструктора">
+                      <p class="guru__teacher-name">Геннадий</p>
+                      <div class="guru__teacher-expearence">
+                        <label for="driving">за рулем</label>
+                        <span name="driving">24 года</span>
 
-                        <label for='teaching'>преподает</label>
-                        <span name='teaching'>13 лет</span>
+                        <label for="teaching">преподает</label>
+                        <span name="teaching">13 лет</span>
 
-                        <label for='categories'>категория</label>
-                        <span name='categories'>A, B</span>
+                        <label for="categories">категория</label>
+                        <span name="categories">A, B</span>
                       </div>
                     </div>
                   </article>
 
-                  <article class='guru__teachers-third-slide' id='third'>
-                    <p class='guru__teachers-third-slide-gradient-text'>Это далеко не все наши инструкторы.<br>Всех просто
+                  <article class="guru__teachers-third-slide" id="third">
+                    <p class="guru__teachers-third-slide-gradient-text">Это далеко не все наши инструкторы.<br>Всех просто
                       невозможно так долго скроллить</p>
                     <span></span>
-                    <p class='guru__teachers-third-slide-text'>Но будь спокоен, остальные ничуть не хуже</p>
+                    <p class="guru__teachers-third-slide-text">Но будь спокоен, остальные ничуть не хуже</p>
                   </article>
 
                 </div>
@@ -895,202 +954,250 @@
           </div>
         </section>
 
-        <section class='reviews' id='reviews'>
-          <div class='reviews__content'>
-            <h2 class='reviews__title'>Отзывы</h2>
-            <h3 class='reviews__subtitle'>Что говорят о нас наши выпускники.</h3>
+        <section class="reviews" id="reviews">
+          <div class="reviews__content">
+            <h2 class="reviews__title">Отзывы</h2>
+            <h3 class="reviews__subtitle">Что говорят о нас наши выпускники.</h3>
 
-            <article class='reviews__container' id='reviews-slider'>
+            <article class="reviews__container" id="reviews-slider">
 
-              <input type='radio' name='reviews-slider' id='switch4' checked>
-              <input type='radio' name='reviews-slider' id='switch5'>
-              <input type='radio' name='reviews-slider' id='switch6'>
+              <input type="radio" name="reviews-slider" id="switch4" checked>
+              <input type="radio" name="reviews-slider" id="switch5">
+              <input type="radio" name="reviews-slider" id="switch6">
 
-              <div class='reviews__slider-circles' id='reviews-circles'>
-                <label class='reviews__slider-circle' for='switch4'></label>
-                <label class='reviews__slider-circle' for='switch5'></label>
-                <label class='reviews__slider-circle' for='switch6'></label>
+              <div class="reviews__slider-circles" id="reviews-circles">
+                <label class="reviews__slider-circle" for="switch4"></label>
+                <label class="reviews__slider-circle" for="switch5"></label>
               </div>
 
-              <div class='reviews__slides' id='reviews__slides'>
-                <div class='reviews__slides-info'>
+              <div class="reviews__slides" id="reviews__slides">
+                <div class="reviews__slides-info">
 
-                    <div class='reviews__reviewer reviews__reviewer_type_one'>
-                      <div class='reviews__reviewer-info'>
-                        <img class='reviews__reviewer-image' src='<%=require('../src/images/Reviews/Diesel.jpg')%>' alt='Фото'>
-                        <h4 class='reviews__reviewer-name'>Иван<br>Иванов</h4>
-                      </div>
-                      <p class='reviews__reviewer-text'>Не следует, однако забывать, что рамки и место обучения кадров позволяет оценить значение дальнейших направлений развития. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке дальнейших направлений развития. С другой стороны дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям.</p>
+                  <div class="reviews__reviewer reviews__reviewer_type_one">
+                    <div class="reviews__reviewer-info">
+                      <img class="reviews__reviewer-image" src="<%=require('../src/images/Reviews/polina-bevz.jpg')%>"
+                        alt="Фото">
+                      <h4 class="reviews__reviewer-name">Полина Бевз,<br>25 лет</h4>
                     </div>
+                    <p class="reviews__reviewer-text">Мне очень понравилось обучаться в автошколе Easy Drive. Понравилась онлайн-платформа для обучения теории, а также возможность в любое время задать вопрос и получить на него грамотный ответ. Инструктора нашли в моём районе, что тоже очень удобно. К моменту получения прав, а я сдала с первого раза, у меня не было автомобиля, и я воспользовалась курсом «каршеринг». Оказывается, есть сервисы, где стаж вождения не нужен. До этого, когда выбирала автошколу не видела, чтобы предлагали такую услугу. Теперь я даже не знаю буду ли покупать машину)))</p>
+                  </div>
 
-                    <div class='reviews__reviewer reviews__reviewer_type_two'>
-                      <div class='reviews__reviewer-info'>
-                        <img class='reviews__reviewer-image' src='<%=require('../src/images/Reviews/Diesel.jpg')%>' alt='Фото'>
-                        <h4 class='reviews__reviewer-name'>Костя<br>Петров</h4>
-                      </div>
-                      <p class='reviews__reviewer-text'>Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. С другой стороны консультация с широким активом позволяет оценить значение дальнейших направлений развития.</p>
+                  <div class="reviews__reviewer reviews__reviewer_type_two">
+                    <div class="reviews__reviewer-info">
+                      <img class="reviews__reviewer-image" src="<%=require('../src/images/Reviews/nikolay-erozhenko.jpg')%>"
+                        alt="Фото">
+                      <h4 class="reviews__reviewer-name">Николай<br>Ерощенко,<br>30 лет</h4>
                     </div>
+                    <p class="reviews__reviewer-text">Выражаю огромную благодарность автошколе Easy Drive! Я сначала сомневался в эффективности онлайн-занятий по теории. Был неудачный опыт на других онлайн-курсах по программированию. Но поддержка, которая оказывалась мне, легко компенсировала занятия в классе.  Практические занятия также были на высоте. Инструктор был внимательным и требовательным. Мне удалось освоиться за рулём практически за 15 занятий. В ГИБДД сдал на права с первого раза.</p>
+                  </div>
 
-                    <div class='reviews__reviewer reviews__reviewer_type_three'>
-                      <div class='reviews__reviewer-info'>
-                        <img class='reviews__reviewer-image' src='<%=require('../src/images/Reviews/Diesel.jpg')%>' alt='Фото'>
-                        <h4 class='reviews__reviewer-name'>Костя<br>Петров</h4>
-                      </div>
-                      <p class='reviews__reviewer-text'>Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности требуют определения и уточнения позиций</p>
+                  <div class="reviews__reviewer reviews__reviewer_type_three">
+                    <div class="reviews__reviewer-info">
+                      <img class="reviews__reviewer-image" src="<%=require('../src/images/Reviews/karpova-anna.jpg')%>"
+                        alt="Фото">
+                      <h4 class="reviews__reviewer-name">Карпова<br>Анна,<br>39 лет</h4>
                     </div>
+                    <p class="reviews__reviewer-text">Большое спасибо автошколе Easy Drive. Я раньше думала, что никогда не смогу сесть за руль, но жизненные обстоятельства заставили. Долго выбирала автошколу. Здесь понравился гибкий подход к обучению. Прошла теорию онлайн, занималась с инструктором в своём районе. Кроме того, очень понравился курс «начинающему водителю». Здорово, что автошкола готовит к различным ситуациям на дороге. Уже успела порекомендовать эту автошколу нескольким своим знакомым.</p>
+                  </div>
 
-                    <div class='reviews__reviewer reviews__reviewer_type_four'>
-                      <div class='reviews__reviewer-info'>
-                        <img class='reviews__reviewer-image' src='<%=require('../src/images/Reviews/Diesel.jpg')%>' alt='Фото'>
-                        <h4 class='reviews__reviewer-name'>Иван<br>Петров</h4>
-                      </div>
-                      <p class='reviews__reviewer-text'>Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности требуют определения и уточнения позиций</p>
+                  <div class="reviews__reviewer reviews__reviewer_type_four">
+                    <div class="reviews__reviewer-info">
+                      <img class="reviews__reviewer-image" src="<%=require('../src/images/Reviews/andrey-efimov.jpg')%>"
+                        alt="Фото">
+                      <h4 class="reviews__reviewer-name">Ефимов<br>Андрей,<br>28 лет</h4>
                     </div>
+                    <p class="reviews__reviewer-text">Во время карантина решил заняться получением водительских прав. Поэтому обучение на онлайн-платформе мне очень подходило. После двух недель обучения теории я уже сел за руль с инструктором. Маски, санитайзеры, всё было на месте. Вначале получалось плохо, но инструктор смог найти ко мне подход, и скоро я стал чувствовать себя уверенно не только на площадке, но и в городе. На права сдал с первого раза, за что очень благодарен всему коллективу автошколы Easy Drive.</p>
+                  </div>
 
                 </div>
               </div>
             </article>
 
-            <div class='reviews__director-container'>
-              <div class='reviews__director-photo'>
-                <img class='reviews__director-image' src='<%=require('../src/images/Reviews/director.svg')%>'
-                  alt='Фото руководителя'>
+            <div class="reviews__director-container">
+              <div class="reviews__director-photo">
+                <img class="reviews__director-image" src="<%=require('../src/images/Reviews/director2.svg')%>"
+                  alt="Фото руководителя">
               </div>
-              <div class='reviews__director-message'>
-                <p class='reviews__director-text'>Уважаемые друзья!<br><br>
+              <div class="reviews__director-message">
+                <p class="reviews__director-text">Уважаемые друзья!<br><br>
                   Наша цель сделать из вас профессиональных водителей. После прохождения обучения в автошколе Easy Drive
                   вы будете уверенно чувствовать себя на дороге, найдёте выход из любой сложной ситуации. А самое главное,
                   мы сделаем так, чтобы после получения водительского удостоверения вы не положили его на полку «до лучших
                   времён».
                 </p>
-                <h2 class='reviews__director-name'><span>Белоусов Илья Юрьевич,</span>руководитель автошколы Easy Drive
+                <h2 class="reviews__director-name"><span>Белоусов Илья Юрьевич,</span>руководитель автошколы Easy Drive
+                  <i>тел. +7 (926) 555-71-11</i>
                 </h2>
               </div>
             </div>
           </div>
         </section>
 
-        <section class='contacts' id='contacts'>
-          <div class='contacts__questions'>
-            <div class='contacts__text'>
-              <h2 class='contacts__title contacts__title_type_white'>Остались вопросы</h2>
-              <p class='contacts__subtitle contacts__subtitle_type_white'>Оставь свои контакнтые данные, мы перезвоним и
+        <section class="contacts" id="contacts">
+          <div class="contacts__questions">
+            <div class="contacts__text">
+              <h2 class="contacts__title contacts__title_type_white">Остались вопросы</h2>
+              <p class="contacts__subtitle contacts__subtitle_type_white">Оставь свои контакнтые данные, мы перезвоним и
                 все расскажем</p>
             </div>
-            <form class='contacts__form' id='contacts-form'>
-              <div class='contacts__input-container'>
-                <label for='name'>имя</label>
-                <input type='text' name='name' id='name' class='contacts__form-input' placeholder='Константин'
-                  pattern='[A-Za-zА-Яа-яЁё]{0,30}'>
+            <form class="contacts__form" id="contacts-form">
+              <div class="contacts__input-container">
+                <label for="name">имя</label>
+                <input type="text" name="name" id="name" class="contacts__form-input" placeholder="Твоё Имя"
+                  pattern="[A-Za-zА-Яа-яЁё]{0,30}">
               </div>
-              <div class='contacts__input-container'>
-                <label for='name'>телефон</label>
-                <input required type='tel' name='phone' id='phone' class='contacts__form-input'
-                  placeholder='+7 (999) 999 99 99'
-                  >
+              <div class="contacts__input-container">
+                <label for="name">телефон</label>
+                <input required type="tel" name="phone" id="phone" class="contacts__form-input"
+                  placeholder="+7 (999) 999 99 99">
               </div>
-              <button class='button button_type_contacts' type='submit' id='contactsSbmt'>консультация</button>
+              <button class="button button_type_contacts" type="submit" id="contactsSbmt">консультация</button>
             </form>
           </div>
-          <!-- pattern='\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}' -->
-          <div class='contacts__office'>
-            <div class='contacts__content'>
-              <div class='contacts__info'>
-                <h2 class='contacts__title contacts__title_type_black'>Контакты</h2>
-                <p class='contacts__subtitle contacts__subtitle_type_black'>Наш центральный офис находится по адресу</p>
-                <p class='contacts__office-adress'>г. Москва, Ленинский проспект д. 65 к. 4
+
+          <div class="contacts__office">
+            <div class="contacts__content" id="contacts-content">
+              <div class="contacts__info">
+                <h2 class="contacts__title contacts__title_type_black">Контакты</h2>
+                <p class="contacts__subtitle contacts__subtitle_type_black">Наш центральный офис находится по адресу</p>
+                <p class="contacts__office-adress">г. Москва, Ленинский проспект д. 65 к. 4
                   (РГУ нефти и газа имени И.М. Губкина,
                   станция метро Университет)
                 </p>
-                <a href='tel:+74997555577' class='contacts__office-phone'>8 (499) 755-55-77</a>
-                <p class='contacts__questionnaire'>заполни анкету для составления договора на обучение</p>
-                <button class='button button_type_office button_type_consult-form'>Записаться</button>
+                <p class="contacts__office-contacts"><img src="<%=require('./images/Header/phone.svg')%>" alt="phone"> Позвонить</p>
+                <a href="tel:+74997555577" class="contacts__office-phone">8 (499) 755-55-77</a>
+
+                <p class="contacts__office-contacts"><a href="https://wa.me/79309609083?text=Интересует%20ваше%20обучение">
+                  <img src="<%=require('./images/Header/whatsApp.svg')%>" alt="whatsApp">
+                </a>
+
+                  <a href="https://t.me/easydrive_online">
+                    <img src="<%=require('./images/Header/telegram.svg')%>" alt="telegram">
+                  </a>
+                  Написать (<a href="https://wa.me/79309609083?text=Интересует%20ваше%20обучение" class="link">WhatsApp</a>/<a href="https://t.me/easydrive_online" class="link">Telegram</a>)</p>
+
+                <a href="https://wa.me/79309609083?text=Интересует%20ваше%20обучение" class="contacts__office-phone">8 (930) 960-90-83</a>
+
+                <button class="button button_type_office button_type_consult-form">Записаться</button>
               </div>
-              <div class='contacts__map'>
+              <div class="contacts__map">
                 <iframe
-                  src='https://yandex.ru/map-widget/v1/?um=constructor%3A851342961f4ecf631d8d86105b04ce9f1c4335ec7a1dd316e230e273de0d2220&amp;source=constructor'
-                  width='100%' height='427' frameborder='0'></iframe>
+                  src="https://yandex.ru/map-widget/v1/?um=constructor%3A851342961f4ecf631d8d86105b04ce9f1c4335ec7a1dd316e230e273de0d2220&amp;source=constructor"
+                  width="100%" height="427" frameborder="0"></iframe>
                 </script>
               </div>
             </div>
           </div>
         </section>
 
-        <section class='popup' id='tablet-computer-licenses'>
-          <div class='popup__licenses'>
-            <button class='popup__cross popup__cross_type_licenses'></button>
-            <div class='popup__license'></div>
-            <div class='popup__license'></div>
+        <section class="popup" id="tablet-computer-licenses">
+          <div class="popup__licenses">
+            <button class="popup__cross popup__cross_type_licenses"></button>
+            <div class="popup__license license-1">
+
+            </div>
+            <div class="popup__license license-2"></div>
           </div>
         </section>
 
-        <section class='popup' id='mobile-license-one'>
-          <div class='popup__license'></div>
-        </section>
-
-        <section class='popup' id='mobile-license-two'>
-          <div class='popup__license'></div>
-        </section>
-
-        <section class='popup' id='contacts-popup'>
-          <form class='contacts__form-popup' id='contacts-form-popup'>
-            <div class='contacts__input-container'>
-              <label for='name'>имя</label>
-              <input type='text' name='name' id='name-popup' class='contacts__form-input' placeholder='Константин'
-                pattern='[A-Za-zА-Яа-яЁё]{0,30}'>
+        <section class="popup" id="mobile-license-one">
+          <div class="popup__license">
+            <div class="license__close">
+              <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="0.34751" y1="1.3075" x2="20.3475" y2="20.6407" stroke="#F8F8F8"/>
+                <line x1="20.3506" y1="0.356512" x2="0.350568" y2="20.0232" stroke="#F8F8F8"/>
+              </svg>
             </div>
-            <div class='contacts__input-container'>
-              <label for='name'>телефон<span>*</span></label>
-              <input required type='tel' name='phone' id='phone-popup' class='contacts__form-input'
-                placeholder='+7 (999) 999 99 99'
-                >
-                <!-- pattern='\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}' -->
+          </div>
+        </section>
+
+        <section class="popup" id="mobile-license-two">
+          <div class="popup__license">
+            <div class="license__close">
+              <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="0.34751" y1="1.3075" x2="20.3475" y2="20.6407" stroke="#F8F8F8"/>
+                <line x1="20.3506" y1="0.356512" x2="0.350568" y2="20.0232" stroke="#F8F8F8"/>
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <section class="popup" id="contacts-popup">
+          <form class="contacts__form-popup" id="contacts-form-popup" name="contactsFormPopup">
+            <div class="contacts__input-container">
+              <label for="name">имя</label>
+              <input type="text" name="name" id="name-popup" class="contacts__form-input" placeholder="Твоё Имя"
+                pattern="[A-Za-zА-Яа-яЁё]{0,30}">
+            </div>
+            <div class="contacts__input-container">
+              <label for="name">телефон<span>*</span></label>
+              <input required type="tel" name="phone" id="phone-popup" class="contacts__form-input"
+                placeholder="+7 (999) 999 99 99">
+            </div>
+            <div class="contacts__input-container">
+              <label for="email">Email</label>
+              <input type="email" name="email" class="contacts__form-input" placeholder="email@gmail.com" />
             </div>
             <p><span>*</span>Обязательное поле для заполнения</p>
-            <button class='button button_type_contacts' type='submit' id='popupContactsSbmt'>Подтвердить</button>
-            <button class='popup__cross popup__cross_type_contacts'></button>
+
+            <div class="contacts__contact-method">
+            <p>Выберите удобный для вас способ связи:</p>
+
+              <div class="contacts__contact-option">
+                <input id="tele" name="contactMethod" type="checkbox" checked>
+                <label for="tele">Звонок</label>
+              </div>
+              <div class="contacts__contact-option">
+                <input id="whatsApp" name="contactMethod" type="checkbox">
+                <label for="whatsApp">WhatsApp</label>
+              </div>
+              <div class="contacts__contact-option">
+                <input id="telegram" name="contactMethod" type="checkbox">
+                <label for="telegram">Telegram</label>
+              </div>
+            </div>
+            <button class="button button_type_contacts" type="submit" id="popupContactsSbmt">Подтвердить</button>
+            <div class="popup__cross popup__cross_type_contacts"></div>
           </form>
         </section>
 
-        <div class='modal fade' id='staticBackdrop' data-backdrop='static' tabindex='-1' role='dialog'
-          aria-labelledby='staticBackdropLabel' aria-hidden='true'>
-          <div class='modal-dialog' role='document'>
-            <div class='modal-content'>
-              <div class='modal-body'>
-
-                <section class='popup' id='burger-popup'>
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <section class="popup" id="burger-popup">
                   <div class='burger-menu'>
-                    <nav class='burger-menu__links'>
-                      <a class='burger-menu__link' href='#prices'>цены</a>
-                      <a class='burger-menu__link' href='#advantages'>преимущества</a>
-                      <a class='burger-menu__link' href='#learning'>обучение</a>
-                      <a class='burger-menu__link' href='#club'>клуб</a>
-                      <a class='burger-menu__link' href='#guru'>гуру</a>
-                      <a class='burger-menu__link' href='#reviews'>отзывы</a>
-                      <a class='burger-menu__link' href='#contacts'>контакты</a>
+                    <nav class="burger-menu__links">
+                      <a class="burger-menu__link" href="#prices">цены</a>
+                      <a class="burger-menu__link" href="#advantages">преимущества</a>
+                      <a class="burger-menu__link" href="#learning">обучение</a>
+                      <a class="burger-menu__link" href="#guru">клуб</a>
+                      <!-- <a class="burger-menu__link" href="#guru">гуру</a> -->
+                      <a class="burger-menu__link" href="#reviews">отзывы</a>
+                      <a class="burger-menu__link" href="#contacts-content">контакты</a>
                     </nav>
                   </div>
                 </section>
-
               </div>
             </div>
           </div>
         </div>
-
       </main>
 
-      <footer class='footer'>
-        <div class='footer__images'>
-          <a href='#main' class='logo logo_type_footer'><img src='<%=require('./images/Header/Logo.svg')%>' alt='Логотип EasyDrive'></a>
-          <img class='footer__image' src='<%=require('./images/Footer/Image1.svg')%>' alt='картинка дорожного знака'>
-          <img class='footer__image' src='<%=require('./images/Footer/Image2.svg')%>' alt='картинка дорожного знака'>
-          <img class='footer__image' src='<%=require('./images/Footer/Image3.svg')%>' alt='картинка дорожного знака'>
-          <img class='footer__image' src='<%=require('./images/Footer/Image4.svg')%>' alt='картинка дорожного знака'>
-          <img class='footer__image' src='<%=require('./images/Footer/Image5.svg')%>' alt='картинка дорожного знака'>
-          <img class='footer__image' src='<%=require('./images/Footer/Image6.svg')%>' alt='картинка дорожного знака'>
+      <footer class="footer">
+        <div class="footer__images">
+          <a href="#top" class="logo logo_type_footer"><img src="<%=require('./images/Header/Logo.svg')%>"
+              alt="Логотип EasyDrive"></a>
+          <img class="footer__image" src="<%=require('./images/Footer/Image1.svg')%>" alt="картинка дорожного знака">
+          <img class="footer__image" src="<%=require('./images/Footer/Image2.svg')%>" alt="картинка дорожного знака">
+          <img class="footer__image" src="<%=require('./images/Footer/Image3.svg')%>" alt="картинка дорожного знака">
+          <img class="footer__image" src="<%=require('./images/Footer/Image4.svg')%>" alt="картинка дорожного знака">
+          <img class="footer__image" src="<%=require('./images/Footer/Image5.svg')%>" alt="картинка дорожного знака">
+          <img class="footer__image" src="<%=require('./images/Footer/Image6.svg')%>" alt="картинка дорожного знака">
         </div>
       </footer>
 
   </body>
 
-  </html>
+</html>

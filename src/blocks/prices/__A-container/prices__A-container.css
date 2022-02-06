@@ -19,7 +19,7 @@
   line-height: 190%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .prices__A-container {
     position: absolute;
     top: 0;
@@ -27,7 +27,6 @@
     left: auto;
     display: none;
   }
-
 
   .prices__A-container_visible {
     display: flex;
