@@ -10,7 +10,7 @@ Naming classes by BEM Nested. Webpack, Babel is installed, HTML, CSS, images and
 The images were taken from the Figma and [optimized](https://tinypng.com/) to make the site load faster.
 
 ## __[View the Site](https://easydrive-online.ru)__
-## __[GitHub Pages](https://at0m234.github.io/EasyDrive/)__
+## __[GitHub Pages](https://at0m234.github.io/Drive/)__
 
 ## __Available Scripts__
 ### __`npm run install`__
