@@ -6,14 +6,14 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
   entry: { main: './src/pages/index.js' },
   output: {
-    path: path.resolve(__dirname, 'easydrive-online.ru'),
+    path: path.resolve(__dirname, 'build'),
     filename: 'main.js',
     publicPath: ''
   },
   mode: 'development', // добавили режим разработчика
   devServer: {
     static: {
-      directory: path.resolve(__dirname, 'easydrive-online.ru'),
+      directory: path.resolve(__dirname, 'build'),
     }, // путь, куда "смотрит" режим разработчика
     compress: true, // это ускорит загрузку в режиме разработки
     port: 8080, // порт, чтобы открывать сайт по адресу localhost:8080, но можно поменять порт
@@ -36,6 +36,19 @@ module.exports = {
         test: /\.(png|svg|jpg|gif|woff(2)?|eot|ttf|otf)$/,
         type: 'asset/resource'
       },
+      // {
+      //   test: /\.(png|svg|jpg)$/,
+      //   use: 'file-loader?name=./images/[name].[ext]'
+      // },
+      // {
+      //   test: /\.(woff|woff2)$/,
+      //   use: 'file-loader?name=./fonts/[name].[ext]',
+      // },
+      // // аналогично добавьте правило для работы с html
+      // {
+      //   test: /\.html$/,
+      //   use: 'html-loader',
+      // },
       {
         // применять это правило только к CSS-файлам
         test: /\.css$/,

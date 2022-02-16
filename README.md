@@ -1,29 +1,32 @@
-# ___EasyDrive Автошкола___
+# __EasyDrive - Driving school__
 
-## ___Обзор___
-EasyDrive - адаптивный одностраничный сайт автошколы, созданный по макету из Figma, при помощи HTML, CSS, JavaScript.
+## __Functionality__
+EasyDrive - adaptive single page driving school website, created based on a layout from Figma, using HTML, CSS, JavaScript and Webpack.
 
-Сайт оптимизирован под разрешения экранов от 320px до бесконечности. При вёрстке использован подход Desktop First.
+The site is optimized for screen resolutions from 320px to infinity. The Desktop First approach was used in the layout.
 
-Именование классов по БЭМ Nested. Установлен Webpack, Babel, настроена обработка HTML, CSS, изображений и шрифтов.
+Naming classes by BEM Nested. Webpack, Babel is installed, HTML, CSS, images and fonts processing is configured.
 
-Изобржения доставались из Фигмы и [оптимизировались](https://tinypng.com/), чтобы сайт загружался быстрее.
-___
-## Домен
-* [Сайт](https://easydrive-online.ru)
-___
-## ___GitHub Pages___
-* [Ссылка на gh-pages](https://at0m234.github.io/EasyDrive/)
-___
+The images were taken from the Figma and [optimized](https://tinypng.com/) to make the site load faster.
 
-## ___Available Scripts___
- - npm install - установка всех пакетов зависимостей из package.json;
- - npm run build - сборка проекта в папку easydrive-online.ru;
- - npm run dev - запуск режима разработчика с горячей перезагрузкой на http://localhost:8080/;
- - npm run deploy - деплой папки "easydrive-online.ru" на ветку удаленного репозитория gh-pages.
-___
-## ___Technology stack:___
-1. HTML
-2. CSS
-3. JavaScript
-4. Webpack
+## __[View the Site](https://easydrive-online.ru)__
+## __[GitHub Pages](https://at0m234.github.io/EasyDrive/)__
+
+## __Available Scripts__
+### __`npm run install`__
+Installing all dependencies from package.json;
+### __`npm run build`__
+Builds the app for production to the `build` folder.\
+It optimizes the build for the best performance.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+### `npm run dev`
+launch developer mode with a hot reload on http://localhost:8080/ in the browser;
+### __`npm run deploy`__
+Deploy the "build" folder to the gh-pages branch of the remote repository.
+## __Stack__
+
+### `HTML`
+### `CSS`
+### `JavaScript`
+### `Webpack`

@@ -4,12 +4,17 @@
   "description": "### Обзор",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf easydrive-online.ru && webpack --mode production",
+    "build": "rimraf build && webpack --mode production",
     "dev": "webpack serve",
-    "deploy": "webpack --mode production & gh-pages -d easydrive-online.ru"
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/At0m234/Drive.git"
   },
   "author": "Vladimir",
   "license": "ISC",
+  "homepage": "https://github.com/At0m234/Drive",
   "devDependencies": {
     "@babel/core": "^7.13.14",
     "@babel/preset-env": "^7.13.12",
@@ -32,6 +37,7 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.9.2",
+    "assets-webpack-plugin": "^7.1.1",
     "bootstrap": "^5.0.0-beta3",
     "core-js": "^3.21.0",
     "lax.js": "^2.0.3",

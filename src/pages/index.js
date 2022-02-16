@@ -351,11 +351,13 @@ let mapMoveOnScroll = (element, size, rightMargin, leftMargin) => {
   }
   element.style.backgroundPosition = String(xN) + "px " + y + "px";
 };
+
 function isVisible(element1, element2) {
   let getOffTop = element1.offsetTop + element2.offsetTop;
   if (getOffTop < pageYOffset + window.innerHeight) return true;
   return false;
 }
+
 function getSize(logic, size) {
   if (logic) {
     return size;
